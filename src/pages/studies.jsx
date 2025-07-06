@@ -57,8 +57,6 @@ export const Studies = ()=>{
                     <li className="text-2xl">Ingles por inmersión</li>
                 </ul>
             </div>
-
-
         </section>
     )
 }
