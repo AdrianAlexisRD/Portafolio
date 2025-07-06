@@ -1,6 +1,6 @@
 import Aprende from '../assets/Aprende.png'
 import Itla from '../assets/ITLA.png'
-import Infotep from '../assets/infotep.jpg'
+import Infotep from '../assets/logo.infotep.webp'
 import Talendig from '../assets/Talendig.png'
 import Mescyt from '../assets/mescyt.jpeg'
 
