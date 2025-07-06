@@ -32,7 +32,7 @@ export default function Home() {
         <IconSlash stroke={4} size={45} className="absolute left-132 aparecer" />
         <IconChevronRight stroke={4} size={45} className="absolute left-139 aparecer" />
       </div>
-      <p className="self-center text-3xl text-white p-4">
+      <p className="self-center md:text-3xl text-white p-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at
         provident iste repellendus labore soluta dicta qui adipisci totam!
         Laudantium accusamus maiores, laboriosam fugit omnis perferendis porro

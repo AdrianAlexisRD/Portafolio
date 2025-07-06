@@ -74,3 +74,25 @@
   }
   to{opacity: 1;}
 }
+
+
+.bg-degradado {
+  background: linear-gradient(160deg, #2d1ba3, #000000, #2d1ba3);
+  background-size: 300% 300%;
+  animation: degradado 7s ease-in-out infinite;
+}
+
+@keyframes degradado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
