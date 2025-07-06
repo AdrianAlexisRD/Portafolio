@@ -1,7 +1,4 @@
-import AnimeMania  from '../assets/AnimeMania.mp4'
-import Clima  from '../assets/Clima.mp4'
-// import Inventario  from '../assets/Inventario.mp4'
-import TodoList from '../assets/TodoList.mp4'
+
 import { 
     IconBrandMongodb,  
     IconBrandNodejs, 
