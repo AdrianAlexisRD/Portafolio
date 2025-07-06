@@ -1,6 +1,6 @@
 import AnimeMania  from '../assets/AnimeMania.mp4'
 import Clima  from '../assets/Clima.mp4'
-import Inventario  from '../assets/Inventario.mp4'
+// import Inventario  from '../assets/Inventario.mp4'
 import TodoList from '../assets/TodoList.mp4'
 import { 
     IconBrandMongodb,  
@@ -37,7 +37,7 @@ export const Proyects = () =>{
             <section className="grid grid-cols-2 items-center place-items-center w-[70%] md:w-[60%] h-[90%] border-blue-950 rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
                 <article className="w-100 h-fit bg-[#121212] rounded-2xl aparecer" >
                     <video width="100%" controls autoPlay loop muted className='rounded-2xl'>
-                    <source src={Inventario} type="video/mp4" /> 
+                    <source src={Clima} type="video/mp4" /> 
                     </video>
                     <h2 className='text-white text-center text-2xl'>Sistema de inventario</h2>
                 </article>
