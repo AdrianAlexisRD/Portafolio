@@ -25,7 +25,7 @@ export const Studies = ()=>{
         'Disciplina en el trabajo.'
     ]
     return(
-        <section className="flex flex-col  md:grid md:grid-cols-2 gap-7 p-10 items-center w-[99%] md:w-[75%] h-fit border-blue-950 rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
+        <section className="flex flex-col  md:grid md:grid-cols-2 gap-7 p-10 md:items-center w-[99%] md:w-[75%] h-fit border-color   rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
              <h2 className="text-4xl font-extrabold text-color col-span-2 text-center">Estudios</h2>
              <div className='flex items-center'>
                 <img src={Itla} alt="aprende" className='md:w-40 md:h-30 w-30 h-20 pr-4' />
