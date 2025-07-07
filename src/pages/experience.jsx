@@ -9,30 +9,30 @@ export const Experience = () =>{
             <h2 className='md:text-4xl text-3xl text-[#EAE4D5] col-span-2 text-center font-extrabold'> Experiencias</h2>
             <div className='flex md:gap-7 gap-4 items-center'>
                 <img src={Ingmelec} alt="Ingmelec" className='md:w-40 w-30 md:h-30 h-25 rounded ' />
-                <div className='md:text-2xl'>
-                    <h3 className='font-extrabold'>Tecnico electricista</h3>
-                    <p>Técnico de electricidad media-baja tension.</p>
+                <div>
+                    <h3 className='md:text-3xl'>Tecnico electricista</h3>
+                    <p className='md:text-2xl'>Técnico de electricidad media-baja tension.</p>
                 </div>  
             </div>
             <div className='flex md:flex-row flex-row-reverse md:gap-7 gap-4 items-center '>
                 <img src={Voz} alt="Ingmelec" className='md:w-40 w-30 md:h-30 h-25 rounded ' />
-                <div className='md:text-2xl text-end md:text-start'>
-                    <h3 className='font-extrabold'>Tecnico en telecomunicaciones</h3>
-                    <p>Tecnico reparado de servicios ADSL y Voz.</p>
+                <div className='text-end md:text-start'>
+                    <h3 className='md:text-3xl'>Tecnico en telecomunicaciones</h3>
+                    <p className='md:text-2xl'>Tecnico reparado de servicios ADSL y Voz.</p>
                 </div>
             </div >
             <div className='flex md:gap-7 gap-4 items-center'>
                 <img src={Nerdot} alt="Ingmelec" className='md:w-40 w-30 md:h-30 h-25 rounded ' />
-                <div className='md:text-2xl'>
-                    <h3 className='font-extrabold'>Tecnico en Logistica Digital</h3>
-                    <p>Servicios tercnicos de software en terminales de tarjetas bancarias.</p>
+                <div>
+                    <h3 className='md:text-3xl'>Tecnico en Logistica Digital</h3>
+                    <p className='md:text-2xl'>Servicios tercnicos de software en terminales de tarjetas bancarias.</p>
                 </div>
             </div>
             <div className='flex md:flex-row flex-row-reverse md:gap-7 gap-4 items-center '>
                 <img src={OceanWorld} alt="Ingmelec" className='md:w-40 w-30 md:h-30 h-25 rounded ' />
-                <div className='md:text-2xl text-end md:text-start'>
-                    <h3 className='font-extrabold'>Tecnico electricista</h3>
-                    <p>Matenimiento electrico industrial.</p>
+                <div className='text-end md:text-start'>
+                    <h3 className='md:text-3xl'>Tecnico electricista</h3>
+                    <p className='md:text-2xl'>Matenimiento electrico industrial.</p>
                 </div>
             </div>
 

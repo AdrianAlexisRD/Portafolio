@@ -22,7 +22,7 @@ export default function Home() {
           <span className="text-color md:text-4xl efecto2 md:left-[185px] left-[140px] text-[28px] font-extrabold   absolute"> 
             Alexis
           </span>
-          <span className="text-color md:text-4xl efecto3 md:left-[300px] right-[70px]  text-[28px] font-extrabold  absolute">
+          <span className="text-color md:text-4xl efecto3 md:left-[310px] right-[70px]  text-[28px] font-extrabold  absolute">
             Lopez
           </span>
           <span className="text-color md:text-4xl efecto4 md:left-[420px] hidden md:flex right-[60px] font-extrabold text-[28px]  absolute">
