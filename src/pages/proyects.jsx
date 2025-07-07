@@ -31,8 +31,8 @@ export const Proyects = () =>{
     return(
  
 
-            <section className="grid grid-cols-2 items-center place-items-center w-[70%] md:w-[60%] h-[90%] border-blue-950 rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
-                <article className="w-100 h-fit bg-[#121212] rounded-2xl aparecer" >
+            <section className="flex flex-col gap-5 p-4 md:grid md:grid-cols-2 items-center place-items-center w-[99%] md:w-[60%] h-[90%] border-blue-950 rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
+                <article className="md:w-100 h-fit bg-[#121212] rounded-2xl aparecer" >
                     <iframe
                     width="100%"
                     height="auto"
@@ -44,7 +44,7 @@ export const Proyects = () =>{
                     />
                     <h2 className='text-white text-center text-2xl'>Sistema de inventario</h2>
                 </article>
-                <article className="w-100 h-fit bg-[#121212] rounded-2xl aparecer " >
+                <article className="md:w-100 h-fit bg-[#121212] rounded-2xl aparecer " >
                     <iframe
                     width="100%"
                     height="auto"
@@ -57,7 +57,7 @@ export const Proyects = () =>{
                     <h2 className='text-white text-center text-2xl'>App weather</h2>
 
                 </article>
-                    <article className="w-100 h-fit bg-[#121212] rounded-2xl aparecer " >
+                    <article className="md:w-100 h-fit bg-[#121212] rounded-2xl aparecer " >
                     <iframe
                     width="100%"
                     height="auto"
@@ -70,7 +70,7 @@ export const Proyects = () =>{
                     <h2 className='text-white text-center text-2xl'>To do list</h2>
 
                 </article>
-                <article className="w-100 h-fit bg-[#121212] rounded-2xl aparecer" >
+                <article className="md:w-100 h-fit bg-[#121212] rounded-2xl aparecer" >
                     <iframe
                     width="100%"
                     height="auto"

@@ -67,7 +67,8 @@
 }
 
 .aparecer{
-  animation: aparecer 2s ease-in-out  forwards ;
+  opacity: 0;
+  animation: aparecer 2s ease-in-out 1s forwards ;
 }
 
 @keyframes aparecer {
@@ -86,8 +87,8 @@
 }
 @media(max-width: 768px){
   body {
-    background: linear-gradient(160deg, #2d1ba3, #000000, #2d1ba3);
-    background-size: 300% 300%;
+    background: linear-gradient(90deg, #2d1ba3, #000000, #2d1ba3);
+    background-size: 200% 200%;
     animation: degradado 7s ease-in-out infinite;
   }
 }
@@ -104,6 +105,3 @@
     background-position: 0% 50%;
   }
 }
-
-
-
