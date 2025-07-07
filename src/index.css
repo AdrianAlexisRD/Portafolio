@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+/* .logo{@apply text-white text-4xl efecto1 left-[60px] absolute } */
+
 
 .efecto1{
   opacity: 0;
@@ -75,12 +77,14 @@
   to{opacity: 1;}
 }
 
-
-.bg-degradado {
-  background: linear-gradient(160deg, #2d1ba3, #000000, #2d1ba3);
-  background-size: 300% 300%;
-  animation: degradado 7s ease-in-out infinite;
+@media(min-width: 768px){
+  body {
+    background: linear-gradient(160deg, #2d1ba3, #000000, #2d1ba3);
+    background-size: 300% 300%;
+    animation: degradado 7s ease-in-out infinite;
+  }
 }
+
 
 @keyframes degradado {
   0% {

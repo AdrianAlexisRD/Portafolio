@@ -3,7 +3,8 @@ import { IconBrandLinkedin, IconBrandGithub ,IconBrandWhatsapp, IconMail } from 
 
 export const Contact = () =>{
     return(
-        <section className="flex justify-center items-center w-[70%] md:w-[50%] h-[50%] border-blue-950 rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
+        <section className="flex justify-center flex-col items-center w-[99%] md:w-[40%] h-[50%] border-blue-950 rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
+            <h2 className='text-3xl text-white font-extrabold mb-15'>Contacta me</h2>
             <ul className='text-white flex flex-col gap-5 '>
                 <div className='flex gap-8'>
                     <li>

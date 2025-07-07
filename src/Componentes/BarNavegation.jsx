@@ -1,14 +1,18 @@
 import { Link ,Outlet } from "react-router-dom"
 import Fondo from "../assets/Fondo.jpg"
+import { IconMenu2 } from '@tabler/icons-react';
+// import { useState } from "react";
 
 export const Navegation = ()=>{
+    // const [toggle , setToggle] = useState(false)
     return(
-    <div  className='flex sm:items-center flex-row-reverse md:justify-between  md:flex-row relative bg-degradado h-[100vh] md:h-screen w-[100vw]'>
+    <div  className='flex sm:items-center justify-end flex-col-reverse md:justify-between md:flex-row relative  h-screen w-[100vw]'>
         {/* <img src={Fondo} alt="" className="absolute z-[-1]  brightness-30" /> */}
         <Outlet/>
-
-        <nav className=" bg-[#121212]/50 text-white w-fit  flex justify-end-safe text-2xl md:text-4xl rounded-l-2xl border-blue-950 border-6 border-r-0  "> 
-            <ul className="flex flex-col gap-5 p-5">
+        
+        <nav className=" bg-[#121212]/50 text-white w-[100%] md:w-fit h-fit p-2 flex md:justify-end-safe m-2 text-2xl md:text-4xl rounded-l-2xl border-blue-950 border-6 border-r-0  "> 
+      
+            <ul className="flex md:flex-col justify-center md:flex-nowrap flex-wrap gap-5 md:p-5 ">
                 <li className="">
                     <Link to='/'  className="relative group inline-block cursor-pointer">
                     <span className="text-white">DashBoard</span>
