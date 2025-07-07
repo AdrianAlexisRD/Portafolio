@@ -84,6 +84,13 @@
     animation: degradado 7s ease-in-out infinite;
   }
 }
+@media(max-width: 768px){
+  body {
+    background: linear-gradient(160deg, #2d1ba3, #000000, #2d1ba3);
+    background-size: 300% 300%;
+    animation: degradado 7s ease-in-out infinite;
+  }
+}
 
 
 @keyframes degradado {
