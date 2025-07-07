@@ -1,4 +1,4 @@
-import Home from "./pages/Home"
+import AbouteMe from "./pages/AbouteMe"
 // import { IconCode , IconChevronLeft ,IconChevronRight, IconSlash } from '@tabler/icons-react'; 
 import {BrowserRouter , Routes, Route} from 'react-router-dom'
 import { Proyects } from "./pages/proyects"
@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
     <Routes >
     <Route path='/' element={<Navegation/>}>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/' element={<AbouteMe/>}/>
       <Route path='/proyects' element={<Proyects/>}/>
       <Route path='/contact' element={<Contact/>} />
       <Route path='/studies' element={<Studies/>} />

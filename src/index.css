@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 /* .logo{@apply text-white text-4xl efecto1 left-[60px] absolute } */
+.text-color{ @apply text-[#F2F2F2] }
+.border-color {@apply border-[#EAE4D5]}
+.title-color{ @apply text-[#EAE4D5] }
 
 
 .efecto1{
@@ -66,6 +69,20 @@
   }
 }
 
+.moveLeft{
+  animation: move-Left 1s ease-in-out forwards ;
+}
+
+
+@keyframes move-Left {
+  from{
+    transform:  translateX(100%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
 .aparecer{
   opacity: 0;
   animation: aparecer 2s ease-in-out 1s forwards ;
@@ -80,16 +97,16 @@
 
 @media(min-width: 768px){
   body {
-    background: linear-gradient(160deg, #2d1ba3, #000000, #2d1ba3);
-    background-size: 300% 300%;
-    animation: degradado 7s ease-in-out infinite;
+    background: linear-gradient(160deg, #EAE4D5, #000000, #EAE4D5);
+    background-size: 400% 400%;
+    animation: degradado 15s ease-in-out infinite;
   }
 }
 @media(max-width: 768px){
   body {
-    background: linear-gradient(90deg, #2d1ba3, #000000, #2d1ba3);
+    background: linear-gradient(-160deg, #EAE4D5, #000000, #EAE4D5);
     background-size: 200% 200%;
-    animation: degradado 7s ease-in-out infinite;
+    animation: degradado 5s ease-in-out infinite;
   }
 }
 
@@ -104,4 +121,11 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+
+@keyframes aumentar {
+  0%{transform: scale(1);}
+  50%{transform: scale(1.5);}
+  /* 100%{transform: scale(1);} */
 }

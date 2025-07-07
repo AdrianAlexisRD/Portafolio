@@ -3,9 +3,9 @@ import { IconBrandLinkedin, IconBrandGithub ,IconBrandWhatsapp, IconMail } from 
 
 export const Contact = () =>{
     return(
-        <section className="flex justify-center flex-col items-center w-[99%] md:w-[40%] h-[50%] border-blue-950 rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
-            <h2 className='text-3xl text-white font-extrabold mb-15'>Contacta me</h2>
-            <ul className='text-white flex flex-col gap-5 '>
+        <section className="flex justify-center flex-col items-center w-[99%] md:w-[40%] h-[50%] border-color rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
+            <h2 className='text-3xl title-color font-extrabold mb-15'>Contacta me</h2>
+            <ul className='text-color flex flex-col gap-5 '>
                 <div className='flex gap-8'>
                     <li>
                         <a className='flex items-center hover:text-blue-950 transition-all duration-500 ease-in-out active:scale-90 aparecer' href='https://www.linkedin.com/in/adri%C3%A1n-a-lopez-santos-669ba4333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank">
