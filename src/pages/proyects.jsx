@@ -22,7 +22,7 @@ useEffect(() => {
   const screenWidth = window.innerWidth;
     console.log(screenWidth)
   if (screenWidth < 800) {
-    if (scroll > 200) {
+    if (scroll > 200 ) {
       setDesplegar(true);
     } else {
       setDesplegar(false);

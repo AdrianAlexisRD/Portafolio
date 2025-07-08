@@ -10,20 +10,20 @@ export default function Home() {
 
   return (
     <article  className={`
-        flex-col mt-4
+        flex-col  md:flex-row
         gap-7 md:p-10 p-4 md:mt-15 
         w-[99%] md:w-[99%] 
         md:h-[70vh] border-color  
         rounded-l-2xl border-r-0 
         border-6 self-end
          bg-[#121212]/50
-         flex moveLeft h-dvh
+         flex moveLeft 
          opacity-0 items-center
          `} >
         <div className="md:h-[400px] h-25  md:w-[400px] w-30 flex justify-center md:items-center mb-15">
             <img src={FotoAnimada} alt="" className=" h-35 w-30 md:h-fit md:w-fit shadow-xl shadow-[#000000]  border-color rounded-3xl   md:rounded-r-2xl  " />
         </div>
-      <div className="text-white flex justify-center  md:mb-4  relative ">
+      <div className="text-white flex md:self-start   md:mb-4  relative ">
         <IconChevronLeft stroke={3} size={40} className="absolute md:left-5 right-25 aparecer title-color" />
         <h1>
           <span className="text-color md:text-3xl efecto1 md:left-[60px] right-1 text-[28px] font-extrabold absolute "> 
