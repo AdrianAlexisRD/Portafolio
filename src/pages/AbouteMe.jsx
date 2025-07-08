@@ -14,9 +14,9 @@ export default function Home() {
             <img src={FotoAnimada} alt="" className=" shadow-xl shadow-[#000000] p-2 border-color rounded-3xl md:w-fit w-[200px] md:rounded-r-2xl md:h-fit h-[200px] " />
         </div>
       <div className="text-white flex justify-center mt-4 mb-4 md:mt-[10%] relative ">
-        <IconChevronLeft stroke={3} size={40} className="absolute md:left-5 left-[65px] aparecer title-color" />
+        <IconChevronLeft stroke={3} size={40} className="absolute md:left-5 left-[60px] aparecer title-color" />
         <h1>
-          <span className="text-color md:text-2xl efecto1 md:left-[60px] left-[100px] text-[28px] font-extrabold absolute "> 
+          <span className="text-color md:text-2xl efecto1 md:left-[60px] left-[95px] text-[28px] font-extrabold absolute "> 
             Adrian
           </span>
           <span className="text-color md:text-2xl efecto2 md:left-[185px] hidden md:flex  left-[140px] text-[28px] font-extrabold   absolute"> 
