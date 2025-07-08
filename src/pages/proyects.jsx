@@ -31,7 +31,7 @@ export const Proyects = () =>{
     return(
  
 
-            <section className="flex flex-col md:gap-15 gap-10 p-4 md:grid md:grid-cols-2 items-center place-items-center w-[99%] md:w-[60%] h-[100%] mb-5 mt-5 border-color rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
+            <section className="flex flex-col md:gap-15 gap-10 p-4 md:grid md:grid-cols-2 items-center place-items-center w-[99%] md:w-[60%] h-fit mb-10 mt-5 border-color rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
                 <h2 className='col-span-2 text-white text-3xl md:text-4xl title-color font-extrabold text-center'>Tecnologias utilizadas</h2>
                 <div className='grid grid-cols-3 gap-10 text-white md:flex md:justify-around w-[100%] col-span-2'>
                 { logos.icons.map((logo , i) =>(
