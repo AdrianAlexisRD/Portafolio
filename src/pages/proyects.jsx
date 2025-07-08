@@ -9,10 +9,21 @@ import {
     IconBrandGithub, 
     IconBrandReact 
 } from '@tabler/icons-react';
+import { useNavigate } from "react-router-dom"
+import { useEffect } from 'react';
 
 
 
-export const Proyects = () =>{
+export const Proyects = ({scroll}) =>{
+
+const navegar = useNavigate()
+
+  useEffect(()=>{
+    if(scroll>80){
+      navegar('/studies')
+    }
+  }, [navegar, scroll])
+
 {/* <div class="animate-[wiggle_1s_ease-in-out_infinite] ..."></div> */}
     const logos = {
                    icons:[<IconBrandReact stroke={2} size={50} className='text-[#30a2ff] animate-[aumentar_2s_ease-in-out_infinite]  cursor-pointer'/>,

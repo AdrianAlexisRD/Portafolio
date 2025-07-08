@@ -6,28 +6,42 @@ import { Contact } from "./pages/contact"
 import { Navegation } from "./Componentes/BarNavegation"
 import { Studies } from "./pages/studies"
 import { Experience } from "./pages/experience"
-
+import { useState } from "react"
+import { useEffect} from "react"
 
 
 function App() {
+  const [scroll, setScroll] = useState(0);
 
+  
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(window.scrollY);
+      console.log("scrollY:", window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <BrowserRouter>
-    <Routes >
-    <Route path='/' element={<Navegation/>}>
-      <Route path='/' element={<AbouteMe/>}/>
-      <Route path='/proyects' element={<Proyects/>}/>
-      <Route path='/contact' element={<Contact/>} />
-      <Route path='/studies' element={<Studies/>} />
-      <Route path='/experience' element={<Experience/>} />
+    <div className="overflow-y-scroll h-[200vh] ">
+      <Routes >
+      <Route  path='/' element={<Navegation/>}>
+        <Route path='/' element={<AbouteMe scroll={scroll}/>}/>
+        <Route path='/proyects' element={<Proyects scroll={scroll}/>}/>
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/studies' element={<Studies/>} />
+        <Route path='/experience' element={<Experience/>} />
 
 
-    </Route>
+      </Route>
 
-    </Routes>
+      </Routes>
 
-    </BrowserRouter>
+
+     </div>
   )
 }
 
