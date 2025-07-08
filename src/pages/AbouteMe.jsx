@@ -9,7 +9,7 @@ import { Navegation } from "../Componentes/BarNavegation"
 
 export default function Home() {
   return (
-    <article className="w-[99%] md:w-[70%] h-fit md:h-[80%] border-6 border-l-0 border-color  rounded-r-2xl flex  flex-col md:flex-row gap-4 moveRight bg-[#121212]/50  ">
+    <article className="w-[99%] md:w-[70%] h-fit md:h-[80%] border-6 border-l-0 border-color rounded-r-2xl flex flex-col md:flex-row gap-4 moveRight bg-[#121212]/50  ">
         <div className="md:h-[100%]  w-[100%] md:w-fit flex justify-center md:items-center">
             <img src={FotoAnimada} alt="" className=" shadow-xl shadow-[#000000] p-2 border-color rounded-3xl md:w-fit w-[200px] md:rounded-r-2xl md:h-fit h-[200px] " />
         </div>
