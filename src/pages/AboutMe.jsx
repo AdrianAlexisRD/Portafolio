@@ -39,8 +39,8 @@ export default function Home() {
             Santos
           </span>
         </h1>
-        <IconSlash stroke={3} size={40} className="absolute md:left-134 right-[-110px] aparecer title-color" />
-        <IconChevronRight stroke={3} size={40} className="absolute md:left-140 right-[-130px]  aparecer title-color" />
+        <IconSlash stroke={3} size={40} className="absolute md:left-134 right-[-115px] aparecer title-color" />
+        <IconChevronRight stroke={3} size={40} className="absolute md:left-140 right-[-135px]  aparecer title-color" />
       </div>
       <div className="self-center p-4 pt-10 ">
         <h2 className="self-center md:text-3xl text-2xl font-black text-color">Desarrollardor web fullstack</h2>
