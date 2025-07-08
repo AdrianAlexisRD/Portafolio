@@ -32,9 +32,9 @@ export default function Home() {
         <IconSlash stroke={3} size={40} className="absolute md:left-134 right-6 aparecer title-color" />
         <IconChevronRight stroke={3} size={40} className="absolute md:left-140 right-0  aparecer title-color" />
       </div>
-      <div className="self-center p-4">
-        <h2 className="self-center md:text-4xl text-2xl font-black text-color">Desarrollardor web fullstack</h2>
-        <p className=" md:text-3xl text-white ">
+      <div className="self-center p-4 pt-20 ">
+        <h2 className="self-center md:text-3xl text-2xl font-black text-color">Desarrollardor web fullstack</h2>
+        <p className=" md:text-2xl text-white ">
         Hola soy un desarrollar junior fullstack autodidactacon deseos de demostrar
         mi talento y cada dia mas superarme a mi mismo. Me gusta aprender y resolver 
         problemas, siempre orientado a alcanzar metas y entregar lo mejor de mi en cada 
