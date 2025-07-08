@@ -1,9 +1,30 @@
 import { IconBrandLinkedin, IconBrandGithub ,IconBrandWhatsapp, IconMail } from '@tabler/icons-react';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
+export const Contact = ({scroll}) =>{
 
-export const Contact = () =>{
+    const [desplegar , setDesplegar] = useState(false)
+    
+    
+        useEffect(()=>{
+        if(scroll>2590 ){
+            console.log('estas en proyect')
+            setDesplegar(true)
+        } else{
+            setDesplegar(false)
+        }
+        }, [scroll])
     return(
-        <section className="flex justify-center flex-col items-center w-[99%] md:w-[40%] h-[50%] border-color rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
+        <section className={` flex-col  
+        gap-7 p-10 items-center
+        w-[99%] md:w-[50%] 
+        h-fit border-color  
+        rounded-l-2xl border-r-0 
+        border-6 md:self-end
+         bg-[#121212]/50
+         ${desplegar?'flex moveLeft': 'animate-[retroceso-Left_1s_ease-in-out_forwards]'}
+         `}>
             <h2 className='text-3xl md:text-4xl title-color font-extrabold mb-15'>Contacta me</h2>
             <ul className='text-color flex flex-col gap-5 '>
                 <div className='flex gap-8'>

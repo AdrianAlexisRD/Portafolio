@@ -6,11 +6,11 @@ import { IconMenu2 } from '@tabler/icons-react';
 export const Navegation = ()=>{
     // const [toggle , setToggle] = useState(false)
     return(
-    <div  className='flex sm:items-center justify-end flex-col-reverse md:justify-between md:flex-row relative  h-screen w-[100vw] '>
+    <div  className='flex sm:items-center justify-end flex-col-reverse md:justify-between md:flex-row   '>
         {/* <img src={Fondo} alt="" className="absolute z-[-1]  brightness-30" /> */}
-        <Outlet/>
+       
         
-        <nav className=" bg-[#121212]/50 text-white w-[100%] md:w-fit h-fit p-5 flex md:justify-end-safe  md:m-0 m-2 text-2xl md:text-4xl rounded-l-2xl border-color border-6 border-r-0 group-focus:w-full moveLeft "> 
+        <nav className=" bg-[#121212]/50 text-white w-[100%] md:w-fit h-fit p-5 flex md:justify-end-safe md:fixed right-0 top-45 md:m-0 m-2 text-2xl md:text-4xl rounded-l-2xl border-color border-6 border-r-0 group-focus:w-full moveLeft "> 
       
             <ul className="flex md:flex-col justify-center md:flex-nowrap flex-wrap gap-5 md:p-5 ">
                 <li className="">

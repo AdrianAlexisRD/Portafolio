@@ -9,20 +9,33 @@ import {
     IconBrandGithub, 
     IconBrandReact 
 } from '@tabler/icons-react';
-import { useNavigate } from "react-router-dom"
+import { useState } from 'react';
 import { useEffect } from 'react';
 
 
 
 export const Proyects = ({scroll}) =>{
+const [desplegar , setDesplegar] = useState(false)
 
-const navegar = useNavigate()
 
-  useEffect(()=>{
-    if(scroll>80){
-      navegar('/studies')
+useEffect(() => {
+  const screenWidth = window.innerWidth;
+    console.log(screenWidth)
+  if (screenWidth < 800) {
+    if (scroll > 200) {
+      setDesplegar(true);
+    } else {
+      setDesplegar(false);
     }
-  }, [navegar, scroll])
+  } else {
+    if (scroll > 400 && scroll < 1240) {
+      setDesplegar(true);
+    } else {
+      setDesplegar(false);
+    }
+  }
+}, [scroll]);
+
 
 {/* <div class="animate-[wiggle_1s_ease-in-out_infinite] ..."></div> */}
     const logos = {
@@ -42,7 +55,13 @@ const navegar = useNavigate()
     return(
  
 
-            <section className="flex flex-col md:gap-15 gap-10 p-4 md:grid md:grid-cols-2 items-center place-items-center w-[99%] md:w-[60%] h-fit mb-10 mt-5 border-color rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
+            <section className={` 
+                flex-col md:gap-15 gap-10 
+                p-4 md:grid md:grid-cols-2 items-center
+                place-items-center w-[99%] md:w-[99%] md:max-w-[1500px]
+                h-fit mb-10 mt-5 border-color bg-[#121212]/50
+                rounded-r-2xl border-l-0 border-6 
+                ${desplegar ? 'flex moveRight' : 'animate-[retroceso-Right_1s_ease-in-out_forwards]'} `}>
                 <h2 className='col-span-2 text-white text-3xl md:text-4xl title-color font-extrabold text-center'>Tecnologias utilizadas</h2>
                 <div className='grid grid-cols-3 gap-10 text-white md:flex md:justify-around w-[100%] col-span-2'>
                 { logos.icons.map((logo , i) =>(

@@ -2,10 +2,29 @@ import Ingmelec from '../assets/Ingmelec.jpeg'
 import Voz from '../assets/Voz.jpeg'
 import Nerdot from '../assets/Nerdot.jpeg'
 import OceanWorld from '../assets/OceanWorld.png'
+import { useState } from 'react';
+import { useEffect } from 'react';
 
-export const Experience = () =>{
+export const Experience = ({scroll}) =>{
+    const [desplegar , setDesplegar] = useState(false)
+    
+    
+      useEffect(()=>{
+        if(scroll>1985&&scroll<2590 ){
+         console.log('estas en proyect')
+         setDesplegar(true)
+        } else {
+        setDesplegar(false)
+      }
+      }, [scroll])
     return(
-        <section className="flex flex-col  md:grid md:grid-cols-2 gap-7 pt-10 pb-10 pl-4 pr-4 items-center w-[99%] md:w-[75%] h-fit border-color rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 text-white ">
+        <section className={` 
+                flex-col md:gap-15 gap-10 
+                p-4 md:grid md:grid-cols-2 items-center
+                place-items-center w-[99%] md:w-[99%] md:max-w-[1500px]
+                h-fit mb-10 mt-5 border-color bg-[#121212]/50
+                rounded-r-2xl border-l-0 border-6 text-color
+                ${desplegar ? 'flex moveRight' : 'animate-[retroceso-Right_1s_ease-in-out_forwards]'} `}>
             <h2 className='md:text-4xl text-3xl text-[#EAE4D5] col-span-2 text-center font-extrabold'> Experiencias</h2>
             <div className='flex md:gap-7 gap-4 items-center'>
                 <img src={Ingmelec} alt="Ingmelec" className='md:w-40 w-30 md:h-30 h-25 rounded ' />

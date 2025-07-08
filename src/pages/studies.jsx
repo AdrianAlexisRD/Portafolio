@@ -3,11 +3,23 @@ import Itla from '../assets/ITLA.png'
 import Infotep from '../assets/logo.infotep.webp'
 import Talendig from '../assets/Talendig.png'
 import Mescyt from '../assets/mescyt.jpeg'
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 
+export const Studies = ({scroll})=>{
 
-export const Studies = ()=>{
-
+    const [desplegar , setDesplegar] = useState(false)
+    
+    
+      useEffect(()=>{
+        if(scroll>1240 && scroll<1985 ){
+         console.log('estas en proyect')
+         setDesplegar(true)
+        } else{
+            setDesplegar(false)
+        }
+      }, [scroll])
     const itla =[
         'diseño de páginas web.',
         'Fundamentos de programación en python.'
@@ -25,7 +37,16 @@ export const Studies = ()=>{
         'Disciplina en el trabajo.'
     ]
     return(
-        <section className="flex flex-col  md:grid md:grid-cols-2 gap-7 p-10 md:items-center w-[99%] md:w-[75%] h-fit border-color   rounded-r-2xl border-l-0 border-6 moveRight bg-[#121212]/50 ">
+        <section className={` flex-col 
+        md:grid md:grid-cols-2 
+        gap-7 p-10  
+        w-[99%] md:w-[99%] 
+        h-fit border-color  
+        rounded-l-2xl border-r-0 
+        border-6 md:self-end
+         bg-[#121212]/50
+         ${desplegar?'flex moveLeft': 'animate-[retroceso-Left_1s_ease-in-out_forwards]'}
+         `}>
              <h2 className="text-4xl font-extrabold text-color col-span-2 text-center">Estudios</h2>
              <div className='flex items-center'>
                 <img src={Itla} alt="aprende" className='md:w-40 md:h-30 w-30 h-20 pr-4' />

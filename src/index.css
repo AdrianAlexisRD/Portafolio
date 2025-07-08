@@ -81,6 +81,24 @@ h1{
   }
 }
 
+@keyframes retroceso-Right {
+  from{
+    transform:  translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes retroceso-Left {
+  from{
+    transform:  translateX(0);
+  }
+  to{
+    transform: translateX(100%);
+  }
+}
+
 .moveLeft{
   animation: move-Left 1s ease-in-out forwards ;
 }
@@ -91,9 +109,12 @@ h1{
     transform:  translateX(100%);
   }
   to{
+    opacity: 1;
     transform: translateX(0);
   }
 }
+
+
 
 .aparecer{
   opacity: 0;
@@ -107,20 +128,10 @@ h1{
   to{opacity: 1;}
 }
 
-@media(min-width: 768px){
   body {
     background: linear-gradient(160deg, #EAE4D5, #000000, #EAE4D5);
-    background-size: 400% 400%;
-    animation: degradado 15s ease-in-out infinite;
   }
-}
-@media(max-width: 768px){
-  body {
-    background: linear-gradient(-160deg, #EAE4D5, #000000, #EAE4D5);
-    background-size: 300% 300%;
-    animation: degradado 5s ease-in-out infinite;
-  }
-}
+
 
 
 @keyframes degradado {

@@ -1,4 +1,4 @@
-import AbouteMe from "./pages/AbouteMe"
+import AbouteMe from "./pages/AboutMe"
 // import { IconCode , IconChevronLeft ,IconChevronRight, IconSlash } from '@tabler/icons-react'; 
 import {BrowserRouter , Routes, Route} from 'react-router-dom'
 import { Proyects } from "./pages/proyects"
@@ -26,21 +26,13 @@ function App() {
   }, []);
 
   return (
-    <div className="overflow-y-scroll h-[200vh] ">
-      <Routes >
-      <Route  path='/' element={<Navegation/>}>
-        <Route path='/' element={<AbouteMe scroll={scroll}/>}/>
-        <Route path='/proyects' element={<Proyects scroll={scroll}/>}/>
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/studies' element={<Studies/>} />
-        <Route path='/experience' element={<Experience/>} />
-
-
-      </Route>
-
-      </Routes>
-
-
+    <div className=" flex flex-col md:gap-40 md:h-fit pb-50 relative w-[100%] ">
+     {/* <Navegation/> */}
+        <AbouteMe scroll={scroll}/>
+        <Proyects scroll={scroll} />
+        <Studies scroll={scroll}/>
+        <Experience scroll={scroll}/>
+        <Contact scroll={scroll}/>
      </div>
   )
 }
