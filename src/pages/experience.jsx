@@ -19,8 +19,8 @@ export const Experience = ({scroll}) =>{
       }, [scroll])
     return(
         <section className={` 
-                flex-col md:gap-15 gap-10 
-                p-4 md:grid md:grid-cols-2 items-center
+                flex-col md:gap-15 gap-10 flex 
+                p-5 md:grid md:grid-cols-2 items-center
                 place-items-center w-[99%] md:w-[99%] md:max-w-[1500px]
                 h-fit mb-10 mt-5 border-color bg-[#121212]/50
                 rounded-r-2xl border-l-0 border-6 text-color

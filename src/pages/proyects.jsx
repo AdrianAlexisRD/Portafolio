@@ -7,7 +7,8 @@ import {
     IconBrandHtml5, 
     IconBrandJavascript, 
     IconBrandGithub, 
-    IconBrandReact 
+    IconBrandReact,
+    IconBrandVite 
 } from '@tabler/icons-react';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -35,7 +36,9 @@ useEffect(() => {
                     <IconBrandCss3 stroke={2} size={50} className='text-[#0874bc] animate-[aumentar_2s_ease-in-out_4s_infinite]'/>,
                     <IconBrandHtml5 stroke={2} size={50} className='text-[#ef6b33] animate-[aumentar_2s_ease-in-out_5s_infinite]'/>,
                     <IconBrandJavascript stroke={2} size={50} className='col-span-2 text-[#f7e025] animate-[aumentar_2s_ease-in-out_6s_infinite]'/>,
-                    <IconBrandGithub stroke={2} size={50} className='col-span-2 animate-[aumentar_2s_ease-in-out_7s_infinite]'/>],
+                    <IconBrandGithub stroke={2} size={50} className='col-span-2 text-black animate-[aumentar_2s_ease-in-out_7s_infinite]'/>,
+                    <IconBrandVite  stroke={2} size={50} className='col-span-2 text-[#b14dfe] animate-[aumentar_2s_ease-in-out_8s_infinite]'/>
+                    ],
                 nombres:    [
         'React', 'MongoDB','Nodejs','Tailwind','CSS','HTML','JavaScript','Github'
     ]
@@ -52,8 +55,8 @@ useEffect(() => {
                 h-fit mb-10 mt-5 border-color bg-[#121212]/50
                 rounded-r-2xl border-l-0 border-6 
                 ${desplegar ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[-50px] pointer-events-none'}
-transition-all duration-700 ease-in-out
- `}>
+                transition-all duration-700 ease-in-out
+                `}>
                 <h2 className='col-span-2 text-white text-3xl md:text-4xl title-color font-extrabold text-center'>Tecnologias utilizadas</h2>
                 <div className='grid grid-cols-3 gap-15 text-white md:flex md:justify-around w-[100%] col-span-2'>
                 { logos.icons.map((logo , i) =>(
@@ -66,55 +69,51 @@ transition-all duration-700 ease-in-out
                 ))
                     }
                 </div>
-                <article className=" md:w-100  h-fit bg-[#121212] rounded-2xl aparecer" >
+                <article className=" md:w-100 w-90 h-fit bg-[#121212]/50 rounded aparecer" >
                     <iframe
                     width="100%"
-                    height="auto"
                     src="https://www.youtube.com/embed/1JfEJCyFgwc"
                     title="Sistema de inventario"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    className="rounded-2xl"
+                    className="rounded-t"
                     />
-                    <h2 className='text-white text-center text-2xl'>Sistema de inventario</h2>
+                    <h2 className='text-white text-center text-2xl font-bold'>Sistema de inventario</h2>
                 </article>
-                <article className="md:w-100 h-fit bg-[#121212] rounded-2xl aparecer " >
+                <article className=" md:w-100 w-90 h-fit bg-[#121212]/50 rounded aparecer " >
                     <iframe
                     width="100%"
-                    height="auto"
                     src="https://golden-bubblegum-db0a73.netlify.app/"
                     title="Sistema de inventario"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    className="rounded-2xl"
+                    className="rounded-t"
                     />
-                    <h2 className='text-white text-center text-2xl'>App weather</h2>
+                    <h2 className='text-white text-center text-2xl font-bold'>To do list</h2>
 
                 </article>
-                    <article className="md:w-100 h-fit bg-[#121212] rounded-2xl aparecer " >
+                    <article className=" md:w-100 w-90 h-fit bg-[#121212]/30 rounded aparecer " >
                     <iframe
                     width="100%"
-                    height="auto"
                     src="https://cualquiercosa.xyz/"
                     title="Sistema de inventario"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    className="rounded-2xl"
+                    className="rounded-t"
                     />
-                    <h2 className='text-white text-center text-2xl'>To do list</h2>
+                    <h2 className='text-white text-center text-2xl font-bold'>Pagina de pedidos</h2>
 
                 </article>
-                <article className="md:w-100 h-fit bg-[#121212] rounded-2xl aparecer" >
+                <article className=" md:w-100 w-90 h-fit bg-[#121212]/20 rounded aparecer" >
                     <iframe
-                    width="100%"
-                    height="auto"
+                    width="100%"                   
                     src="https://jolly-peony-a4c08a.netlify.app/"
                     title="Sistema de inventario"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    className="rounded-2xl"
+                    className="rounded-t"
                     />
-                    <h2 className='text-white text-center text-2xl'>Pagina de Anime</h2>
+                    <h2 className='text-white text-center text-2xl font-bold'>App weather</h2>
 
                 </article>
 

@@ -22,8 +22,8 @@ export default function Home() {
          pointer-events-none
           transition-all duration-700 ease-in-out
          `} >
-        <div className="md:h-[400px] h-25  md:w-[400px] w-30 flex justify-center md:items-center mb-15">
-            <img src={FotoAnimada} alt="" className=" h-35 w-30 md:h-fit md:w-fit shadow-xl shadow-[#000000]  border-color rounded-3xl   md:rounded-r-2xl  " />
+        <div className="md:h-[300px] h-25 mb-10 md:mb-0 md:w-fit w-30 flex justify-center md:items-center ">
+            <img src={FotoAnimada} alt="" className=" h-35 w-30 md:h-fit md:w-fit shadow-xl shadow-[#EAE4D5]  border-color rounded-3xl   md:rounded-r-2xl  " />
         </div>
       <div className="text-white flex md:self-start   md:mb-4  relative ">
         <IconChevronLeft stroke={3} size={40} className="absolute md:left-5 right-25 aparecer title-color" />
@@ -41,16 +41,17 @@ export default function Home() {
             Santos
           </span>
         </h1>
-        <IconSlash stroke={3} size={40} className="absolute md:left-134 right-[-115px] aparecer title-color" />
-        <IconChevronRight stroke={3} size={40} className="absolute md:left-140 right-[-135px]  aparecer title-color" />
+        <IconSlash stroke={3} size={40} className="absolute md:left-134 right-[-120px] aparecer title-color" />
+        <IconChevronRight stroke={3} size={40} className="absolute md:left-140 right-[-142px]  aparecer title-color" />
       </div>
       <div className="self-center p-4 pt-10 ">
-        <h2 className="self-center md:text-3xl text-2xl font-black text-color">Desarrollardor web fullstack</h2>
+        <h2 className=""></h2>
         <p className=" md:text-2xl text-white ">
-        Hola soy un desarrollar junior fullstack autodidactacon deseos de demostrar
+        <span className="self-center md:text-3xl text-2xl font-black text-color">Desarrollardor web fullstack</span><br/><br/>
+        Hola soy un desarrollar junior fullstack autodidacta con deseos de demostrar
         mi talento y cada dia mas superarme a mi mismo. Me gusta aprender y resolver 
         problemas, siempre orientado a alcanzar metas y entregar lo mejor de mi en cada 
-        trabajo u oficio a realizar<br></br>Motivado a trabajar en equipo, compartir 
+        trabajo u oficio a realizar<br/><br/>Motivado a trabajar en equipo, compartir 
         y aprender conocimiento y distintas formas de trabajar.
         </p>
       </div>
