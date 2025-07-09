@@ -10,7 +10,7 @@ export const Experience = ({scroll}) =>{
     
     
       useEffect(()=>{
-        if(scroll>1985&&scroll<2590 ){
+        if(scroll>2300 ){
          console.log('estas en proyect')
          setDesplegar(true)
         } else {
@@ -24,7 +24,9 @@ export const Experience = ({scroll}) =>{
                 place-items-center w-[99%] md:w-[99%] md:max-w-[1500px]
                 h-fit mb-10 mt-5 border-color bg-[#121212]/50
                 rounded-r-2xl border-l-0 border-6 text-color
-                ${desplegar ? 'flex moveRight' : 'animate-[retroceso-Right_1s_ease-in-out_forwards]'} `}>
+                ${desplegar ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[-50px] pointer-events-none'}
+transition-all duration-700 ease-in-out
+ `}>
             <h2 className='md:text-4xl text-3xl text-[#EAE4D5] col-span-2 text-center font-extrabold'> Experiencias</h2>
             <div className='flex md:gap-7 gap-4 items-center'>
                 <img src={Ingmelec} alt="Ingmelec" className='md:w-40 w-30 md:h-30 h-25 rounded ' />

@@ -13,7 +13,7 @@ export const Studies = ({scroll})=>{
     
     
       useEffect(()=>{
-        if(scroll>1240 && scroll<1985 ){
+        if(scroll>1500 ){
          console.log('estas en proyect')
          setDesplegar(true)
         } else{
@@ -45,7 +45,9 @@ export const Studies = ({scroll})=>{
         rounded-l-2xl border-r-0 
         border-6 md:self-end
          bg-[#121212]/50
-         ${desplegar?'flex moveLeft': 'animate-[retroceso-Left_1s_ease-in-out_forwards]'}
+         ${desplegar ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[-50px] pointer-events-none'}
+transition-all duration-700 ease-in-out
+
          `}>
              <h2 className="text-4xl font-extrabold text-color col-span-2 text-center">Estudios</h2>
              <div className='flex items-center'>

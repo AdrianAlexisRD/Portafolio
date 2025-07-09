@@ -8,7 +8,7 @@ export const Contact = ({scroll}) =>{
     
     
         useEffect(()=>{
-        if(scroll>2590 ){
+        if(scroll>2900 ){
             console.log('estas en proyect')
             setDesplegar(true)
         } else{
@@ -23,7 +23,9 @@ export const Contact = ({scroll}) =>{
         rounded-l-2xl border-r-0 
         border-6 md:self-end
          bg-[#121212]/50
-         ${desplegar?'flex moveLeft': 'animate-[retroceso-Left_1s_ease-in-out_forwards]'}
+        ${desplegar ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[-50px] pointer-events-none'}
+transition-all duration-700 ease-in-out
+
          `}>
             <h2 className='text-3xl md:text-4xl title-color font-extrabold mb-15'>Contacta me</h2>
             <ul className='text-color flex flex-col gap-5 '>

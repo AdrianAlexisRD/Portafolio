@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import "tailwindcss";
 
 /* .logo{@apply text-white text-4xl efecto1 left-[60px] absolute } */
 .text-color{ @apply text-[#F2F2F2] }
@@ -96,6 +96,8 @@ h1{
   }
   to{
     transform: translateX(100%);
+    display: none;
+    
   }
 }
 
@@ -114,8 +116,6 @@ h1{
   }
 }
 
-
-
 .aparecer{
   opacity: 0;
   animation: aparecer 2s ease-in-out 1s forwards ;
@@ -132,19 +132,6 @@ h1{
     background: linear-gradient(160deg, #EAE4D5, #000000, #EAE4D5);
   }
 
-
-
-@keyframes degradado {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 @keyframes emailColor { 0%{color:#EAE4D5; } 50%{color: #f5493b; transform: 1.3;} 100%{color:#EAE4D5; }}
 @keyframes linkColor { 0%{color:#EAE4D5; } 50%{color: #162556; transform: 1.3;} 100%{color:#EAE4D5; }}

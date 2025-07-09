@@ -1,9 +1,7 @@
 import AbouteMe from "./pages/AboutMe"
 // import { IconCode , IconChevronLeft ,IconChevronRight, IconSlash } from '@tabler/icons-react'; 
-import {BrowserRouter , Routes, Route} from 'react-router-dom'
 import { Proyects } from "./pages/proyects"
 import { Contact } from "./pages/contact"
-import { Navegation } from "./Componentes/BarNavegation"
 import { Studies } from "./pages/studies"
 import { Experience } from "./pages/experience"
 import { useState } from "react"
@@ -26,9 +24,8 @@ function App() {
   }, []);
 
   return (
-    <div className=" flex flex-col md:gap-40 md:h-fit pb-50 relative w-[100%] ">
-     {/* <Navegation/> */}
-        <AbouteMe scroll={scroll}/>
+    <div className=" flex flex-col md:gap-40 gap-20 h-fit mb-30 md:h-fit pb-50 relative w-[100%] ">
+        <AbouteMe/>
         <Proyects scroll={scroll} />
         <Studies scroll={scroll}/>
         <Experience scroll={scroll}/>

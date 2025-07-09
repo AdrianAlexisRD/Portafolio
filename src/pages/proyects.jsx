@@ -19,21 +19,11 @@ const [desplegar , setDesplegar] = useState(false)
 
 
 useEffect(() => {
-  const screenWidth = window.innerWidth;
-    console.log(screenWidth)
-  if (screenWidth < 800) {
-    if (scroll > 200 ) {
+    if (scroll > 0 ) {
       setDesplegar(true);
     } else {
       setDesplegar(false);
     }
-  } else {
-    if (scroll > 400 && scroll < 1240) {
-      setDesplegar(true);
-    } else {
-      setDesplegar(false);
-    }
-  }
 }, [scroll]);
 
 
@@ -61,7 +51,9 @@ useEffect(() => {
                 place-items-center w-[99%] md:w-[99%] md:max-w-[1500px]
                 h-fit mb-10 mt-5 border-color bg-[#121212]/50
                 rounded-r-2xl border-l-0 border-6 
-                ${desplegar ? 'flex moveRight' : 'animate-[retroceso-Right_1s_ease-in-out_forwards]'} `}>
+                ${desplegar ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[-50px] pointer-events-none'}
+transition-all duration-700 ease-in-out
+ `}>
                 <h2 className='col-span-2 text-white text-3xl md:text-4xl title-color font-extrabold text-center'>Tecnologias utilizadas</h2>
                 <div className='grid grid-cols-3 gap-10 text-white md:flex md:justify-around w-[100%] col-span-2'>
                 { logos.icons.map((logo , i) =>(
