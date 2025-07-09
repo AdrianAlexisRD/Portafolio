@@ -8,7 +8,8 @@ import { useEffect } from 'react';
 export const Experience = ({scroll}) =>{
     const [desplegar , setDesplegar] = useState(false)
     
-    
+
+    const saludo = 'hola mundo'
       useEffect(()=>{
         if(scroll>2300 ){
          console.log('estas en proyect')
@@ -23,11 +24,11 @@ export const Experience = ({scroll}) =>{
                 p-5 md:grid md:grid-cols-2 items-center
                 place-items-center w-[99%] md:w-[99%] md:max-w-[1500px]
                 h-fit mb-10 mt-5 border-color bg-[#121212]/50
-                rounded-r-2xl border-l-0 border-6 text-color
+                rounded-2xl text-color
                 ${desplegar ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[-50px] pointer-events-none'}
-transition-all duration-700 ease-in-out
+                transition-all duration-700 ease-in-out
  `}>
-            <h2 className='md:text-4xl text-3xl text-[#EAE4D5] col-span-2 text-center font-extrabold'> Experiencias</h2>
+            <h2 className='md:text-4xl text-3xl text-[#EAE4D5] col-span-2 text-center font-extrabold'> {saludo}</h2>
             <div className='flex md:gap-7 gap-4 items-center'>
                 <img src={Ingmelec} alt="Ingmelec" className='md:w-40 w-30 md:h-30 h-25 rounded ' />
                 <div>

@@ -5,49 +5,50 @@ import {
   IconSlash,
 } from "@tabler/icons-react";
 
+import { Espejo } from "../Componentes/EfectoEspejo";
+
 
 export default function Home() {
-
+const titulo = 'Desarrollardor web fullstack'
   return (
     <article  className={`
         flex-col  md:flex-row
         gap-7 md:p-10 p-4 md:mt-15 
-        w-[99%] md:w-[99%] 
+        w-[99%] md:w-[90%] 
         md:h-[70vh] border-color  
-        rounded-l-2xl border-r-0 
-        border-6 self-end
+        rounded-2xl
          bg-[#121212]/50
          flex moveLeft 
          opacity-0 items-center
          pointer-events-none
           transition-all duration-700 ease-in-out
          `} >
-        <div className="md:h-[300px] h-25 mb-10 md:mb-0 md:w-fit w-30 flex justify-center md:items-center ">
-            <img src={FotoAnimada} alt="" className=" h-35 w-30 md:h-fit md:w-fit shadow-xl shadow-[#EAE4D5]  border-color rounded-3xl   md:rounded-r-2xl  " />
+        <div className="md:h-[300px] h-25 mb-10 md:mb-0 md:w-fit w-[100%] flex justify-center md:items-center ">
+            <img src={FotoAnimada} alt="" className=" h-40 w-[50%] md:h-fit md:w-fit md:shadow-xl shadow-xl/40  shadow-[#EAE4D5]  border-color rounded-3xl   md:rounded-r-2xl  " />
         </div>
       <div className="text-white flex md:self-start   md:mb-4  relative ">
-        <IconChevronLeft stroke={3} size={40} className="absolute md:left-5 right-25 aparecer title-color" />
+        {/* <IconChevronLeft stroke={3} size={40} className="absolute md:left-5 right-25 aparecer title-color" /> */}
         <h1>
-          <span className="text-color md:text-3xl efecto1 md:left-[60px] right-1 text-[28px] font-extrabold absolute "> 
+          <span className="text-color md:text-4xl efecto1 md:left-[43px] right-1 text-[28px] font-extrabold absolute "> 
             Adrian
           </span>
-          <span className="text-color md:text-3xl efecto2 md:left-[185px] hidden md:flex text-[28px] font-extrabold   absolute"> 
+          <span className="text-color md:text-4xl efecto2 md:left-[200px] hidden md:flex text-[28px] font-extrabold   absolute"> 
             Alexis
           </span>
-          <span className="text-color md:text-3xl efecto3 md:left-[310px] text-[28px] font-extrabold absolute">
+          <span className="text-color md:text-4xl md:efecto3 efecto2 md:left-[350px] left-2 text-[28px] font-extrabold absolute">
             Lopez
           </span>
-          <span className="text-color md:text-3xl efecto4 md:left-[420px] hidden md:flex  font-extrabold text-[28px]  absolute">
+          <span className="text-color md:text-4xl efecto4 md:left-[480px] hidden md:flex  font-extrabold text-[28px]  absolute">
             Santos
           </span>
         </h1>
-        <IconSlash stroke={3} size={40} className="absolute md:left-134 right-[-120px] aparecer title-color" />
-        <IconChevronRight stroke={3} size={40} className="absolute md:left-140 right-[-142px]  aparecer title-color" />
+        {/* <IconSlash stroke={3} size={40} className="absolute md:left-134 right-[-120px] aparecer title-color" /> */}
+        {/* <IconChevronRight stroke={3} size={40} className="absolute md:left-140 right-[-142px]  aparecer title-color" /> */}
       </div>
       <div className="self-center p-4 pt-10 ">
         <h2 className=""></h2>
         <p className=" md:text-2xl text-white ">
-        <span className="self-center md:text-3xl text-2xl font-black text-color">Desarrollardor web fullstack</span><br/><br/>
+        <span className="self-center md:text-3xl text-2xl font-black text-[#121212]">{titulo}</span><br/><br/>
         Hola soy un desarrollar junior fullstack autodidacta con deseos de demostrar
         mi talento y cada dia mas superarme a mi mismo. Me gusta aprender y resolver 
         problemas, siempre orientado a alcanzar metas y entregar lo mejor de mi en cada 

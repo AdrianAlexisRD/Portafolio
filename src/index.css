@@ -3,7 +3,7 @@
 
 /* .logo{@apply text-white text-4xl efecto1 left-[60px] absolute } */
 .text-color{ @apply text-[#F2F2F2] }
-.border-color {@apply border-[#EAE4D5]}
+.border-color {@apply border-[#222831] border-4}
 .title-color{ @apply text-[#EAE4D5] }
 
 *{
@@ -43,6 +43,12 @@ h1{
   animation: Efecto-arriba 1s ease-in-out forwards ;
   animation-delay: 1.2s;
 
+}
+
+@keyframes espejo {
+  0%{color: #EAE4D5 ; opacity: 0;}
+  /* 50%{color:  #C0C0C0;} */
+  100%{color: #C0C0C0; opacity: 1;}
 }
 
 @keyframes Efecto-abajo {
