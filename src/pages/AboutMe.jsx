@@ -16,7 +16,7 @@ const titulo = 'Desarrollardor web fullstack'
         gap-7 md:p-10 p-4 md:mt-15 
         w-[99%] md:w-[90%] 
         md:h-[70vh] border-color  
-        rounded-2xl
+        rounded-2xl mt-7
          bg-[#121212]/50
          flex moveLeft 
          opacity-0 items-center
@@ -24,18 +24,18 @@ const titulo = 'Desarrollardor web fullstack'
           transition-all duration-700 ease-in-out
          `} >
         <div className="md:h-[300px] h-25 mb-10 md:mb-0 md:w-fit w-[100%] flex justify-center md:items-center ">
-            <img src={FotoAnimada} alt="" className=" h-40 w-[50%] md:h-fit md:w-fit md:shadow-xl shadow-xl/40  shadow-[#EAE4D5]  border-color rounded-3xl   md:rounded-r-2xl  " />
+            <img src={FotoAnimada} alt="" className=" h-50 w-[50%] md:h-fit md:w-fit md:shadow-xl shadow-xl/40 opacity-80 shadow-[#EAE4D5]  border-color rounded-3xl   md:rounded-r-2xl  " />
         </div>
       <div className="text-white flex md:self-start   md:mb-4  relative ">
         {/* <IconChevronLeft stroke={3} size={40} className="absolute md:left-5 right-25 aparecer title-color" /> */}
         <h1>
-          <span className="text-color md:text-4xl efecto1 md:left-[43px] right-1 text-[28px] font-extrabold absolute "> 
+          <span className="text-color md:text-4xl efecto1 md:left-[43px] right-0 text-[45px] font-extrabold absolute  "> 
             Adrian
           </span>
           <span className="text-color md:text-4xl md:efecto2 md:left-[200px] hidden md:flex text-[28px] font-extrabold   absolute"> 
             Alexis
           </span>
-          <span className="text-color md:text-4xl md:efecto3 efecto2 md:left-[350px] left-2 text-[28px] font-extrabold absolute">
+          <span className="text-color md:text-4xl md:efecto3 efecto2 md:left-[350px] left-5 text-[45px] font-extrabold absolute">
             Lopez
           </span>
           <span className="text-color md:text-4xl efecto4 md:left-[480px] hidden md:flex  font-extrabold text-[28px]  absolute">

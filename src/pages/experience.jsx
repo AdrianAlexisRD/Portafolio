@@ -9,7 +9,7 @@ export const Experience = ({scroll}) =>{
     const [desplegar , setDesplegar] = useState(false)
     
 
-    const saludo = 'hola mundo'
+    
       useEffect(()=>{
         if(scroll>2300 ){
          console.log('estas en proyect')
@@ -28,7 +28,7 @@ export const Experience = ({scroll}) =>{
                 ${desplegar ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[-50px] pointer-events-none'}
                 transition-all duration-700 ease-in-out
  `}>
-            <h2 className='md:text-4xl text-3xl text-[#EAE4D5] col-span-2 text-center font-extrabold'> {saludo}</h2>
+            <h2 className='md:text-4xl text-3xl text-[#EAE4D5] col-span-2 text-center font-extrabold'>Experiencia Laboral</h2>
             <div className='flex md:gap-7 gap-4 items-center'>
                 <img src={Ingmelec} alt="Ingmelec" className='md:w-40 w-30 md:h-30 h-25 rounded ' />
                 <div>
