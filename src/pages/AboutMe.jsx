@@ -19,6 +19,8 @@ export default function Home() {
          bg-[#121212]/50
          flex moveLeft 
          opacity-0 items-center
+         pointer-events-none
+          transition-all duration-700 ease-in-out
          `} >
         <div className="md:h-[400px] h-25  md:w-[400px] w-30 flex justify-center md:items-center mb-15">
             <img src={FotoAnimada} alt="" className=" h-35 w-30 md:h-fit md:w-fit shadow-xl shadow-[#000000]  border-color rounded-3xl   md:rounded-r-2xl  " />
