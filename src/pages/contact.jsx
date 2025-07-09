@@ -18,7 +18,7 @@ export const Contact = ({scroll}) =>{
     return(
         <section className={` flex-col  
         gap-7 p-10 items-center
-        w-[90%] md:w-[50%] 
+        w-[99%] md:w-[50%] 
         h-fit border-color  
         rounded-2xl text-center
          bg-[#121212]/50

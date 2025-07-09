@@ -32,7 +32,7 @@ const titulo = 'Desarrollardor web fullstack'
           <span className="text-color md:text-4xl efecto1 md:left-[43px] right-1 text-[28px] font-extrabold absolute "> 
             Adrian
           </span>
-          <span className="text-color md:text-4xl efecto2 md:left-[200px] hidden md:flex text-[28px] font-extrabold   absolute"> 
+          <span className="text-color md:text-4xl md:efecto2 md:left-[200px] hidden md:flex text-[28px] font-extrabold   absolute"> 
             Alexis
           </span>
           <span className="text-color md:text-4xl md:efecto3 efecto2 md:left-[350px] left-2 text-[28px] font-extrabold absolute">
