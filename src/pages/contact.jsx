@@ -16,7 +16,7 @@ export const Contact = ({scroll}) =>{
                 setDesplegar(false)
             }
         }else{
-            scroll>= 5100 ? setDesplegar(true): setDesplegar(false)
+            scroll>= 4900 ? setDesplegar(true): setDesplegar(false)
         }
 
       }, [esPantallaGrande, scroll])
