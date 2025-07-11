@@ -16,8 +16,7 @@ export const Atom = ()=>{
             <IconRadioactive  stroke={2} size={aumentar} className='absolute bottom-0 left-12 opacity-30 animate-[atomos_5s_ease-in_infinite]' />
             <IconPlanet stroke={2} size={aumentar}  className='absolute left-0 top-[40%] opacity-30 animate-[atomos_5s_ease-in_infinite]'/>
             <IconAlien stroke={2} size={aumentar} className='absolute right-0 bottom-[20%] opacity-30 rotate-20 animate-[atomos_5s_ease-in_infinite]'/>
-            {/* <IconAtom stroke={2} size={400} className='abosolute top-0 '/>
-            <IconAtom stroke={2} size={210}  className='abosolute top-0 '/> */}
+
         </>
 
     )

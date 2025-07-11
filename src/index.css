@@ -39,27 +39,27 @@ h1 {
 
 .efecto1{
   opacity: 0;
-  animation: Efecto-abajo 1s ease-in-out forwards;
+  animation: Efecto-abajo 0.7s ease-in-out forwards;
   animation-delay: 0.3s;
 
 }
 
 .efecto2{
   opacity: 0;
-  animation: Efecto-arriba 1s ease-in-out forwards;
+  animation: Efecto-arriba 0.7s ease-in-out forwards;
   animation-delay: 0.6s;
 
 }
 
 .efecto3{
   opacity: 0;
-  animation: Efecto-abajo 1s ease-in-out forwards;
+  animation: Efecto-abajo 0.7s ease-in-out forwards;
   animation-delay: 0.9s;
 
 }
 .efecto4{
   opacity: 0;
-  animation: Efecto-arriba 1s ease-in-out forwards ;
+  animation: Efecto-arriba 0.7s ease-in-out forwards ;
   animation-delay: 1.2s;
 
 }
