@@ -41,13 +41,9 @@ const [desplegar , setDesplegar] = useState(false)
     
       useEffect(()=>{
         if (esPantallaGrande){
-            if(scroll>400 ){
-            setDesplegar(true)
-            } else{
-                setDesplegar(false)
-            }
+            scroll>= 400 ? setDesplegar(true): setDesplegar(false)
         }else{
-            scroll>= 555 ? setDesplegar(true): setDesplegar(false)
+            scroll>= 96 ? setDesplegar(true): setDesplegar(false)
         }
 
       }, [esPantallaGrande, scroll])
@@ -145,43 +141,6 @@ const [desplegar , setDesplegar] = useState(false)
                         <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>To do list</h2>
                     </a>
                 </article>
-                {/* <article className=" md:w-100 w-90 h-fit bg-[#121212]/50 rounded aparecer " >
-                    <iframe
-                    width="100%"
-                    src="https://golden-bubblegum-db0a73.netlify.app/"
-                    title="Sistema de inventario"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="rounded-t"
-                    />
-                    <h2 className='text-white text-center text-2xl font-bold'>To do list</h2> */}
-
-                {/* </article>
-                    <article className=" md:w-100 w-90 h-fit bg-[#121212]/30 rounded aparecer " >
-                    <iframe
-                    width="100%"
-                    src="https://cualquiercosa.xyz/"
-                    title="Sistema de inventario"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="rounded-t"
-                    />
-                    <h2 className='text-white text-center text-2xl font-bold'>Pagina de pedidos</h2>
-
-                </article>
-                <article className=" md:w-100 w-90 h-fit bg-[#121212]/20 rounded aparecer" >
-                    <iframe
-                    width="100%"                   
-                    src="https://jolly-peony-a4c08a.netlify.app/"
-                    title="Sistema de inventario"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="rounded-t"
-                    />
-                    <h2 className='text-white text-center text-2xl font-bold'>App weather</h2>
-
-                </article> */}
-
 
             </section>
 

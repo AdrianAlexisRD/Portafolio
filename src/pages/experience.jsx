@@ -11,11 +11,7 @@ export const Experience = ({scroll}) =>{
     
       useEffect(()=>{
         if (esPantallaGrande){
-            if(scroll>2300 ){
-            setDesplegar(true)
-            } else{
-                setDesplegar(false)
-            }
+            scroll>= 2300 ? setDesplegar(true): setDesplegar(false)
         }else{
             scroll>= 4228 ? setDesplegar(true): setDesplegar(false)
         }
