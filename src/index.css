@@ -1,21 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
 @import "tailwindcss";
 
 /* .logo{@apply text-white text-4xl efecto1 left-[60px] absolute } */
 .text-color{ @apply text-[#F2F2F2] }
 .border-color {@apply border-[#222831] border-4}
 .title-color{ @apply text-[#EAE4D5] }
-
-*{
+.img-style{@apply rounded hover:scale-200 transition-all duration-1000 ease-in-out hover:z-100}
+.logo-skill{@apply  hover:scale-140 transition-all duration-500 ease-in }
+/* *{
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+} */
+
+.grid:hover > img:not(:hover) {
+  filter: blur(4px);
+  transition: filter 0.7s ease-in-out;
 }
-h1{
-  font-family: "Alfa Slab One", serif;
-  font-weight: 400;
+
+.grid > img:hover {
+  filter: none;
+  transition: filter 0.7s ease-in-out;
+}
+
+h1 {
+  font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
+  font-weight: 500; 
+}
+
+.forma-polygon{
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
 .efecto1{
@@ -46,9 +64,9 @@ h1{
 }
 
 @keyframes espejo {
-  0%{color: #EAE4D5 ; opacity: 0;}
-  /* 50%{color:  #C0C0C0;} */
-  100%{color: #C0C0C0; opacity: 1;}
+  0%{color: #121212 ; }
+  50%{color:  #C0C0C0;}
+  100%{color: #121212 ;}
 }
 
 @keyframes Efecto-abajo {
@@ -73,17 +91,15 @@ h1{
   }
 }
 
-.moveRight{
-  animation: move-right 1s ease-in-out forwards ;
-}
-
 
 @keyframes move-right {
   from{
     transform:  translateX(-100%);
+
   }
   to{
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -98,27 +114,23 @@ h1{
 
 @keyframes retroceso-Left {
   from{
-    transform:  translateX(0);
+    transform:  translateY(0);
+    opacity: 1;
   }
   to{
-    transform: translateX(100%);
-    display: none;
+    transform: translateY(100%);
+    
     
   }
 }
 
-.moveLeft{
-  animation: move-Left 1s ease-in-out forwards ;
-}
-
-
 @keyframes move-Left {
   from{
-    transform:  translateX(100%);
+    transform:  translateY(40%);
   }
   to{
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -136,6 +148,7 @@ h1{
 
   body {
     background: linear-gradient(160deg, #C0C0C0, #000000, #EAE4D5);
+   
   }
 
 

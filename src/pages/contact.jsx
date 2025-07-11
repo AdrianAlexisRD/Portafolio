@@ -6,15 +6,20 @@ export const Contact = ({scroll}) =>{
 
     const [desplegar , setDesplegar] = useState(false)
     
+    const esPantallaGrande = window.innerWidth >= 768;
     
-        useEffect(()=>{
-        if(scroll>2900 ){
-            console.log('estas en proyect')
+      useEffect(()=>{
+        if (esPantallaGrande){
+            if(scroll>2900 ){
             setDesplegar(true)
-        } else{
-            setDesplegar(false)
+            } else{
+                setDesplegar(false)
+            }
+        }else{
+            scroll>= 5200 ? setDesplegar(true): setDesplegar(false)
         }
-        }, [scroll])
+
+      }, [esPantallaGrande, scroll])
     return(
         <section className={` flex-col  
         gap-7 p-10 items-center

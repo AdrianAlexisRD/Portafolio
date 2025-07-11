@@ -10,7 +10,7 @@ import {
     IconBrandReact,
     IconBrandVite 
 } from '@tabler/icons-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 import SM1 from '../assets/StockMaster1.png'
 import SM2 from '../assets/StockMaster2.png'
 import SM3 from '../assets/StockMaster3.png'
@@ -37,27 +37,32 @@ import TD5 from '../assets/Todoapp5.png'
 
 export const Proyects = ({scroll}) =>{
 const [desplegar , setDesplegar] = useState(false)
+    const esPantallaGrande = window.innerWidth >= 768;
+    
+      useEffect(()=>{
+        if (esPantallaGrande){
+            if(scroll>400 ){
+            setDesplegar(true)
+            } else{
+                setDesplegar(false)
+            }
+        }else{
+            scroll>= 555 ? setDesplegar(true): setDesplegar(false)
+        }
 
-useEffect(() => {
-    if (scroll > 1 ) {
-      setDesplegar(true);
-    } else {
-      setDesplegar(false);
-    }
-}, [scroll]);
+      }, [esPantallaGrande, scroll])
 
 
-{/* <div class="animate-[wiggle_1s_ease-in-out_infinite] ..."></div> */}
     const logos = {
-                   icons:[<IconBrandReact stroke={2} size={50} className='text-[#30a2ff] animate-[aumentar_2s_ease-in-out_infinite]  cursor-pointer'/>,
-                    <IconBrandMongodb stroke={2} size={50} className='text-[#4b9d4d] animate-[aumentar_2s_ease-in-out_1s_infinite]'/>,
-                    <IconBrandNodejs stroke={2} size={50} className='text-[#85c008] animate-[aumentar_2s_ease-in-out_2s_infinite]'/>,
-                    <IconBrandTailwind stroke={2} size={50} className='text-[#30a2ff] animate-[aumentar_2s_ease-in-out_3s_infinite]'/>,
-                    <IconBrandCss3 stroke={2} size={50} className='text-[#0874bc] animate-[aumentar_2s_ease-in-out_4s_infinite]'/>,
-                    <IconBrandHtml5 stroke={2} size={50} className='text-[#ef6b33] animate-[aumentar_2s_ease-in-out_5s_infinite]'/>,
-                    <IconBrandJavascript stroke={2} size={50} className='col-span-2 text-[#f7e025] animate-[aumentar_2s_ease-in-out_6s_infinite]'/>,
-                    <IconBrandGithub stroke={2} size={50} className='col-span-2 text-black animate-[aumentar_2s_ease-in-out_7s_infinite]'/>,
-                    <IconBrandVite  stroke={2} size={50} className='col-span-2 text-[#b14dfe] animate-[aumentar_2s_ease-in-out_8s_infinite]'/>
+                   icons:[<IconBrandReact stroke={2} size={50} className='text-[#30a2ff] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_infinite]  cursor-pointer'/>,
+                    <IconBrandMongodb stroke={2} size={50} className='text-[#4b9d4d] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_1s_infinite]'/>,
+                    <IconBrandNodejs stroke={2} size={50} className='text-[#85c008] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_2s_infinite]'/>,
+                    <IconBrandTailwind stroke={2} size={50} className='text-[#30a2ff] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_3s_infinite]'/>,
+                    <IconBrandCss3 stroke={2} size={50} className='text-[#0874bc] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_4s_infinite]'/>,
+                    <IconBrandHtml5 stroke={2} size={50} className='text-[#ef6b33] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_5s_infinite]'/>,
+                    <IconBrandJavascript stroke={2} size={50} className='col-span-2 text-[#f7e025] md:animate-none hover:scale-140 transition-all duration-00 ease animate-[aumentar_2s_ease-in-out_6s_infinite]'/>,
+                    <IconBrandGithub stroke={2} size={50} className='col-span-2 text-black md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_7s_infinite]'/>,
+                    <IconBrandVite  stroke={2} size={50} className='col-span-2 text-[#b14dfe] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_8s_infinite]'/>
                     ],
                 nombres:    [
         'React', 'MongoDB','Nodejs','Tailwind','CSS','HTML','JavaScript','Github','Vite'
@@ -67,21 +72,20 @@ useEffect(() => {
     return(
  
 
-            <section className={` 
+            <section  className={` 
                 flex
-                flex-col md:gap-20 gap-30 
+                flex-col md:gap-20 gap-20 
                 p-15 md:grid md:grid-cols-2 items-center
                 place-items-center w-[99%] md:w-[95%] 
-                h-fit mb-10 mt-5 border-color bg-[#121212]/50
-                rounded-2xl  
-                ${desplegar ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[-100px] pointer-events-none'}
-                transition-all duration-700 ease-in-out
+                h-fit mb-10 mt-20 border-color bg-[#121212]/50
+                rounded-2xl opacity-0
+                ${desplegar ? ' animate-[move-Left_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
                 `}>
                 <h2 className='col-span-2 text-white text-3xl md:text-4xl title-color font-extrabold text-center'>Tecnologias utilizadas</h2>
                 <div className='grid grid-cols-3 gap-10 text-white md:flex md:justify-around w-[100%] border-color rounded-2xl bg-black/40 p-6 col-span-2'>
                 { logos.icons.map((logo , i) =>(
-                    <div className='relative group '>
-                    <div className='absolute top-[-60px] right-[-20px] z-20 hidden group-hover:flex '>
+                    <div className='relative group flex justify-center'>
+                    <div className='absolute top-[-60px]  z-20 hidden group-hover:flex '>
                         <h3 className='text-white text-3xl bg-black/30 px-2 py-1 rounded '>{logos.nombres[i]}</h3>
                     </div>
                         {logo}
@@ -89,52 +93,52 @@ useEffect(() => {
                 ))
                     }
                 </div>
-                <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl" >
-                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl'>
-                        <img src={SM1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-120   transition-all duration-700 ease-initial' />
-                        <img src={SM2} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
-                        <img src={SM3} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
-                        <img src={SM4} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
-                        <img src={SM5} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
+                <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
+                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl group'>
+                        <img src={SM1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-130  transition-all duration-700 ease-initial hover:z-100 ' />
+                        <img src={SM2} alt="" className='img-style'/>
+                        <img src={SM3} alt="" className='img-style'/>
+                        <img src={SM4} alt="" className='img-style'/>
+                        <img src={SM5} alt="" className='img-style'/>
                     </div>
                     <a href='https://github.com/AdrianAlexisRD/Inventario-MERN' className='flex justify-center items-center' target='_blank'>
                         <IconBrandGithub stroke={2} size={50} className='p-2 text-white'/>
                         <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>Sistema de inventario</h2>
                     </a>
                 </article>
-                <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl" >
-                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl'>
-                        <img src={WT1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-120   transition-all duration-700 ease-initial' />
-                        <img src={WT2} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
-                        <img src={WT3} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
-                        <img src={WT4} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
-                        <img src={WT5} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
+                <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
+                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl border-color'>
+                        <img src={WT1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-120   transition-all duration-700 ease-initial hover:z-100' />
+                        <img src={WT2} alt="" className='img-style'/>
+                        <img src={WT3} alt="" className='img-style'/>
+                        <img src={WT4} alt="" className='img-style'/>
+                        <img src={WT5} alt="" className='img-style'/>
                     </div>
                     <a href='https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/App-clima' className='flex justify-center items-center' target='_blank'>
                         <IconBrandGithub stroke={2} size={50} className='p-2 text-white'/>
                         <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>App Weather</h2>
                     </a>
                 </article>
-                <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl" >
+                <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
                     <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl'>
-                        <img src={AN1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-120   transition-all duration-700 ease-initial' />
-                        <img src={AN2} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
-                        <img src={AN3} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
-                        <img src={AN4} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
-                        <img src={AN5} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
+                        <img src={AN1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-120   transition-all duration-700 ease-initial hover:z-100' />
+                        <img src={AN2} alt="" className='img-style'/>
+                        <img src={AN3} alt="" className='img-style'/>
+                        <img src={AN4} alt="" className='img-style'/>
+                        <img src={AN5} alt="" className='img-style'/>
                     </div>
                     <a href='https://github.com/AdrianAlexisRD/Inventario-MERN' className='flex justify-center items-center' target='_blank'>
                         <IconBrandGithub stroke={2} size={50} className='p-2 text-white'/>
                         <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>Animemania</h2>
                     </a>
                 </article>
-                <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl" >
+                <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
                     <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl'>
-                        <img src={TD1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-120   transition-all duration-700 ease-initial' />
-                        <img src={TD2} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
-                        <img src={TD3} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
-                        <img src={TD4} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
-                        <img src={TD5} alt="" className='rounded hover:scale-200 transition-all duration-400 ease-initial'/>
+                        <img src={TD1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-120   transition-all duration-700 ease-initial hover:z-100' />
+                        <img src={TD2} alt="" className='img-style'/>
+                        <img src={TD3} alt="" className='img-style'/>
+                        <img src={TD4} alt="" className='img-style'/>
+                        <img src={TD5} alt="" className='img-style'/>
                     </div>
                     <a href='https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/To-do-app' className='flex justify-center items-center' target='_blank'>
                         <IconBrandGithub stroke={2} size={50} className='p-2 text-white'/>

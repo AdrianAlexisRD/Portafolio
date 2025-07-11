@@ -7,27 +7,30 @@ import { useEffect } from 'react';
 
 export const Experience = ({scroll}) =>{
     const [desplegar , setDesplegar] = useState(false)
-    
-
+    const esPantallaGrande = window.innerWidth >= 768;
     
       useEffect(()=>{
-        if(scroll>2300 ){
-         console.log('estas en proyect')
-         setDesplegar(true)
-        } else {
-        setDesplegar(false)
-      }
-      }, [scroll])
+        if (esPantallaGrande){
+            if(scroll>2300 ){
+            setDesplegar(true)
+            } else{
+                setDesplegar(false)
+            }
+        }else{
+            scroll>= 4690 ? setDesplegar(true): setDesplegar(false)
+        }
+
+      }, [esPantallaGrande, scroll])
     return(
         <section className={` 
-                flex-col md:gap-15 gap-10 flex 
-                p-5 md:grid md:grid-cols-2 items-center
-                place-items-center w-[99%] md:w-[90%] md:max-w-[1500px]
-                h-fit mb-10 mt-5 border-color bg-[#121212]/50
-                rounded-2xl text-color
-                ${desplegar ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[-50px] pointer-events-none'}
-                transition-all duration-700 ease-in-out
- `}>
+            flex-col md:gap-15 gap-10 flex 
+            p-5 md:grid md:grid-cols-2 items-center
+            place-items-center w-[99%] md:w-[90%] md:max-w-[1500px]
+            h-fit mb-10 mt-5 border-color bg-[#121212]/50
+            rounded-2xl text-color opacity-0
+            ${desplegar ? ' animate-[move-Left_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
+            transition-all duration-1000 ease-in-out
+            `}>
             <h2 className='md:text-4xl text-3xl text-[#EAE4D5] col-span-2 text-center font-extrabold'>Experiencia Laboral</h2>
             <div className='flex md:gap-7 gap-4 items-center'>
                 <img src={Ingmelec} alt="Ingmelec" className='md:w-40 w-30 md:h-30 h-25 rounded ' />
