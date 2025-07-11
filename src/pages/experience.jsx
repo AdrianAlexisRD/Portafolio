@@ -17,7 +17,7 @@ export const Experience = ({scroll}) =>{
                 setDesplegar(false)
             }
         }else{
-            scroll>= 4690 ? setDesplegar(true): setDesplegar(false)
+            scroll>= 4228 ? setDesplegar(true): setDesplegar(false)
         }
 
       }, [esPantallaGrande, scroll])
