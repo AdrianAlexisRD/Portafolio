@@ -48,7 +48,7 @@ export const Studies = ({scroll})=>{
         ${desplegar ? ' animate-[move-right_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
     
         `}>
-             <h2 className="text-4xl font-extrabold text-color col-span-2 md:justify-start text-center ">Estudios</h2>
+             <h2 className="text-4xl font-extrabold title-color col-span-2 md:justify-start text-center ">Estudios</h2>
              <div className='flex '>
                 <img src={Itla} alt="aprende" className='md:w-40 md:h-30 w-[100px] h-20 rounded  ' />
                 <ul className=" text-color flex flex-col gap-2 justify-center   pl-4">
