@@ -19,18 +19,18 @@ export default function Home() {
         <img
           src={FotoAnimada}
           alt=""
-          className="rounded-full filter grayscale-25 contrast-120 drop-shadow-2xl/50 md:rounded-3xl h-45 w-[50%] md:h-fit md:w-fit   shadow-[#EAE4D5]  md:border-color border-color   "
+          className="rounded-full filter grayscale-25 contrast-120 drop-shadow-2xl/50  md:rounded-3xl h-45 w-[50%] md:h-fit md:w-fit   shadow-[#EAE4D5] border-color   "
         />
       </div>
       <div className="text-white flex md:self-start   md:mb-4  relative ">
         <h1 className="text-color md:text-5xl text-[45px]">
-          <span className=" efecto1 md:left-[43px] right-0  font-extrabold absolute  ">
+          <span className=" efecto1 md:left-[43px] right-0   font-extrabold absolute  ">
             Adrian
           </span>
           <span className=" efecto2 md:left-[200px] hidden md:flex  font-extrabold   absolute">
             Alexis
           </span>
-          <span className=" efecto3  md:left-[350px] left-5  font-extrabold absolute">
+          <span className=" efecto3  md:left-[350px] left-5  font-extrabold  absolute">
             Lopez
           </span>
           <span className=" efecto4 md:left-[480px] hidden md:flex  font-extrabold   absolute">

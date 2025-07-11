@@ -4,8 +4,10 @@ import { Proyects } from "./pages/proyects"
 import { Contact } from "./pages/contact"
 import { Studies } from "./pages/studies"
 import { Experience } from "./pages/experience"
-import { useState } from "react"
-import { useEffect} from "react"
+import { useState, useEffect } from "react"
+
+import { Atom } from "./Componentes/atomos"
+
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
 
   return (
     <div className=" flex flex-col items-center md:gap-40 gap-20 h-fit mb-30 md:h-fit pb-50 relative w-[100%] ">
+       <Atom/>
         <AbouteMe/>
         <Proyects scroll={scroll} />
         <Studies scroll={scroll}/>

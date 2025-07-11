@@ -124,6 +124,19 @@ h1 {
   }
 }
 
+@keyframes atomos {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+
 @keyframes move-Left {
   from{
     transform:  translateY(40%);
@@ -147,7 +160,7 @@ h1 {
 }
 
   body {
-    background: linear-gradient(160deg, #C0C0C0, #000000, #EAE4D5);
+    background: linear-gradient(160deg, #C0C0C0, #EAE4D5);
    
   }
 

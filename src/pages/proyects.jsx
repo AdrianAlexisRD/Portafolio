@@ -54,15 +54,15 @@ const [desplegar , setDesplegar] = useState(false)
 
 
     const logos = {
-                   icons:[<IconBrandReact stroke={2} size={50} className='text-[#30a2ff] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_infinite]  cursor-pointer'/>,
-                    <IconBrandMongodb stroke={2} size={50} className='text-[#4b9d4d] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_1s_infinite]'/>,
-                    <IconBrandNodejs stroke={2} size={50} className='text-[#85c008] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_2s_infinite]'/>,
-                    <IconBrandTailwind stroke={2} size={50} className='text-[#30a2ff] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_3s_infinite]'/>,
-                    <IconBrandCss3 stroke={2} size={50} className='text-[#0874bc] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_4s_infinite]'/>,
-                    <IconBrandHtml5 stroke={2} size={50} className='text-[#ef6b33] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_5s_infinite]'/>,
-                    <IconBrandJavascript stroke={2} size={50} className='col-span-2 text-[#f7e025] md:animate-none hover:scale-140 transition-all duration-00 ease animate-[aumentar_2s_ease-in-out_6s_infinite]'/>,
-                    <IconBrandGithub stroke={2} size={50} className='col-span-2 text-black md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_7s_infinite]'/>,
-                    <IconBrandVite  stroke={2} size={50} className='col-span-2 text-[#b14dfe] md:animate-none hover:scale-140 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_8s_infinite]'/>
+                   icons:[<IconBrandReact stroke={2} size={50} className='text-blue-600 md:animate-none hover:scale-140 hover:drop-shadow-2xl hover:drop-shadow-blue-600 transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_infinite]  cursor-pointer'/>,
+                    <IconBrandMongodb stroke={2} size={50} className='text-[#4b9d4d] md:animate-none hover:scale-140 hover:drop-shadow-2xl hover:drop-shadow-[#4b9d4d] transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_1s_infinite] cursor-pointer'/>,
+                    <IconBrandNodejs stroke={2} size={50} className='text-[#85c008] md:animate-none hover:scale-140 hover:drop-shadow-2xl hover:drop-shadow-[#85c008] transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_2s_infinite] cursor-pointer'/>,
+                    <IconBrandTailwind stroke={2} size={50} className='text-[#30a2ff] md:animate-none hover:scale-140 hover:drop-shadow-2xl hover:drop-shadow-[#30a2ff] transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_3s_infinite] cursor-pointer'/>,
+                    <IconBrandCss3 stroke={2} size={50} className='text-[#0874bc] md:animate-none hover:scale-140 hover:drop-shadow-2xl hover:drop-shadow-[#0874bc] transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_4s_infinite] cursor-pointer'/>,
+                    <IconBrandHtml5 stroke={2} size={50} className='text-[#ef6b33] md:animate-none hover:scale-140 hover:drop-shadow-2xl hover:drop-shadow-[#ef6b33] transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_5s_infinite] cursor-pointer'/>,
+                    <IconBrandJavascript stroke={2} size={50} className='col-span-2 text-[#f7e025] md:animate-none hover:drop-shadow-2xl hover:drop-shadow-[#f7e025] hover:scale-140 transition-all duration-00 ease animate-[aumentar_2s_ease-in-out_6s_infinite] cursor-pointer'/>,
+                    <IconBrandGithub stroke={2} size={50} className='col-span-2 text-black md:animate-none hover:scale-140 hover:drop-shadow-2xl hover:drop-shadow-black transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_7s_infinite] cursor-pointer'/>,
+                    <IconBrandVite  stroke={2} size={50} className='col-span-2 text-[#b14dfe] md:animate-none hover:scale-140 hover:drop-shadow-2xl hover:drop-shadow-[#b14dfe] transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_8s_infinite] cursor-pointer'/>
                     ],
                 nombres:    [
         'React', 'MongoDB','Nodejs','Tailwind','CSS','HTML','JavaScript','Github','Vite'
