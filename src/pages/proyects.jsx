@@ -103,7 +103,7 @@ const [desplegar , setDesplegar] = useState(false)
                     </div>
                     <a href='https://github.com/AdrianAlexisRD/Inventario-MERN' className='flex justify-center items-center' target='_blank'>
                         <IconBrandGithub stroke={2} size={50} className='p-2 text-white'/>
-                        <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>Sistema de inventario</h2>
+                        <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>Inventario</h2>
                     </a>
                 </article>
                 <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >

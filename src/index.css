@@ -7,13 +7,14 @@
 .border-color {@apply border-[#222831] border-4}
 .title-color{ @apply text-[#EAE4D5] }
 .img-style{@apply rounded hover:scale-200 transition-all duration-1000 ease-in-out hover:z-100}
-.logo-skill{@apply  hover:scale-140 transition-all duration-500 ease-in }
-/* *{
+.logo-skill{@apply  hover:scale-140 transition-all duration-500 ease-in } 
+
+h2 , p , h3{
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-} */
+}
 
 .grid:hover > img:not(:hover) {
   filter: blur(4px);
