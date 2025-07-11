@@ -42,7 +42,7 @@ export default function Home() {
       <div className="self-center p-4 pt-10 ">
         <h2 className=""></h2>
         <p className=" md:text-2xl text-white ">
-        <h2 className="self-center md:text-3xl text-2xl font-black text-center text-[#121212]">
+        <h2 className="self-center md:text-3xl text-2xl font-black text-center md:text-start text-[#121212]">
           <span className="animate-[espejo_5s_ease-in_0s_infinite]">Desarrollador </span>
           <span className="animate-[espejo_5s_ease-in_0.3s_infinite]">web </span>
           <span className="animate-[espejo_5s_ease-in_0.6s_infinite]">fullstack</span>
