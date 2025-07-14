@@ -6,8 +6,8 @@ export default function Home() {
     <article
       className={`
         flex-col  xl:flex-row
-        gap-7 md:p-10 p-4 md:mt-20 xl:mt-80
-        w-[99%] md:w-[90%] xl:w-[80%] 2xl:w-[60%]
+        gap-7 md:p-10 p-4 lg:mt-20 
+        w-[99%] md:w-[90%] xl:w-[80%] 2xl:w-[80%] 2xl:max-w-380
         md:h-fit border-color  
         rounded-2xl mt-7
          bg-[#121212]/50 flex 

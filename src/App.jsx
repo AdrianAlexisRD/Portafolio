@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <div className=" flex flex-col items-center md:gap-40 gap-20 h-fit mb-30 md:h-fit pb-50 relative w-[100%] ">
+    <div className=" flex flex-col items-center justify-center md:gap-40 gap-20 h-fit mb-30 md:h-fit pb-50 relative w-[100vw] ">
        <Atom/>
         <AbouteMe/>
         <Proyects scroll={scroll} />

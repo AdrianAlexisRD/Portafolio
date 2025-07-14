@@ -48,26 +48,26 @@ export const Studies = ({scroll})=>{
         ${desplegar ? ' animate-[move-right_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
     
         `}>
-             <h2 className="text-4xl font-extrabold title-color col-span-2 md:justify-start text-center ">Estudios</h2>
+             <h2 className="text-4xl font-extrabold title-color col-span-2 md:justify-start text-center  ">Estudios</h2>
              <div className='flex '>
                 <img src={Itla} alt="aprende" className='md:w-40 md:h-30 w-[100px] h-20 rounded  ' />
                 <ul className=" text-color flex flex-col gap-2 justify-center   pl-4">
                     {itla.map(curso =><li className="md:text-2xl p-2 ">{curso}</li>)}
                 </ul>
              </div>
-            <div className='flex gap-5 md:flex-row flex-row-reverse md:justify-start '>
+            <div className='flex gap-5 md:flex-row flex-row-reverse md:items-center '>
                 <img src={Infotep} alt="aprende" className='md:w-40 md:h-30 w-[100px] h-20 rounded'  />
                 <ul className="text-color flex flex-col justify-center gap-2 ">
                     {infotep.map(curso =><li className="md:text-2xl p-2">{curso}</li>)}
                 </ul>
             </div>
-            <div className='flex gap-5 md:justify-start'>
+            <div className='flex gap-5 md:justify-center items-center'>
                 <img src={Aprende} alt="aprende" className='md:w-40 md:h-30 w-[100px] h-20 rounded' />
                 <ul className="text-color flex flex-col justify-center gap-2">
                     {aprende.map(curso =><li className="md:text-2xl  p-2 ">{curso}</li>)}
                 </ul>
             </div>
-            <div className='flex gap-5 md:flex-row flex-row-reverse justify-end md:justify-start'>
+            <div className='flex gap-5 md:flex-row flex-row-reverse justify-end md:justify-center'>
                 <img src={Talendig} alt="aprende" className='md:w-45 md:h-30 w-[100px] h-20 rounded' />
                 <ul className="text-color flex flex-col justify-center gap-2 ">
                     <li className="md:text-2xl text-start p-2 ">Tecnico desarrollador fullstack.</li>
