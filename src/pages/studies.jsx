@@ -16,7 +16,7 @@ export const Studies = ({scroll})=>{
         if (esPantallaGrande){
             scroll>= 1500 ? setDesplegar(true): setDesplegar(false)
         }else{
-            scroll>= 3500 ? setDesplegar(true): setDesplegar(false)
+            scroll>= 3200 ? setDesplegar(true): setDesplegar(false)
         }
 
       }, [esPantallaGrande, scroll])

@@ -22,8 +22,8 @@ export const Experience = ({scroll}) =>{
             flex-col md:gap-15 gap-10 flex 
             p-5 md:grid md:grid-cols-2 items-center
             place-items-center w-[99%] md:w-[90%] md:max-w-[1500px]
-            h-fit mb-10 mt-5 border-color bg-[#121212]/50
-            rounded-2xl text-color opacity-0
+            h-fit mt-5 border-color bg-[#121212]/50
+            rounded-2xl text-color opacity-0 xl:mb-100
             ${desplegar ? ' animate-[move-Left_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
             transition-all duration-1000 ease-in-out
             `}>

@@ -78,7 +78,7 @@ const [desplegar , setDesplegar] = useState(false)
                 ${desplegar ? ' animate-[move-Left_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
                 `}>
                 <h2 className='col-span-2 text-white text-3xl md:text-4xl title-color font-extrabold text-center'>Tecnologias utilizadas</h2>
-                <div className='grid grid-cols-3 gap-10 text-white md:flex md:justify-around w-[100%] border-color rounded-2xl bg-black/40 p-6 col-span-2'>
+                <div className='grid grid-cols-3 gap-10 text-white lg:flex md:justify-around w-[100%] border-color rounded-2xl bg-black/40 p-6 col-span-2'>
                 { logos.icons.map((logo , i) =>(
                     <div className='relative group flex justify-center'>
                     <div className='absolute top-[-60px]  z-20 hidden group-hover:flex '>
@@ -89,9 +89,9 @@ const [desplegar , setDesplegar] = useState(false)
                 ))
                     }
                 </div>
-                <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
-                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl group'>
-                        <img src={SM1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-130  transition-all duration-700 ease-initial hover:z-100 ' />
+                <article className=" 2xl:w-170 lg:w-110  w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
+                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl group relative'>
+                        <img src={SM1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140 transition-all duration-700 ease-initial hover:z-100' />
                         <img src={SM2} alt="" className='img-style'/>
                         <img src={SM3} alt="" className='img-style'/>
                         <img src={SM4} alt="" className='img-style'/>
@@ -102,9 +102,9 @@ const [desplegar , setDesplegar] = useState(false)
                         <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>Inventario</h2>
                     </a>
                 </article>
-                <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
-                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl border-color'>
-                        <img src={WT1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-120   transition-all duration-700 ease-initial hover:z-100' />
+                <article className=" 2xl:w-170 lg:w-110  w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
+                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl border-color relative'>
+                        <img src={WT1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140  transition-all duration-700 ease-initial hover:z-100 ' />
                         <img src={WT2} alt="" className='img-style'/>
                         <img src={WT3} alt="" className='img-style'/>
                         <img src={WT4} alt="" className='img-style'/>
@@ -115,9 +115,9 @@ const [desplegar , setDesplegar] = useState(false)
                         <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>App Weather</h2>
                     </a>
                 </article>
-                <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
-                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl'>
-                        <img src={AN1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-120   transition-all duration-700 ease-initial hover:z-100' />
+                <article className=" 2xl:w-170 lg:w-110 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
+                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl relative'>
+                        <img src={AN1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140   transition-all duration-700 ease-initial hover:z-100 ' />
                         <img src={AN2} alt="" className='img-style'/>
                         <img src={AN3} alt="" className='img-style'/>
                         <img src={AN4} alt="" className='img-style'/>
@@ -128,9 +128,9 @@ const [desplegar , setDesplegar] = useState(false)
                         <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>Animemania</h2>
                     </a>
                 </article>
-                <article className=" md:w-170 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
-                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl'>
-                        <img src={TD1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-120   transition-all duration-700 ease-initial hover:z-100' />
+                <article className=" 2xl:w-170 lg:w-110 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
+                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl relative'>
+                        <img src={TD1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140   transition-all duration-700 ease-initial hover:z-100' />
                         <img src={TD2} alt="" className='img-style'/>
                         <img src={TD3} alt="" className='img-style'/>
                         <img src={TD4} alt="" className='img-style'/>

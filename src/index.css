@@ -6,7 +6,7 @@
 .text-color{ @apply text-[#F2F2F2] }
 .border-color {@apply border-[#222831] border-4}
 .title-color{ @apply text-[#EAE4D5] }
-.img-style{@apply rounded hover:scale-200 transition-all duration-1000 ease-in-out hover:z-100}
+.img-style{@apply rounded hover:scale-200 transition-all duration-1000 ease-in-out hover:z-100 }
 .logo-skill{@apply  hover:scale-140 transition-all duration-500 ease-in } 
 
 h2 , p , h3{
@@ -16,14 +16,19 @@ h2 , p , h3{
   font-style: normal;
 }
 
-.grid:hover > img:not(:hover) {
+/* .grid:active > img:not(:hover) {
   filter: blur(4px);
   transition: filter 0.7s ease-in-out;
 }
 
-.grid > img:hover {
+.grid > img:active {
   filter: none;
   transition: filter 0.7s ease-in-out;
+} */
+
+.hexagono{
+  clip-path: polygon(25% 0%, 75% 0%, 100% 21%, 86% 90%, 25% 100%, 0 59%);
+
 }
 
 h1 {
@@ -75,7 +80,7 @@ h1 {
 @keyframes Efecto-abajo {
   from{ 
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-40px);
   }
   to{
     opacity: 1;
@@ -86,7 +91,7 @@ h1 {
 @keyframes Efecto-arriba {
   from{ 
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(40px);
   }
   to{
     opacity: 1;
@@ -97,7 +102,7 @@ h1 {
 
 @keyframes move-right {
   from{
-    transform:  translateX(-100%);
+    transform:  translateX(-40%);
 
   }
   to{
@@ -111,7 +116,7 @@ h1 {
     transform:  translateX(0);
   }
   to{
-    transform: translateX(-100%);
+    transform: translateX(-40%);
   }
 }
 
@@ -121,7 +126,7 @@ h1 {
     opacity: 1;
   }
   to{
-    transform: translateY(100%);
+    transform: translateY(40%);
     
     
   }
@@ -129,13 +134,13 @@ h1 {
 
 @keyframes atomos {
   0% {
-    transform: translateY(0) scale(1);
+    transform:  scale(1);
   }
   50% {
-    transform: translateY(-20px) scale(1.1);
+    transform:  scale(1.1);
   }
   100% {
-    transform: translateY(0) scale(1);
+    transform: scale(1);
   }
 }
 
