@@ -61,7 +61,7 @@ export const Studies = ({scroll})=>{
                     {infotep.map(curso =><li className="md:text-2xl p-2">{curso}</li>)}
                 </ul>
             </div>
-            <div className='flex gap-5 md:justify-center items-center'>
+            <div className='flex gap-5 md:justify-start items-center'>
                 <img src={Aprende} alt="aprende" className='md:w-40 md:h-30 w-[100px] h-20 rounded' />
                 <ul className="text-color flex flex-col justify-center gap-2">
                     {aprende.map(curso =><li className="md:text-2xl  p-2 ">{curso}</li>)}
