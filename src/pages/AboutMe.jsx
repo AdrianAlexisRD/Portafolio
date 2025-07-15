@@ -1,4 +1,4 @@
-import FotoAnimada from "../assets/fotoCV.jpg";
+import FotoAnimada from "../assets/fotoCV_isnet-anime.png";
 
 export default function Home() {
  
@@ -13,13 +13,12 @@ export default function Home() {
          bg-[#121212]/50 flex 
          opacity-0 items-center
           animate-[move-Left_0.7s_ease-in-out_forwards]
-         `}
-    >
-      <div className=" h-20 mb-10 md:mb-0  md:h-fit md:w-fit w-[100%] flex justify-center md:items-center  ">
+         `}>
+      <div className=" h-fit md:mb-0  md:h-fit md:w-fit w-fit flex justify-center md:items-center bg-gradient-to-tl from-[#C0C0C0] to-[#121212]  rounded-full border-color">
         <img
           src={FotoAnimada}
           alt=""
-          className="rounded-full filter grayscale-25 contrast-120 drop-shadow-2xl/50 2xl:w-[800px] xl:w-400 mb-20 xl:h-[300px] w-50 md:h-80 xl:rounded-3xl h-45  border-color shadow-[#EAE4D5]    "
+          className=" filter grayscale-25 contrast-120 drop-shadow-2xl/50 2xl:w-[800px] xl:w-400 xl:h-[300px] w-50 md:h-80 h-50  shadow-[#EAE4D5] rounded-full  "
         />
       </div>
       <div className="text-white flex md:self-start  md:mb-4  relative ">

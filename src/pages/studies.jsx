@@ -49,34 +49,34 @@ export const Studies = ({scroll})=>{
     
         `}>
              <h2 className="text-4xl font-extrabold title-color col-span-2 md:justify-start text-center  ">Estudios</h2>
-             <div className='flex items-center '>
-                <img src={Itla} alt="aprende" className='md:w-40 md:h-30 w-[100px] h-20 rounded  ' />
-                <ul className=" text-color flex flex-col gap-2 justify-center   pl-4">
-                    {itla.map(curso =><li className="md:text-2xl p-2 ">{curso}</li>)}
+             <div className={`flex items-center bg-center h-64 w-full bg-cover rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url('https://index.gob.do/wp-content/uploads/2022/10/itla.png')` }}>
+                <ul className=" text-color flex flex-col  justify-center  pl-4">
+                    {itla.map(curso =><li className="text-2xl md:text-3x1 p-2 font-bold ">{curso}</li>)}
                 </ul>
              </div>
-            <div className='flex gap-5 md:flex-row flex-row-reverse items-center '>
-                <img src={Infotep} alt="aprende" className='md:w-40 md:h-30 w-[100px] h-20 rounded'  />
-                <ul className="text-color flex flex-col justify-center gap-2 ">
-                    {infotep.map(curso =><li className="md:text-2xl p-2">{curso}</li>)}
+             <div className={`flex items-center bg-center bg-no-repeat h-64 w-full rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url('https://continuada.ipl.edu.do/images/cursos/infotep.jpg')` }}>
+
+                <ul className="text-color flex flex-col justify-center ">
+                    {infotep.map(curso =><li className="xl:text-3xl text-2xl font-bold p-2">{curso}</li>)}
                 </ul>
             </div>
-            <div className='flex gap-5 md:justify-start items-center'>
-                <img src={Aprende} alt="aprende" className='md:w-40 md:h-30 w-[100px] h-20 rounded' />
+             <div className={`flex items-center bg-center h-64 w-full bg-cover rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(${'https://accesolatino.org/wp-content/uploads/2022/05/aprende-con-nuestras-herramientas.png'})` }}>
+
                 <ul className="text-color flex flex-col justify-center gap-2">
-                    {aprende.map(curso =><li className="md:text-2xl  p-2 ">{curso}</li>)}
+                    {aprende.map(curso =><li className="xl:text-3xl text-2xl font-bold p-2 ">{curso}</li>)}
                 </ul>
             </div>
-            <div className='flex gap-5 md:flex-row flex-row-reverse justify-end md:justify-center'>
-                <img src={Talendig} alt="aprende" className='md:w-45 md:h-30 w-[100px] h-20 rounded' />
-                <ul className="text-color flex flex-col justify-center gap-2 ">
-                    <li className="md:text-2xl text-start p-2 ">Tecnico desarrollador fullstack.</li>
+             <div className={`flex items-center bg-center h-64 w-full bg-cover rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(${'https://startupeable.com/directorio/wp-content/uploads/listing-uploads/logo/2022/12/Logo-full-color-1.jpg'})` }}>
+
+                <ul className="text-color flex flex-col justify-center  ">
+                    <li className="md:text-3xl text-2xl text-start font-bold p-2 ">Tecnico desarrollador fullstack.</li>
                 </ul>
             </div>
-            <div className='flex gap-5'>
-                <img src={Mescyt} alt="aprende" className='md:w-40 md:h-30 h-20 rounded' />
-                <ul className="text-color flex flex-col justify-center gap-2">
-                    <li className="md:text-2xl  p-2 ">Ingles por inmersión.</li>
+
+             <div className={`flex items-center bg-center h-64 w-full  bg-no-repeat rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(${Mescyt})` }}>
+
+                <ul className="text-color flex flex-col justify-center">
+                    <li className="md:text-3xl text-2xl font-bold  p-2 ">Ingles por inmersión.</li>
                 </ul>
             </div>
         </section>

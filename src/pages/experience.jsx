@@ -20,10 +20,10 @@ export const Experience = ({scroll}) =>{
     return(
         <section className={` 
             flex-col md:gap-15 gap-10 flex 
-            p-5 md:grid md:grid-cols-2 items-center
+            p-5 xl:grid xl:grid-cols-2 items-center
             place-items-center w-[99%] md:w-[90%] md:max-w-[1500px]
             h-fit mt-5 border-color bg-[#121212]/50
-            rounded-2xl text-color opacity-0 xl:mb-100
+            rounded-2xl text-color opacity-0 xl:mb-20
             ${desplegar ? ' animate-[move-Left_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
             transition-all duration-1000 ease-in-out
             `}>
@@ -42,14 +42,14 @@ export const Experience = ({scroll}) =>{
                     <p className='md:text-2xl'>Tecnico reparado de servicios ADSL y Voz.</p>
                 </div>
             </div >
-            <div className='flex md:gap-7 gap-4 items-center md:justify-start'>
+            <div className='flex md:gap-7  gap-4 items-center md:justify-start'>
                 <img src={Nerdot} alt="Ingmelec" className='md:w-40 w-30 md:h-30 h-25 rounded ' />
                 <div>
                     <h3 className='md:text-3xl text-[20px] font-bold'>Tecnico en Logistica Digital</h3>
                     <p className='md:text-2xl'>Servicios tercnicos de software en terminales de tarjetas bancarias.</p>
                 </div>
             </div>
-            <div className='flex md:flex-row flex-row-reverse md:gap-7 gap-4 items-center md:justify-start m-0 p-0 '>
+            <div className='flex md:flex-row flex-row-reverse md:gap-7 gap-4 items-center  m-0 p-0 '>
                 <img src={OceanWorld} alt="Ingmelec" className='md:w-40 w-30 md:h-30 h-25 rounded ' />
                 <div>
                     <h3 className='md:text-3xl text-[20px] font-bold'>Tecnico electricista</h3>

@@ -2,7 +2,7 @@
 
 @import "tailwindcss";
 
-/* .logo{@apply text-white text-4xl efecto1 left-[60px] absolute } */
+
 .text-color{ @apply text-[#F2F2F2] }
 .border-color {@apply border-[#222831] border-4}
 .title-color{ @apply text-[#EAE4D5] }
@@ -16,30 +16,12 @@ h2 , p , h3{
   font-style: normal;
 }
 
-/* .grid:active > img:not(:hover) {
-  filter: blur(4px);
-  transition: filter 0.7s ease-in-out;
-}
-
-.grid > img:active {
-  filter: none;
-  transition: filter 0.7s ease-in-out;
-} */
-
-.hexagono{
-  clip-path: polygon(25% 0%, 75% 0%, 100% 21%, 86% 90%, 25% 100%, 0 59%);
-
-}
 
 h1 {
   font-family: "Winky Rough", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 500; 
-}
-
-.forma-polygon{
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
 .efecto1{
@@ -181,6 +163,5 @@ h1 {
 @keyframes aumentar {
   0%{transform: scale(1);}
   50%{transform: scale(1.5);}
-  /* 100%{transform: scale(1);} */
 }
 

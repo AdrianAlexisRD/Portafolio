@@ -89,7 +89,7 @@ const [desplegar , setDesplegar] = useState(false)
                 ))
                     }
                 </div>
-                <article className=" 2xl:w-170 lg:w-110  w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
+                <article className=" 2xl:w-170 lg:w-110 sm:w-85 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
                     <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl group relative'>
                         <img src={SM1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140 transition-all duration-700 ease-initial hover:z-100' />
                         <img src={SM2} alt="" className='img-style'/>
@@ -102,7 +102,7 @@ const [desplegar , setDesplegar] = useState(false)
                         <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>Inventario</h2>
                     </a>
                 </article>
-                <article className=" 2xl:w-170 lg:w-110  w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
+                <article className=" 2xl:w-170 lg:w-110 sm:w-85  w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
                     <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl border-color relative'>
                         <img src={WT1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140  transition-all duration-700 ease-initial hover:z-100 ' />
                         <img src={WT2} alt="" className='img-style'/>
@@ -115,7 +115,7 @@ const [desplegar , setDesplegar] = useState(false)
                         <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>App Weather</h2>
                     </a>
                 </article>
-                <article className=" 2xl:w-170 lg:w-110 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
+                <article className=" 2xl:w-170 lg:w-110 sm:w-85 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
                     <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl relative'>
                         <img src={AN1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140   transition-all duration-700 ease-initial hover:z-100 ' />
                         <img src={AN2} alt="" className='img-style'/>
@@ -128,7 +128,7 @@ const [desplegar , setDesplegar] = useState(false)
                         <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>Animemania</h2>
                     </a>
                 </article>
-                <article className=" 2xl:w-170 lg:w-110 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
+                <article className=" 2xl:w-170 lg:w-110 sm:w-85 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
                     <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl relative'>
                         <img src={TD1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140   transition-all duration-700 ease-initial hover:z-100' />
                         <img src={TD2} alt="" className='img-style'/>
