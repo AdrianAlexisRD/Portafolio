@@ -10,14 +10,10 @@ export const Contact = ({scroll}) =>{
     
       useEffect(()=>{
         if (esPantallaGrande){
-            // setTimeout(()=>{
                 scroll>= 3530 ? setDesplegar(true): setDesplegar(false)
-            // }, 1000)
             
         }else{
-            // setTimeout(()=>{
-                scroll>= 4200 ? setDesplegar(true): setDesplegar(false)
-            // }, 500)
+                scroll>= 4200 ? setDesplegar(true): setDesplegar(false)   
         }
 
       }, [esPantallaGrande, scroll])

@@ -72,21 +72,25 @@ const [desplegar , setDesplegar] = useState(false)
             title: "Inventario",
             github: "https://github.com/AdrianAlexisRD/Inventario-MERN",
             images: [SM1, SM2, SM3, SM4, SM5],
+            url: ''
         },
         {
             title: "App Weather",
             github: "https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/App-clima",
             images: [WT1, WT2, WT3, WT4, WT5],
+            url: 'https://jolly-peony-a4c08a.netlify.app/'
         },
         {
             title: "Animemania",
             github: "https://github.com/AdrianAlexisRD/Inventario-MERN",
             images: [AN1, AN2, AN3, AN4, AN5],
+            url: ''
         },
         {
             title: "To do list",
             github: "https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/To-do-app",
             images: [TD1, TD2, TD3, TD4, TD5],
+            url: 'https://golden-bubblegum-db0a73.netlify.app/'
         },
         ];
 
@@ -96,14 +100,14 @@ const [desplegar , setDesplegar] = useState(false)
 
             <section  className={` 
                 flex
-                flex-col md:gap-20 gap-20 
-                p-15 items-center
+                flex-col md:gap-20 gap-10 
+                p-5 items-center
                 place-items-center w-[99%] md:w-[95%] 
                 h-270  xl:h-220 sm:h-210 mb-10 mt-20 border-color bg-[#121212]/50
                 rounded-2xl opacity-0
                 ${desplegar ? ' animate-[move-Left_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
                 `}>
-                <h2 className='col-span-2 text-white text-3xl md:text-4xl title-color font-extrabold text-center'>Tecnologias utilizadas</h2>
+                <h2 className=' text-white text-3xl md:text-4xl title-color font-extrabold text-center'>Tecnologias utilizadas</h2>
                 <div className='grid grid-cols-3 gap-10 text-white lg:flex md:justify-around w-[100%] border-color rounded-2xl bg-black/40 p-6 col-span-2'>
                 { logos.icons.map((logo , i) =>(
                     <div className='relative group flex justify-center'>
@@ -115,58 +119,7 @@ const [desplegar , setDesplegar] = useState(false)
                 ))
                     }
                 </div>
-                {/* <article className=" 2xl:w-170 lg:w-110 sm:w-85 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
-                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl group relative'>
-                        <img src={SM1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140 transition-all duration-700 ease-initial hover:z-100' />
-                        <img src={SM2} alt="" className='img-style'/>
-                        <img src={SM3} alt="" className='img-style'/>
-                        <img src={SM4} alt="" className='img-style'/>
-                        <img src={SM5} alt="" className='img-style'/>
-                    </div>
-                    <a href='https://github.com/AdrianAlexisRD/Inventario-MERN' className='flex justify-center items-center' target='_blank'>
-                        <IconBrandGithub stroke={2} size={50} className='p-2 text-white'/>
-                        <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>Inventario</h2>
-                    </a>
-                </article>
-                <article className=" 2xl:w-170 lg:w-110 sm:w-85  w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
-                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl border-color relative'>
-                        <img src={WT1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140  transition-all duration-700 ease-initial hover:z-100 ' />
-                        <img src={WT2} alt="" className='img-style'/>
-                        <img src={WT3} alt="" className='img-style'/>
-                        <img src={WT4} alt="" className='img-style'/>
-                        <img src={WT5} alt="" className='img-style'/>
-                    </div>
-                    <a href='https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/App-clima' className='flex justify-center items-center' target='_blank'>
-                        <IconBrandGithub stroke={2} size={50} className='p-2 text-white'/>
-                        <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>App Weather</h2>
-                    </a>
-                </article>
-                <article className=" 2xl:w-170 lg:w-110 sm:w-85 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
-                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl relative'>
-                        <img src={AN1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140   transition-all duration-700 ease-initial hover:z-100 ' />
-                        <img src={AN2} alt="" className='img-style'/>
-                        <img src={AN3} alt="" className='img-style'/>
-                        <img src={AN4} alt="" className='img-style'/>
-                        <img src={AN5} alt="" className='img-style'/>
-                    </div>
-                    <a href='https://github.com/AdrianAlexisRD/Inventario-MERN' className='flex justify-center items-center' target='_blank'>
-                        <IconBrandGithub stroke={2} size={50} className='p-2 text-white'/>
-                        <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>Animemania</h2>
-                    </a>
-                </article>
-                <article className=" 2xl:w-170 lg:w-110 sm:w-85 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
-                    <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl relative'>
-                        <img src={TD1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140   transition-all duration-700 ease-initial hover:z-100' />
-                        <img src={TD2} alt="" className='img-style'/>
-                        <img src={TD3} alt="" className='img-style'/>
-                        <img src={TD4} alt="" className='img-style'/>
-                        <img src={TD5} alt="" className='img-style'/>
-                    </div>
-                    <a href='https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/To-do-app' className='flex justify-center items-center' target='_blank'>
-                        <IconBrandGithub stroke={2} size={50} className='p-2 text-white'/>
-                        <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>To do list</h2>
-                    </a>
-                </article> */}
+                    <h2 className='text-white text-3xl md:text-4xl title-color font-extrabold text-center'>Proyectos</h2>
 
                 <Slider data={data}/>
 
