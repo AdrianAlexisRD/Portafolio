@@ -23,7 +23,7 @@ export const Slider = ({data}) =>{
 
     const intervalo = setInterval(() => {
       setIndex((prev) => (prev < data.length - 1 ? prev + 1 : 0));
-    }, 5000);
+    }, 8000);
 
     return () => clearInterval(intervalo);
   }, [isPaused, data.length]);
@@ -35,7 +35,7 @@ export const Slider = ({data}) =>{
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
         >
-        <IconChevronCompactLeft className="absolute left-[-50px] top-40 md:left-[-80px] z-50 text-[#121212]/50" stroke={4} size={esPantallaGrande ? 150 : 100} onClick={() =>  index > 0 ? setIndex(index - 1) : setIndex(data.length - 1) }/>
+        <IconChevronCompactLeft className="absolute left-[30px] lg:top-40 bottom-[-100px] lg:left-[-60px] z-50 text-[#121212]/50 active:scale-90" stroke={3} size={esPantallaGrande ? 150 : 100} onClick={() =>  index > 0 ? setIndex(index - 1) : setIndex(data.length - 1) }/>
 
             <AnimatePresence mode="wait">
             <motion.div
@@ -43,15 +43,15 @@ export const Slider = ({data}) =>{
                 initial={{ opacity: 0, x: 30, scale: 0.98 }}
                 animate={{ opacity: 1, x: 0, scale: 1 }}
                 exit={{ opacity: 0, x: -30, scale: 0.98 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
+                transition={{ duration: 0.2, ease: "easeInOut" }}
                 className="w-full flex justify-center items-center "
             >
 
-            <article key={index}  className="2xl:w-300 xl:w-250 lg:w-200 sm:w-230 w-230 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color animate-[aparecer_0.5s_ease-in-out_forwards] ">
+            <article key={index}  className="2xl:w-300 xl:w-250 lg:w-200 sm:w-230 w-230 h-fit p-3 bg-[#121212]/50 rounded-2xl border-color ">
               <a href={data[index].url} target="_blank">
 
             <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl group relative'>
-                <img src={data[index].images[0]} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140 transition-all duration-700 ease-initial hover:z-100' />
+                <img src={data[index].images[0]} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-120 transition-all duration-700 ease-initial hover:z-100' />
                 <img src={data[index].images[1]} alt="" className='img-style' />
                 <img src={data[index].images[2]} alt="" className='img-style' />
                 <img src={data[index].images[3]} alt="" className='img-style' />
@@ -68,7 +68,7 @@ export const Slider = ({data}) =>{
           </motion.div>
 </AnimatePresence>
 
-         < IconChevronCompactRight className="absolute right-[-50px] md:right-[-80px] top-40 text-[#121212]/50" stroke={4} size={esPantallaGrande ? 150 : 100} onClick={ () => index < data.length - 1 ? setIndex(index + 1) : setIndex(0) }/>
+         < IconChevronCompactRight className="absolute right-[30px] lg:right-[-60px] lg:top-40 bottom-[-100px] active:scale-90 text-[#121212]/50" stroke={3} size={esPantallaGrande ? 150 : 100} onClick={ () => index < data.length - 1 ? setIndex(index + 1) : setIndex(0) }/>
 
 
             

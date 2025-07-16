@@ -101,9 +101,9 @@ const [desplegar , setDesplegar] = useState(false)
             <section  className={` 
                 flex
                 flex-col md:gap-20 gap-10 
-                p-5 items-center
+                p-2 items-center
                 place-items-center w-[99%] md:w-[95%] 
-                h-270  xl:h-220 sm:h-210 mb-10 mt-20 border-color bg-[#121212]/50
+                h-290 md:h-300 sm:h-350  xl:h-220  mb-10 mt-20 border-color bg-[#121212]/50
                 rounded-2xl opacity-0
                 ${desplegar ? ' animate-[move-Left_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
                 `}>

@@ -1,4 +1,4 @@
-import FotoAnimada from "../assets/fotoCV_isnet-anime.png";
+import FotoAnimada from "../assets/Foto-animada.jpg";
 
 export default function Home() {
  
@@ -18,7 +18,7 @@ export default function Home() {
         <img
           src={FotoAnimada}
           alt=""
-          className=" filter grayscale-25 contrast-120 drop-shadow-2xl/50 2xl:w-[800px] xl:w-400 xl:h-[300px] w-50 md:h-80 h-50  shadow-[#EAE4D5] rounded-full  "
+          className=" filter grayscale-25 contrast-120 drop-shadow-2xl/50 2xl:w-450 xl:w-400 xl:h-60 w-50 md:h-80 h-50  shadow-[#EAE4D5] rounded-full  "
         />
       </div>
       <div className="text-white flex md:self-start  md:mb-4  relative ">
