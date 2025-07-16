@@ -16,7 +16,7 @@ export const Studies = ({scroll})=>{
         if (esPantallaGrande){
             scroll>= 1500 ? setDesplegar(true): setDesplegar(false)
         }else{
-            scroll>= 3200 ? setDesplegar(true): setDesplegar(false)
+            scroll>= 1800 ? setDesplegar(true): setDesplegar(false)
         }
 
       }, [esPantallaGrande, scroll])
@@ -37,6 +37,9 @@ export const Studies = ({scroll})=>{
         'Instalador de Fibra Óptica. ',
         'Disciplina en el trabajo.'
     ]
+
+
+   
     return(
         <section className={` 
         flex-col flex md:grid md:grid-cols-2 
@@ -51,7 +54,7 @@ export const Studies = ({scroll})=>{
              <h2 className="text-4xl font-extrabold title-color col-span-2 md:justify-start text-center  ">Estudios</h2>
              <div className={`flex items-center bg-center h-64 w-full bg-cover rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url('https://index.gob.do/wp-content/uploads/2022/10/itla.png')` }}>
                 <ul className=" text-color flex flex-col  justify-center  pl-4">
-                    {itla.map(curso =><li className="text-2xl md:text-3x1 p-2 font-bold ">{curso}</li>)}
+                    {itla.map(curso =><li className="text-2xl xl:text-3xl p-2 font-bold ">{curso}</li>)}
                 </ul>
              </div>
              <div className={`flex items-center bg-center bg-no-repeat h-64 w-full rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url('https://continuada.ipl.edu.do/images/cursos/infotep.jpg')` }}>

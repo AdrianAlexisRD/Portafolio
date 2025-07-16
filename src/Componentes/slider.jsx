@@ -1,0 +1,75 @@
+import { useEffect, useState } from "react"
+import { IconChevronCompactLeft, IconChevronCompactRight } from "@tabler/icons-react"
+// eslint-disable-next-line no-unused-vars
+import { AnimatePresence, motion } from "framer-motion";
+
+
+import { 
+
+    IconBrandGithub, 
+ 
+} from '@tabler/icons-react';
+
+
+export const Slider = ({data}) =>{
+    const [index , setIndex] = useState(0)
+
+  const [isPaused, setIsPaused] = useState(false); 
+
+
+  useEffect(() => {
+    if (isPaused) return; 
+
+    const intervalo = setInterval(() => {
+      setIndex((prev) => (prev < data.length - 1 ? prev + 1 : 0));
+    }, 5000);
+
+    return () => clearInterval(intervalo);
+  }, [isPaused, data.length]);
+
+
+
+
+    return(
+
+        <div className="flex flex-col items-center w-[100%] relative" 
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+        >
+        <IconChevronCompactLeft className="absolute left-[-108px] md:left-[-80px] z-50 text-[#121212]/50" stroke={4} size={150} onClick={() =>  index > 0 ? setIndex(index - 1) : setIndex(data.length - 1) }/>
+
+            <AnimatePresence mode="wait">
+            <motion.div
+                key={index}
+                initial={{ opacity: 0, x: 30, scale: 0.98 }}
+                animate={{ opacity: 1, x: 0, scale: 1 }}
+                exit={{ opacity: 0, x: -30, scale: 0.98 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="w-full flex justify-center items-center "
+            >
+
+            <article key={index}  className="2xl:w-300 lg:w-200 sm:w-150 w-120 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color animate-[aparecer_0.5s_ease-in-out_forwards] ">
+            <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl group relative'>
+                <img src={data[index].images[0]} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140 transition-all duration-700 ease-initial hover:z-100' />
+                <img src={data[index].images[1]} alt="" className='img-style' />
+                <img src={data[index].images[2]} alt="" className='img-style' />
+                <img src={data[index].images[3]} alt="" className='img-style' />
+                <img src={data[index].images[4]} alt="" className='img-style' />
+            </div>
+            <a href={data[index].github} className='flex justify-center items-center' target='_blank'>
+                <IconBrandGithub stroke={2} size={50} className='p-2 text-white'/>
+                <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2]'>{data[index].title}</h2>
+            </a>
+            </article>
+        
+          </motion.div>
+</AnimatePresence>
+
+         < IconChevronCompactRight className="absolute right-[-108px] md:right-[-80px] text-[#121212]/50" stroke={4} size={150} onClick={ () => index < data.length - 1 ? setIndex(index + 1) : setIndex(0) }/>
+
+
+            
+       
+        </div>
+    )
+}

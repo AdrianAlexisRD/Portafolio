@@ -31,6 +31,8 @@ import TD2 from '../assets/Todoapp2.png'
 import TD3 from '../assets/Todoapp3.png'
 import TD4 from '../assets/Todoapp4.png'
 import TD5 from '../assets/Todoapp5.png'
+import { Slider } from '../Componentes/slider';
+
 
 
 
@@ -64,6 +66,30 @@ const [desplegar , setDesplegar] = useState(false)
         'React', 'MongoDB','Nodejs','Tailwind','CSS','HTML','JavaScript','Github','Vite'
     ]
     }
+
+            const data = [
+        {
+            title: "Inventario",
+            github: "https://github.com/AdrianAlexisRD/Inventario-MERN",
+            images: [SM1, SM2, SM3, SM4, SM5],
+        },
+        {
+            title: "App Weather",
+            github: "https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/App-clima",
+            images: [WT1, WT2, WT3, WT4, WT5],
+        },
+        {
+            title: "Animemania",
+            github: "https://github.com/AdrianAlexisRD/Inventario-MERN",
+            images: [AN1, AN2, AN3, AN4, AN5],
+        },
+        {
+            title: "To do list",
+            github: "https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/To-do-app",
+            images: [TD1, TD2, TD3, TD4, TD5],
+        },
+        ];
+
  
     return(
  
@@ -71,9 +97,9 @@ const [desplegar , setDesplegar] = useState(false)
             <section  className={` 
                 flex
                 flex-col md:gap-20 gap-20 
-                p-15 md:grid md:grid-cols-2 items-center
+                p-15 items-center
                 place-items-center w-[99%] md:w-[95%] 
-                h-fit mb-10 mt-20 border-color bg-[#121212]/50
+                h-270  xl:h-220 sm:h-210 mb-10 mt-20 border-color bg-[#121212]/50
                 rounded-2xl opacity-0
                 ${desplegar ? ' animate-[move-Left_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
                 `}>
@@ -89,7 +115,7 @@ const [desplegar , setDesplegar] = useState(false)
                 ))
                     }
                 </div>
-                <article className=" 2xl:w-170 lg:w-110 sm:w-85 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
+                {/* <article className=" 2xl:w-170 lg:w-110 sm:w-85 w-95 h-fit p-3 bg-[#121212]/50 aparecer rounded-2xl border-color" >
                     <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl group relative'>
                         <img src={SM1} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-140 transition-all duration-700 ease-initial hover:z-100' />
                         <img src={SM2} alt="" className='img-style'/>
@@ -140,7 +166,11 @@ const [desplegar , setDesplegar] = useState(false)
                         <IconBrandGithub stroke={2} size={50} className='p-2 text-white'/>
                         <h2 className='text-white text-2xl font-bold hover:border-b-6 border-[#F2F2F2] '>To do list</h2>
                     </a>
-                </article>
+                </article> */}
+
+                <Slider data={data}/>
+
+
 
             </section>
 

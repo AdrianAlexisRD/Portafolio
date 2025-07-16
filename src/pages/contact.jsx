@@ -10,14 +10,14 @@ export const Contact = ({scroll}) =>{
     
       useEffect(()=>{
         if (esPantallaGrande){
-            setTimeout(()=>{
-                scroll>= 3100 ? setDesplegar(true): setDesplegar(false)
-            }, 1000)
+            // setTimeout(()=>{
+                scroll>= 3530 ? setDesplegar(true): setDesplegar(false)
+            // }, 1000)
             
         }else{
-            setTimeout(()=>{
-                scroll>= 5000 ? setDesplegar(true): setDesplegar(false)
-            }, 500)
+            // setTimeout(()=>{
+                scroll>= 4200 ? setDesplegar(true): setDesplegar(false)
+            // }, 500)
         }
 
       }, [esPantallaGrande, scroll])
@@ -25,7 +25,7 @@ export const Contact = ({scroll}) =>{
         <section className={` flex-col  
         gap-7 p-10 items-center
         w-[99%] md:w-[50%] 
-        h-fit border-color  
+        h-fit border-color absolute bottom-0
         rounded-2xl text-center
          bg-[#121212]/50 opacity-0
         ${desplegar ? ' animate-[move-right_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
