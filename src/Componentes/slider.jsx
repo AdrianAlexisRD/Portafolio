@@ -35,7 +35,7 @@ export const Slider = ({data}) =>{
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
         >
-        <IconChevronCompactLeft className="absolute left-[30px] lg:top-40 bottom-[-100px] lg:left-[-60px] z-50 text-[#121212]/50 active:scale-90" stroke={3} size={esPantallaGrande ? 150 : 100} onClick={() =>  index > 0 ? setIndex(index - 1) : setIndex(data.length - 1) }/>
+        <IconChevronCompactLeft className="absolute left-[0px] lg:top-40 bottom-[0px] lg:left-[-40px] z-50 text-[#121212]/50 active:scale-90" stroke={5} size={esPantallaGrande ? 150 : 100} onClick={() =>  index > 0 ? setIndex(index - 1) : setIndex(data.length - 1) }/>
 
             <AnimatePresence mode="wait">
             <motion.div
@@ -68,7 +68,7 @@ export const Slider = ({data}) =>{
           </motion.div>
 </AnimatePresence>
 
-         < IconChevronCompactRight className="absolute right-[30px] lg:right-[-60px] lg:top-40 bottom-[-100px] active:scale-90 text-[#121212]/50" stroke={3} size={esPantallaGrande ? 150 : 100} onClick={ () => index < data.length - 1 ? setIndex(index + 1) : setIndex(0) }/>
+         < IconChevronCompactRight className="absolute right-[0px] lg:right-[-40px] lg:top-40 bottom-[0px] active:scale-90 text-[#121212]/50" stroke={5} size={esPantallaGrande ? 150 : 100} onClick={ () => index < data.length - 1 ? setIndex(index + 1) : setIndex(0) }/>
 
 
             
