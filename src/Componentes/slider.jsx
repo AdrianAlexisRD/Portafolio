@@ -50,7 +50,7 @@ export const Slider = ({data}) =>{
             <article key={index}  className="2xl:w-300 xl:w-250 lg:w-200 sm:w-230 w-230 h-fit p-3 bg-[#121212]/50 rounded-2xl border-color ">
               <a href={data[index].url} target="_blank">
 
-            <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-[100%] rounded-2xl group relative'>
+            <div className='grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 gap-2 h-90 rounded-2xl group relative'>
                 <img src={data[index].images[0]} alt="Portada" className='col-span-2 row-span-2 h-[100%] rounded hover:scale-120 transition-all duration-700 ease-initial hover:z-100' />
                 <img src={data[index].images[1]} alt="" className='img-style' />
                 <img src={data[index].images[2]} alt="" className='img-style' />

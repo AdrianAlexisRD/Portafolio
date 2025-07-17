@@ -13,7 +13,7 @@ export const Contact = ({scroll}) =>{
                 scroll>= 3530 ? setDesplegar(true): setDesplegar(false)
             
         }else{
-                scroll>= 4200 ? setDesplegar(true): setDesplegar(false)   
+                scroll>= 4000 ? setDesplegar(true): setDesplegar(false)   
         }
 
       }, [esPantallaGrande, scroll])
