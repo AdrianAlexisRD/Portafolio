@@ -55,32 +55,32 @@ export const Studies = ({scroll})=>{
              <h2 className="text-4xl font-extrabold title-color col-span-2 md:justify-start text-center  ">Estudios</h2>
              <div className={`flex items-end  bg-center h-64 w-full bg-cover rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(${esPantallaGrande? 'https://index.gob.do/wp-content/uploads/2022/10/itla.png' :'https://be.nortic.ogtic.gob.do/organizationsImages/ITLA.png' })` }}>
                 <ul className=" text-color flex flex-col  justify-center  pl-4">
-                    {itla.map(curso =><li className="text-2xl xl:text-3xl p-2 font-bold ">{curso}</li>)}
+                    {itla.map(curso =><li className="sm:text-2xl xl:text-3xl text-[18px] p-2 font-bold ">{curso}</li>)}
                 </ul>
              </div>
              <div className={`flex items-end bg-center bg-no-repeat h-64 w-full rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url('https://continuada.ipl.edu.do/images/cursos/infotep.jpg')` }}>
 
                 <ul className="text-color flex flex-col justify-center ">
-                    {infotep.map(curso =><li className="xl:text-3xl sm:text-[20px] text-2xl font-bold p-2">{curso}</li>)}
+                    {infotep.map(curso =><li className="sm:text-2xl xl:text-3xl text-[18px] text-2xl font-bold p-2">{curso}</li>)}
                 </ul>
             </div>
              <div className={`flex items-end bg-center h-64 w-full bg-cover rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(${'https://accesolatino.org/wp-content/uploads/2022/05/aprende-con-nuestras-herramientas.png'})` }}>
 
                 <ul className="text-color flex flex-col justify-center gap-2">
-                    {aprende.map(curso =><li className="xl:text-3xl text-2xl font-bold p-2 ">{curso}</li>)}
+                    {aprende.map(curso =><li className="sm:text-2xl xl:text-3xl text-[18px] font-bold p-2 ">{curso}</li>)}
                 </ul>
             </div>
              <div className={`flex items-end bg-center h-64 w-ful bg-no-repeat sm:bg-cover rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(${esPantallaGrande?'https://startupeable.com/directorio/wp-content/uploads/listing-uploads/logo/2022/12/Logo-full-color-1.jpg': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Usg1HQtjhuJM0Go1ObVZZ8IYzgmy3L68GcKCN-DGstv3yl0p8kE3vvDs_4AfhiUCFPc&usqp=CAU'})` }}>
 
                 <ul className="text-color flex flex-col justify-center  ">
-                    <li className="md:text-3xl text-2xl text-start font-bold p-2 ">Tecnico desarrollador fullstack.</li>
+                    <li className="sm:text-2xl xl:text-3xl text-[18px] text-start font-bold p-2 ">Tecnico desarrollador fullstack.</li>
                 </ul>
             </div>
 
              <div className={`flex items-end bg-center h-64 w-full  bg-no-repeat rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(${Mescyt})` }}>
 
                 <ul className="text-color flex flex-col justify-center">
-                    <li className="md:text-3xl text-2xl font-bold  p-2 ">Ingles por inmersión.</li>
+                    <li className="sm:text-2xl xl:text-3xl text-[18px] font-bold  p-2 ">Ingles por inmersión.</li>
                 </ul>
             </div>
         </section>

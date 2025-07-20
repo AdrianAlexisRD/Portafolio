@@ -29,34 +29,34 @@ export const Experience = ({scroll}) =>{
             `}>
             <h2 className='md:text-4xl text-3xl text-[#EAE4D5] col-span-2 text-center font-extrabold'>Experiencia Laboral</h2>
 
-  <div className="flex md:gap-7 gap-4 items-center md:justify-start border-color p-2 rounded bg-[#121212]/50 sm:w-[80%]">
+  <div className="flex md:gap-7 gap-2 items-center md:justify-start border-color p-2 rounded bg-[#121212]/50 sm:w-[90%] xl:w-[100%]">
     <img src={Ingmelec} alt="Ingmelec" className="md:w-30 w-25 md:h-30 h-25 rounded-full" />
-    <div >
-      <h3 className="md:text-3xl text-[20px] font-bold">Técnico electricista</h3>
+    <div className='text-[15px]'>  
+      <h3 className="md:text-3xl font-extrabold">Técnico electricista</h3>
       <p className="md:text-2xl">Técnico de electricidad media-baja tensión.</p>
     </div>
   </div>
 
-  <div className="flex md:flex-row flex-row-reverse md:gap-7 gap-4 items-center md:justify-start border-color p-2 rounded  bg-[#121212]/50 sm:w-[80%]">
+  <div className="flex md:flex-row flex-row-reverse md:gap-7 gap-2 items-center m-0 border-color p-2 rounded bg-[#121212]/50 sm:w-[90%] xl:w-[100%]">
     <img src={Voz} alt="Voz" className="md:w-30 w-25 md:h-30 h-25 rounded-full" />
-    <div>
-      <h3 className="md:text-3xl text-[20px] font-bold">Técnico en telecomunicaciones</h3>
-      <p className="md:text-2xl">Técnico reparador de servicios ADSL y Voz.</p>
+    <div className='text-[15px]'>  
+      <h3 className="md:text-3xl font-extrabold">Técnico en telecomunicaciones</h3>
+      <p className="md:text-2xl te">Técnico reparador de servicios ADSL y Voz.</p>
     </div>
   </div>
 
-  <div className="flex md:gap-7 gap-4 items-center md:justify-start border-color p-2 rounded bg-[#121212]/50 sm:w-[80%]">
+  <div className="flex md:gap-7 gap-2 items-center md:justify-start border-color p-2 rounded bg-[#121212]/50 sm:w-[90%] xl:w-[100%]">
     <img src={Nerdot} alt="Nerdot" className="md:w-30 w-25 md:h-30 h-25 rounded-full" />
-    <div>
-      <h3 className="md:text-3xl text-[20px] font-bold">Técnico en Logística Digital</h3>
+    <div className='text-[15px]'>  
+      <h3 className="md:text-3xl  font-extrabold">Técnico en Logística Digital</h3>
       <p className="md:text-2xl">Servicios técnicos de software en terminales de tarjetas bancarias.</p>
     </div>
   </div>
 
-  <div className="flex md:flex-row flex-row-reverse md:gap-7 gap-4 items-center m-0  border-color p-2 rounded bg-[#121212]/50 sm:w-[80%]">
+  <div className="flex md:flex-row flex-row-reverse md:gap-7 gap-2 items-center m-0  border-color p-2 rounded bg-[#121212]/50 sm:w-[90%] xl:w-[100%]">
     <img src={OceanWorld} alt="OceanWorld" className="md:w-30 w-25 md:h-30 h-25 rounded-full" />
-    <div>
-      <h3 className="md:text-3xl text-[20px] font-bold">Técnico electricista</h3>
+    <div className='text-[15px]'>  
+      <h3 className="md:text-3xl font-extrabold">Técnico electricista</h3>
       <p className="md:text-2xl">Mantenimiento eléctrico industrial.</p>
     </div>
   </div>
