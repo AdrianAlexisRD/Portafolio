@@ -83,7 +83,7 @@ const [desplegar , setDesplegar] = useState(false)
         {
             title: "Animemania",
             github: "https://github.com/AdrianAlexisRD/Inventario-MERN",
-            images: [AN1, AN2, AN3, AN4, AN5],
+            images: ['https://firebasestorage.googleapis.com/v0/b/fotos-portafolio-41731.firebasestorage.app/o/Animemania1.png?alt=media&token=04587b31-6230-4de2-90e0-19fcfed76f6c', AN2, AN3, AN4, AN5],
             url: ''
         },
         {
