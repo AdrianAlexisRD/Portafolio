@@ -6,10 +6,10 @@ export default function Home() {
     <article
       className={`
         flex-col  xl:flex-row
-        gap-7 md:p-10 p-4 lg:mt-20 
+        gap-7 md:p-10 p-4 lg:mt-20 xl:mt-40
         w-[99%] md:w-[90%] xl:w-[80%] 2xl:w-[80%] 2xl:max-w-380
         md:h-fit border-color  
-        rounded-2xl mt-7
+        rounded-2xl mt-7 
          bg-[#121212]/50 flex 
          opacity-0 items-center
           animate-[move-Left_0.7s_ease-in-out_forwards]
@@ -18,7 +18,7 @@ export default function Home() {
         <img
           src={FotoAnimada}
           alt=""
-          className=" filter grayscale-25 contrast-120 drop-shadow-2xl/50 2xl:w-450 xl:w-400 xl:h-60 w-50 md:h-80 h-50  shadow-[#EAE4D5] rounded-full  "
+          className=" filter grayscale-25 contrast-120 drop-shadow-2xl/50 2xl:w-200 xl:w-400 xl:h-60  w-50 h-50  shadow-[#EAE4D5] rounded-full  "
         />
       </div>
       <div className="text-white flex md:self-start  md:mb-4  relative ">
@@ -40,7 +40,7 @@ export default function Home() {
       </div>
       <div className="self-center p-4 pt-10 lg:mt-10">
         <h2 className=""></h2>
-        <h2 className="self-center md:text-3xl text-2xl font-black text-center md:text-start text-[#121212]">
+        <h2 className="self-center md:text-3xl text-2xl font-black text-center md:text-start text-[#121212] mb-10">
           <span className="animate-[espejo_5s_ease-in_0s_infinite]">Desarrollador </span>
           <span className="animate-[espejo_5s_ease-in_0.3s_infinite]">web </span>
           <span className="animate-[espejo_5s_ease-in_0.6s_infinite]">fullstack</span>

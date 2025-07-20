@@ -6,7 +6,7 @@
 .text-color{ @apply text-[#F2F2F2] }
 .border-color {@apply border-[#222831] border-4}
 .title-color{ @apply text-[#EAE4D5] }
-.img-style{@apply rounded hover:scale-150 transition-all duration-1000 ease-in-out hover:z-100 }
+.img-style{@apply rounded hover:scale-150 transition-all duration-500 ease-in-out hover:z-100  }
 .logo-skill{@apply  hover:scale-140 transition-all duration-500 ease-in } 
 
 h2 , p , h3{
@@ -84,7 +84,7 @@ h1 {
 
 @keyframes move-right {
   from{
-    transform:  translateX(-40%);
+    transform:  translateX(-30%);
 
   }
   to{
@@ -98,7 +98,7 @@ h1 {
     transform:  translateX(0);
   }
   to{
-    transform: translateX(-40%);
+    transform: translateX(-30%);
   }
 }
 
@@ -148,8 +148,10 @@ h1 {
 }
 
   body {
-    background: linear-gradient(160deg, #C0C0C0, #EAE4D5);
-   
+    background: linear-gradient(160deg, #212121, #ffffff);
+     margin: 0;
+    padding: 0;
+    
   }
 
 

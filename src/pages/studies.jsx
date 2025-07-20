@@ -44,6 +44,7 @@ export const Studies = ({scroll})=>{
         <section className={` 
         flex-col flex md:grid md:grid-cols-2 
         gap-7 md:p-10  justify-start md:items-center
+        xl:mt-20 mt-40  2xl:w-[80%] 2xl:max-w-380
         w-[99%] md:w-[90%]  md:gap-10
         h-fit border-color  p-5
         rounded-2xl border-6 
@@ -60,7 +61,7 @@ export const Studies = ({scroll})=>{
              <div className={`flex items-end bg-center bg-no-repeat h-64 w-full rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url('https://continuada.ipl.edu.do/images/cursos/infotep.jpg')` }}>
 
                 <ul className="text-color flex flex-col justify-center ">
-                    {infotep.map(curso =><li className="xl:text-3xl text-2xl font-bold p-2">{curso}</li>)}
+                    {infotep.map(curso =><li className="xl:text-3xl sm:text-[20px] text-2xl font-bold p-2">{curso}</li>)}
                 </ul>
             </div>
              <div className={`flex items-end bg-center h-64 w-full bg-cover rounded-2xl `} style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(${'https://accesolatino.org/wp-content/uploads/2022/05/aprende-con-nuestras-herramientas.png'})` }}>
