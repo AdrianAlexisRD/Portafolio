@@ -4,9 +4,9 @@
 
 
 .text-color{ @apply text-[#F2F2F2] }
-.border-color {@apply border-[#222831] border-4}
-.title-color{ @apply text-[#EAE4D5] }
-.img-style{@apply rounded hover:scale-150 transition-all duration-500 ease-in-out hover:z-100  }
+.border-color {@apply border-[#1b3351] border-4}
+.title-color{ @apply text-[#F2F2F2] }
+.img-style{@apply rounded hover:scale-110 transition-all duration-500 ease-in-out }
 .logo-skill{@apply  hover:scale-140 transition-all duration-500 ease-in } 
 
 h2 , p , h3{

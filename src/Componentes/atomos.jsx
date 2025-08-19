@@ -7,7 +7,7 @@ export const Atom = ()=>{
     const esPantallaGrande = window.innerWidth >= 768;
 
     useEffect(()=>{
-    esPantallaGrande && setAumentar(400)
+    esPantallaGrande && setAumentar(600)
     },[esPantallaGrande])
 
     return(
