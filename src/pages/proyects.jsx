@@ -103,7 +103,7 @@ const [desplegar , setDesplegar] = useState(false)
                 md:p-4 items-center gap-10 2xl:gap-20
                 place-items-center w-[99%] md:w-[95%] xl:w-[90%] 2xl:w-[80%] 2xl:max-w-380
                 md:mt-10 md:mb-20 sm:mb-10 sm:mt
-                h-350 md:h-300 sm:h-350 xl:h-300 mb-10 mt-20 border-color bg-[#121212]/50
+                h-320 md:h-300 sm:h-350 xl:h-300 mb-10 mt-20 border-color bg-[#121212]/50
                 rounded-2xl opacity-0 
                 ${desplegar ? ' animate-[move-Left_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
                 `}>

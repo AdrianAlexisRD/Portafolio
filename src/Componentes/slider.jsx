@@ -41,7 +41,7 @@ export const Slider = ({ data }) => {
         >
           <article
             key={index}
-            className=" flex flex-col items-center gap-4 2xl:w-300 xl:w-250 lg:w-200 p-5 bg-[#121212]/50 rounded-2xl border-color xl:h-110 h-180  "
+            className=" flex flex-col items-center gap-4 2xl:w-300 xl:w-250 lg:w-200 w-[95%] p-5 bg-[#121212]/50 rounded-2xl border-color xl:h-110 h-150  "
           >
             <a href={data[index].url} target="_blank">
               <div className="grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-4 
