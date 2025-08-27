@@ -5,7 +5,6 @@
 
 .text-color{ @apply text-[#F2F2F2] }
 .border-color {@apply border-[#1b3351] border-4}
-.title-color{ @apply text-[#F2F2F2] }
 .img-style{@apply rounded hover:scale-110 transition-all duration-500 ease-in-out }
 .logo-skill{@apply  hover:scale-140 transition-all duration-500 ease-in } 
 
@@ -148,8 +147,9 @@ h1 {
 }
 
   body {
-    background: linear-gradient(160deg, #212121, #ffffff);
-     margin: 0;
+    background-size: contain;
+    background: linear-gradient(180deg, #1b3351, #ffffff);
+    margin: 0;
     padding: 0;
     
   }

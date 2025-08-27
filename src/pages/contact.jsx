@@ -13,7 +13,7 @@ export const Contact = ({scroll}) =>{
                 scroll>= 3530 ? setDesplegar(true): setDesplegar(false)
             
         }else{
-                scroll>= 4000 ? setDesplegar(true): setDesplegar(false)   
+                scroll>= 5400 ? setDesplegar(true): setDesplegar(false)   
         }
 
       }, [esPantallaGrande, scroll])
@@ -21,12 +21,12 @@ export const Contact = ({scroll}) =>{
         <section className={` flex-col  
         gap-7 p-10 items-center
         w-[99%] md:w-[50%] max-w-200
-        h-fit border-color absolute bottom-0
-        rounded-2xl text-center
+        h-fit border-orange-300 border-4 absolute bottom-0
+        rounded-2xl text-center 
          bg-[#121212]/50 opacity-0
         ${desplegar ? ' animate-[move-right_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
         `}>
-            <h2 className='text-3xl md:text-4xl title-color font-extrabold mb-15'>Contacta me</h2>
+            <h2 className='text-3xl md:text-4xl text-blue-300 font-extrabold mb-15'>Contacta me</h2>
             <ul className='text-color flex flex-col items-center gap-5 md:gap-10 '>
                 <div className='flex gap-8'>
                     <li className='group  '>

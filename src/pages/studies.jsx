@@ -14,7 +14,7 @@ export const Studies = ({ scroll }) => {
     if (esPantallaGrande) {
       scroll >= 1500 ? setDesplegar(true) : setDesplegar(false);
     } else {
-      scroll >= 1800 ? setDesplegar(true) : setDesplegar(false);
+      scroll >= 2200 ? setDesplegar(true) : setDesplegar(false);
     }
   }, [esPantallaGrande, scroll]);
 
@@ -39,20 +39,19 @@ export const Studies = ({ scroll }) => {
       className={` 
         flex-col flex md:grid md:grid-cols-2 
         gap-7 md:p-10  justify-start md:items-center
-        xl:mt-20 mt-40  2xl:w-[80%] 2xl:max-w-380
+         2xl:w-[80%] 2xl:max-w-380
         w-[99%] md:w-[90%]  md:gap-10
-        h-fit border-color  p-5
-        rounded-2xl border-6 
+        h-fit p-5 rounded-2xl border-orange-300 border-4
          bg-[#121212]/50 opacity-0
-        ${
-          desplegar
-            ? " animate-[move-right_0.7s_ease-in-out_forwards]"
-            : "animate-[retroceso-Left_0.7s_ease-in-out_forwards]"
-        }
+                ${
+                  desplegar
+                    ? " animate-[move-Left_0.7s_ease-in-out_forwards]"
+                    : "animate-[retroceso-Left_0.7s_ease-in-out_forwards]"
+                }
     
         `}
     >
-      <h2 className="text-4xl font-extrabold title-color col-span-2 md:justify-start text-center  ">
+      <h2 className="text-4xl text-blue-300 font-extrabold title-color col-span-2 md:justify-start text-center  ">
         Estudios
       </h2>
       <div

@@ -3,6 +3,7 @@ import {
   IconChevronCompactLeft,
   IconChevronCompactRight,
 } from "@tabler/icons-react";
+// eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "framer-motion";
 import { IconBrandGithub } from "@tabler/icons-react";
 
@@ -81,7 +82,7 @@ export const Slider = ({ data }) => {
             <a
               href={data[index].github}
               className="flex justify-center items-center hover:text-[#1b3351] border-4 bg-[#1b3351] xl:w-150 
-              w-[100%] rounded hover:bg-white hover:border-[#1b3351] border-white text-white"
+              w-[80%] rounded hover:bg-white hover:border-[#1b3351] border-white text-white"
               target="_blank"
             >
               <IconBrandGithub stroke={2} size={50} className="p-2" />

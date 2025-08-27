@@ -8,31 +8,31 @@ export default function Home() {
         flex-col  xl:flex-row
         gap-7 md:p-10 p-4 lg:mt-20 
         w-[99%] md:w-[90%] xl:w-[80%] 2xl:w-[80%] 2xl:max-w-380
-        md:h-fit border-color  
+        md:h-fit border-orange-300 border-4
         rounded-2xl mt-7 
          bg-[#121212]/50 flex 
          opacity-0 items-center
           animate-[move-Left_0.7s_ease-in-out_forwards]
          `}>
-      <div className=" h-fit md:mb-0  md:h-fit md:w-fit w-fit flex justify-center md:items-center bg-gradient-to-tl from-[#C0C0C0] to-[#121212]  rounded-full border-color">
+      <div className=" h-fit md:mb-0  md:h-fit md:w-fit w-fit flex justify-center md:items-center  rounded-full border-blue-300 border-4">
         <img
           src={FotoAnimada}
           alt=""
           className=" filter grayscale-25 contrast-120 drop-shadow-2xl/50 2xl:w- xl:w-400 xl:h-60 2xl:h-90 w-50 h-50  shadow-[#EAE4D5] rounded-full  "
         />
       </div>
-      <div className="text-white flex md:self-start  md:mb-4  relative ">
-        <h1 className="text-color md:text-5xl text-[45px]">
+      <div className="flex md:self-start  md:mb-4  relative ">
+        <h1 className="text-orange-300 md:text-5xl text-[45px]">
           <span className=" efecto1 md:left-[43px] right-0  font-extrabold absolute  ">
             Adrian
           </span>
-          <span className=" efecto2 md:left-[200px] hidden md:flex  font-extrabold   absolute">
+          <span className=" efecto2 md:left-[200px] hidden md:flex  font-extrabold text-blue-300 absolute">
             Alexis
           </span>
           <span className=" efecto3  md:left-[350px] left-5  font-extrabold  absolute">
             Lopez
           </span>
-          <span className=" efecto4 md:left-[480px] hidden md:flex  font-extrabold   absolute">
+          <span className=" efecto4 md:left-[480px] hidden md:flex  font-extrabold text-blue-300 absolute">
             Santos
           </span>
         </h1>
