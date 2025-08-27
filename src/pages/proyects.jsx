@@ -39,7 +39,7 @@ export const Proyects = ({ scroll }) => {
 
   useEffect(() => {
     if (esPantallaGrande) {
-      scroll >= 400 ? setDesplegar(true) : setDesplegar(false);
+      scroll >= 250 ? setDesplegar(true) : setDesplegar(false);
     } else {
       scroll >= 96 ? setDesplegar(true) : setDesplegar(false);
     }

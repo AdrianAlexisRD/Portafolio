@@ -10,10 +10,10 @@ export const Contact = ({scroll}) =>{
     
       useEffect(()=>{
         if (esPantallaGrande){
-                scroll>= 3530 ? setDesplegar(true): setDesplegar(false)
+                scroll>= 5884 ? setDesplegar(true): setDesplegar(false)
             
         }else{
-                scroll>= 5400 ? setDesplegar(true): setDesplegar(false)   
+                scroll>= 5100 ? setDesplegar(true): setDesplegar(false)   
         }
 
       }, [esPantallaGrande, scroll])

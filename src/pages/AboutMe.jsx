@@ -18,7 +18,7 @@ export default function Home() {
         <img
           src={FotoAnimada}
           alt=""
-          className=" filter grayscale-25 contrast-120 drop-shadow-2xl/50 2xl:w- xl:w-400 xl:h-60 2xl:h-90 w-50 h-50  shadow-[#EAE4D5] rounded-full  "
+          className=" filter grayscale-25 contrast-120 drop-shadow-2xl/50 w-50 xl:w-400 max-2xl-90 2xl:h-60 xl:h-60 lg:h-60  h-50  shadow-[#EAE4D5] rounded-full  "
         />
       </div>
       <div className="flex md:self-start  md:mb-4  relative ">

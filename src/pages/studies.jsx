@@ -12,7 +12,7 @@ export const Studies = ({ scroll }) => {
 
   useEffect(() => {
     if (esPantallaGrande) {
-      scroll >= 1500 ? setDesplegar(true) : setDesplegar(false);
+      scroll >= 3900 ? setDesplegar(true) : setDesplegar(false);
     } else {
       scroll >= 2200 ? setDesplegar(true) : setDesplegar(false);
     }
