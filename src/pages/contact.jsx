@@ -29,16 +29,16 @@ export const Contact = ({scroll}) =>{
             <h2 className='text-3xl md:text-4xl text-blue-300 font-extrabold mb-15'>Contacta me</h2>
             <ul className='text-color flex flex-col items-center gap-5 md:gap-10 '>
                 <div className='flex gap-8'>
-                    <li className='group  '>
+                    <li className='group '>
                         <a className={desplegar && `flex items-center  ease-in-out active:scale-90 drop-shadow-2xl group-hover:drop-shadow-[#162556] text-[#162556] sm:text-white efecto1`} href='https://www.linkedin.com/in/adri%C3%A1n-a-lopez-santos-669ba4333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank">
                             <IconBrandLinkedin stroke={2} size={60} className='group-hover:text-[#162556] transition-all duration-300 ease-in-out' />
-                            <h2 className='sm:text-2xl group-hover:text-[#162556] font-extrabold transition-all duration-300 ease-in-out'>Linkedin</h2>
+                            <h2 className=' group-hover:text-[#162556] font-extrabold text-2xl transition-all duration-300 ease-in-out'>Linkedin</h2>
                         </a>
                     </li>
                     <li className='group'>
                     <a className={ desplegar && `flex items-center  active:scale-90 drop-shadow-2xl group-hover:drop-shadow-[#000000] text-[#000000] sm:text-white efecto2`}  href="https://github.com/AdrianAlexisRD" target="_blank">
                             <IconBrandGithub stroke={2} size={60} className='group-hover:text-[#000000] transition-all duration-300 ease-in-out'  /> 
-                            <h2 className='sm:text-2xl group-hover:text-[#000000] font-extrabold transition-all duration-300 ease-in-out'>Github</h2>
+                            <h2 className=' group-hover:text-[#000000] font-extrabold text-2xl transition-all duration-300 ease-in-out'>Github</h2>
                         </a>
                     </li>
                 </div>
@@ -46,13 +46,13 @@ export const Contact = ({scroll}) =>{
                     <li className='group'>
                         <a className={desplegar&&`flex items-center text-[#08aa5e] drop-shadow-2xl group-hover:drop-shadow-[#08aa5e] sm:text-white efecto4`} href='https://wa.me/18092322812' target="_blank">
                             <IconBrandWhatsapp stroke={2} size={60} className='group-hover:text-[#08aa5e] transition-all duration-300 ease-in-out'  />
-                            <h2 className='sm:text-2xl group-hover:text-[#08aa5e] font-extrabold transition-all duration-300 ease-in-out'> Whatsapp</h2>
+                            <h2 className='text-2xl group-hover:text-[#08aa5e] font-extrabold transition-all duration-300 ease-in-out'> Whatsapp</h2>
                         </a>
                     </li>
                     <li className='group transition-all duration-500 ease-in-out'> 
                         <a className={`flex items-center active:scale-90 text-[#f5493b] drop-shadow-2xl group-hover:drop-shadow-[#f5493b] sm:text-white efecto3 `} href="mailto:Alexaghm411@gmail.com?subject=Hola&body=Quiero contactarte" target="_blank">
                             <IconMail stroke={2} size={60} className='group-hover:text-[#f5493b] transition-all duration-300 ease-in-out' />
-                            <h2 className='sm:text-2xl group-hover:text-[#f5493b] font-extrabold transition-all duration-300 ease-in-out'>Gmail</h2>
+                            <h2 className='text-2xl group-hover:text-[#f5493b] font-extrabold transition-all duration-300 ease-in-out'>Gmail</h2>
                         </a>
                     </li>
                 </div>

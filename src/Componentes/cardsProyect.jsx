@@ -73,7 +73,7 @@ function ImageSlider({ images }) {
       <img
         src={images[current]}
         alt={`slide-${current}`}
-        className="w-full h-full object-cover transition-all duration-500 ease-in-out"
+        className="w-full xl:max-h-100 h-full object-cover transition-all duration-500 ease-in-out"
       />
       < IconChevronCompactLeft
         size={80}
