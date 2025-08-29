@@ -12,9 +12,9 @@ export const Studies = ({ scroll }) => {
 
   useEffect(() => {
     if (esPantallaGrande) {
-      scroll >= 3900 ? setDesplegar(true) : setDesplegar(false);
+      scroll >= 4600 ? setDesplegar(true) : setDesplegar(false);
     } else {
-      scroll >= 2200 ? setDesplegar(true) : setDesplegar(false);
+      scroll >= 2900 ? setDesplegar(true) : setDesplegar(false);
     }
   }, [esPantallaGrande, scroll]);
 
@@ -55,7 +55,7 @@ export const Studies = ({ scroll }) => {
         Estudios
       </h2>
       <div
-        className={`flex items-end  bg-center h-64 w-full bg-cover rounded-2xl `}
+        className={`flex items-end  bg-center h-64 w-full bg-cover rounded-2xl hover:scale-110 transition-all duration-300`}
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(${
             esPantallaGrande
@@ -75,7 +75,7 @@ export const Studies = ({ scroll }) => {
         </ul>
       </div>
       <div
-        className={`flex items-end bg-center bg-no-repeat h-64 w-full rounded-2xl `}
+        className={`flex items-end bg-center bg-no-repeat h-64 w-full rounded-2xl hover:scale-110 transition-all duration-300 `}
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url('https://continuada.ipl.edu.do/images/cursos/infotep.jpg')`,
           backgroundSize: "cover",
@@ -90,7 +90,7 @@ export const Studies = ({ scroll }) => {
         </ul>
       </div>
       <div
-        className={`flex items-end bg-center h-64 w-full bg-cover rounded-2xl `}
+        className={`flex items-end bg-center h-64 w-full bg-cover rounded-2xl hover:scale-110 transition-all duration-300`}
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(${"https://accesolatino.org/wp-content/uploads/2022/05/aprende-con-nuestras-herramientas.png"})`,
           backgroundSize: "cover",
@@ -105,7 +105,7 @@ export const Studies = ({ scroll }) => {
         </ul>
       </div>
       <div
-        className={`flex items-end bg-center h-64 w-ful bg-no-repeat sm:bg-cover rounded-2xl `}
+        className={`flex items-end bg-center h-64 w-ful bg-no-repeat sm:bg-cover rounded-2xl hover:scale-110 transition-all duration-300`}
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(${
             esPantallaGrande
@@ -123,7 +123,7 @@ export const Studies = ({ scroll }) => {
       </div>
 
       <div
-        className={`flex items-end bg-center h-64 w-full  bg-no-repeat rounded-2xl `}
+        className={`flex items-end bg-center h-64 w-full  bg-no-repeat rounded-2xl hover:scale-110 transition-all duration-300`}
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(${Mescyt})`,
           backgroundSize: "cover",

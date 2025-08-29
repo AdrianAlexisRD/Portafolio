@@ -148,7 +148,7 @@ h1 {
 
   body {
     background-size: contain;
-    background: linear-gradient(180deg, #1b3351, #ffffff);
+    background: linear-gradient(180deg, #1b3351, #000000, #1b3351);
     margin: 0;
     padding: 0;
     

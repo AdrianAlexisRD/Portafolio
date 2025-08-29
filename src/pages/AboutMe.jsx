@@ -8,7 +8,7 @@ export default function Home() {
         flex-col  xl:flex-row
         gap-7 md:p-10 p-4 lg:mt-20 
         w-[99%] md:w-[90%] xl:w-[80%] 2xl:w-[80%] 2xl:max-w-380
-        md:h-fit border-orange-300 border-4
+        md:h-fit  border-orange-300 border-4
         rounded-2xl mt-7 
          bg-[#121212]/50 flex 
          opacity-0 items-center
@@ -18,7 +18,7 @@ export default function Home() {
         <img
           src={FotoAnimada}
           alt=""
-          className=" filter grayscale-25 contrast-120 drop-shadow-2xl/50 w-50 xl:w-400 max-2xl-90 2xl:h-60 xl:h-60 lg:h-60  h-50  shadow-[#EAE4D5] rounded-full  "
+          className=" filter grayscale-25 contrast-120 drop-shadow-2xl/50 2xl:w-200 w-50 xl:w-400 2xl:h-60 xl:h-60 lg:h-60  h-50  shadow-[#EAE4D5] rounded-full  "
         />
       </div>
       <div className="flex md:self-start  md:mb-4  relative ">

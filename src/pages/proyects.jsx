@@ -41,7 +41,7 @@ export const Proyects = ({ scroll }) => {
     if (esPantallaGrande) {
       scroll >= 250 ? setDesplegar(true) : setDesplegar(false);
     } else {
-      scroll >= 96 ? setDesplegar(true) : setDesplegar(false);
+      scroll >= 500 ? setDesplegar(true) : setDesplegar(false);
     }
   }, [esPantallaGrande, scroll]);
 
@@ -211,7 +211,67 @@ export const Proyects = ({ scroll }) => {
         </div>
       ),
     },
-
+    {
+      title: "Aqui Restaurante",
+      github: "https://github.com/AdrianAlexisRD/Proyecto-aqui-restaurante",
+      images: [
+      'https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran1.png?alt=media&token=ae55477b-ba7b-4509-9713-be80c1203f0a',
+       'https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran2.png?alt=media&token=0427ca1e-0427-4978-9cae-777a850e83fc',
+        'https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran3.png?alt=media&token=05734b46-38e2-4652-897a-a67a79d1a063',
+        'https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran4.png?alt=media&token=6850e8b0-ce8d-4952-92fc-b8fe130f2ac1',
+        'https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran5.png?alt=media&token=dc5e1c93-7cd4-4cba-a1da-5889432b5f2b',
+      ],
+      url: "",
+      descripcion: (
+        <div className="bg-[#121212]/60 rounded p-3 text-[14px] animate-[aparecer_1s_ease-in-out]">
+          <p>
+            <span className="font-extrabold text-[18px] text-blue-300">
+              Aquí Restaurante
+            </span>{" "}
+            es una aplicación web diseñada para facilitar la interacción entre
+            clientes y restaurantes, permitiendo a los usuarios consultar menús,
+            realizar pedidos en línea y contactar directamente al negocio a través de
+            WhatsApp.
+            <br />
+            <br />
+            <span className="text-[16px] font-bold text-blue-300">
+              Tecnologías utilizadas:
+            </span>
+            <br />
+            <span className="text-[#f7e025] font-bold">JavaScript</span>{" "}
+            + <span className="text-[#b14dfe] font-bold">React</span> y{" "}
+            <span className="text-[#ef6b33] font-bold">Tailwind CSS</span>{" "}
+            para el diseño y la interactividad.{" "}
+            <span className="text-green-400 font-bold">Firebase</span> para el manejo
+            de datos e imágenes, y{" "}
+            <span className="text-[#25D366] font-bold">WhatsApp API</span> para la
+            integración de pedidos.
+            <br />
+            <br />
+            <span className="text-[16px] font-bold text-blue-300">
+              Logros del proyecto:{" "}
+            </span>
+            <ul className="flex flex-col gap-4">
+              <li>Formulario de pedidos conectado directamente con WhatsApp</li>
+              <li>Generación automática de fecha y hora de entrega</li>
+              <li>Menú interactivo con imágenes y descripciones de los productos</li>
+              <li>Mapa integrado para mostrar la ubicación del restaurante</li>
+              <li>
+                Sistema adaptable a cualquier tipo de negocio gastronómico con mínimos
+                cambios
+              </li>
+              <li>
+                Interfaz moderna, responsiva y optimizada para móviles y escritorio
+              </li>
+              <li>
+                Posibilidad de expansión hacia un sistema completo de inventario y
+                gestión de pedidos
+              </li>
+            </ul>
+          </p>
+      </div>
+)
+    },
     {
       title: "Animemania",
       github: "https://github.com/AdrianAlexisRD/Inventario-MERN",
@@ -223,6 +283,7 @@ export const Proyects = ({ scroll }) => {
         AN5,
       ],
       url: "",
+
     },
     {
       title: "To do list",
