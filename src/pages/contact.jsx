@@ -9,6 +9,7 @@ export const Contact = ({scroll}) =>{
     const esPantallaGrande = window.innerWidth >= 768;
     
       useEffect(()=>{
+
         if (esPantallaGrande){
                 scroll>= 6600 ? setDesplegar(true): setDesplegar(false)
             

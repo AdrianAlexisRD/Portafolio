@@ -24,7 +24,7 @@ export const Atom = () => {
     <>
       {esPantallaGrande && 
         <>
-                  <IconCode
+        <IconCode
         stroke={1.5}
         size={size}
         className="absolute top-10 right-10 opacity-25 blur-sm text-blue-400"
@@ -72,7 +72,7 @@ export const Atom = () => {
       <IconCloud
         stroke={1.5}
         size={size}
-        className="absolute top-[60%] right-[40%] opacity-25 blur-sm text-indigo-400"
+        className="absolute top-[60%] left-[0%] opacity-25 blur-sm text-indigo-400"
       />
         </>
 

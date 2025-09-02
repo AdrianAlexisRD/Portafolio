@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 @import "tailwindcss";
 
 
@@ -8,7 +8,7 @@
 .img-style{@apply rounded hover:scale-110 transition-all duration-500 ease-in-out }
 .logo-skill{@apply  hover:scale-140 transition-all duration-500 ease-in } 
 
-h2 , p , h3{
+p , h3{
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -16,11 +16,11 @@ h2 , p , h3{
 }
 
 
-h1 {
-  font-family: "Winky Rough", sans-serif;
+h1 , h2 {
+  font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
+  font-weight: weight;
   font-style: normal;
-  font-weight: 500; 
 }
 
 .efecto1{
@@ -50,7 +50,11 @@ h1 {
 
 }
 
-
+@keyframes rotacion {
+  0%{transform: rotatez(0deg); }
+  30%{transform: rotatez(-80deg);}
+  100%{transform: rotatez(720deg);}
+}
 
 @keyframes espejo {
   0%{color: #121212 ; }
@@ -146,13 +150,18 @@ h1 {
   to { opacity: 1; transform: scale(1); }
 }
 
-  body {
+body {
     background-size: contain;
     background: linear-gradient(180deg, #1b3351, #000000, #1b3351);
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
   }
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(180deg, #6991c2, #000000, #6991c2);
+  }
+}
+
 
 
 @keyframes emailColor { 0%{color:#EAE4D5; } 50%{color: #f5493b; transform: scale(1.1);} 100%{color:#EAE4D5; }}

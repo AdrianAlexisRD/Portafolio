@@ -30,7 +30,6 @@ import TD2 from "../assets/Todoapp2.png";
 import TD3 from "../assets/Todoapp3.png";
 import TD4 from "../assets/Todoapp4.png";
 import TD5 from "../assets/Todoapp5.png";
-import { Slider } from "../Componentes/slider";
 import ImageSlider from "../Componentes/cardsProyect";
 
 export const Proyects = ({ scroll }) => {
@@ -115,7 +114,8 @@ export const Proyects = ({ scroll }) => {
       descripcion: (
         <div className="bg-[#121212]/60 rounded p-3 text-[14px] animate-[aparecer_1s_ease-in-out]">
           <p>
-            Desarrollé una aplicación para la gestión de inventario que permite
+            <span className="text-blue-500 font-bold">Stock Master </span> es aplicación 
+            fullstack para la gestión de inventario que permite
             registrar, consultar, actualizar y eliminar productos de manera
             sencilla y eficiente.
             <br />
@@ -124,31 +124,130 @@ export const Proyects = ({ scroll }) => {
               Tecnologías utilizadas:{" "}
             </span>{" "}
             <br />
-            <span className="font-bold text-blue-300">Backend</span> con Node.js
-            + Express, base de datos MongoDB, API REST con CRUD completo{" "}
-            <span className="font-extrabold text-red-400">(</span>GET, POST,
+            <span className="font-bold text-blue-300 font">Backend</span> conocer
+            <span className="text-green-400 font-bold"> Node.js </span> +
+            <span className="text-red-300 font-bold"> Express</span>
+             , base de datos MongoDB, API REST con CRUD completo{" "}
+            <span className="font-extrabold text-red-400 font">(</span>GET, POST,
             PUT, DELETE <span className="font-extrabold text-red-400">)</span> y
             lenguaje JavaScript . <br /> <br />
-            <span className="font-bold text-blue-300">Backend</span> con React +
-            Vite y Tailwind para los estilo, librerias como axios para realizar
+            <span className="font-bold text-blue-300">Frontend</span> con 
+            <span className="text-blue-400 font-bold"> React</span> +
+            <span className="text-purple-500 font-bold"> Vite </span> y
+            <span className="text-blue-400 font-bold"> Tailwind </span> 
+            para los estilo, librerias como axios para realizar
             peticiones y React dom para para tener una pagina estruturada en
             rutas <br /> <br />
             <span className="text-[16px] font-bold text-orange-300">
               Logros del proyecto:{" "}
             </span>
-            <ul className="flex flex-col gap-4">
+            <ul className="flex flex-col gap-2 mt-2">
               <li>
-                Implementación de una API escalable para manejar productos
+               <span className="text-black font-extrabold text-2xl">- </span> 
+               Implementación de una API escalable para manejar productos
               </li>
-              <li>base de datos inicial con más de 50 productos registrados</li>
               <li>
-                {" "}
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                base de datos inicial con más de 50 productos registrados</li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
                 estructura clara para expandir funciones como búsqueda, filtros
                 o reportes
               </li>
-              <li> Dashboard en React con autenticación de usuarios</li>
-              <li>control de entradas y salidas de productos con historial</li>
-              <li>exportación de inventario en Excel/PDF</li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                 Dashboard en React con autenticación de usuarios
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                control de entradas y salidas de productos con historial
+                </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                exportación de inventario en Excel/PDF
+              </li>
+            </ul>
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Aqui Restaurante",
+      github: "https://github.com/AdrianAlexisRD/Proyecto-aqui-restaurante",
+      images: [
+        "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran1.png?alt=media&token=ae55477b-ba7b-4509-9713-be80c1203f0a",
+        "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran2.png?alt=media&token=0427ca1e-0427-4978-9cae-777a850e83fc",
+        "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran3.png?alt=media&token=05734b46-38e2-4652-897a-a67a79d1a063",
+        "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran4.png?alt=media&token=6850e8b0-ce8d-4952-92fc-b8fe130f2ac1",
+        "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran5.png?alt=media&token=dc5e1c93-7cd4-4cba-a1da-5889432b5f2b",
+      ],
+      url: "",
+      descripcion: (
+        <div className="bg-[#121212]/60 rounded p-3 text-[14px] animate-[aparecer_1s_ease-in-out]">
+          <p>
+            <span className="font-extrabold text-[18px] text-blue-300">
+              Aquí Restaurante
+            </span>{" "}
+            Es una aplicación web fullstack diseñada para optimizar la
+            interacción entre clientes y restaurantes. Permite a los usuarios
+            consultar información detallada de los negocios y contactarlos
+            directamente a través de WhatsApp, teléfono, dirección o correo
+            electrónico. Además, ofrece la posibilidad de valorar cada
+            restaurante mediante puntuaciones y dar “like” como muestra de
+            preferencia.
+            <br />
+            <br />
+            <span className="text-[16px] font-bold text-blue-300">
+              Tecnologías utilizadas:
+            </span>
+            <br />
+            <span className="text-blue-500 font-bold">TypeScript</span> +{" "}
+            <span className="text-blue-400 font-bold"> React</span> ,
+            <span className="text-[#ef6b33] font-bold"> Tailwind</span> y
+            <span className="text-[#b14dfe] font-bold"> CSS</span> para el
+            diseño y la interactividad,{" "}
+            <span className="text-[#85c008] font-bold">Nodejs</span> para el
+            backend
+            <span className="text-red-400 font-bold"> Firebase</span> y
+            <span className="text-[#4b9d4d] font-bold"> MongoDB Atlas </span>{" "}
+            para almacenamiento de datos, authetificacion .
+            <br />
+            <br />
+            <span className="text-[16px] font-bold text-blue-300">
+              Logros del proyecto:{" "}
+            </span>
+            <ul className="flex flex-col gap-1 mt-3">
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Formulario para que los propietarios puedan publicar
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Una presentacion estetica de cada restaurante
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Menú interactivo con imágenes y descripciones de los productos
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Mapa integrado para mostrar la ubicación del restaurante
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Sistema adaptable a cualquier tipo de negocio gastronómico con
+                mínimos cambios
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Interfaz moderna, responsiva y optimizada para móviles y
+                escritorio
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Posibilidad de expansión hacia un sistema completo de inventario
+                y gestión de pedidos
+              </li>
             </ul>
           </p>
         </div>
@@ -165,7 +264,7 @@ export const Proyects = ({ scroll }) => {
           <p>
             <span className="font-extrabold text-[18px] text-blue-300">
               App weather
-            </span>{" "}
+            </span>{' '}
             permite consultar el clima de cualquier ciudad en tiempo real,
             mostrando información como temperatura, humedad, estado del cielo y
             predicciones diarias.
@@ -186,91 +285,45 @@ export const Proyects = ({ scroll }) => {
             <span className="text-[16px] font-bold text-blue-300">
               Logros del proyecto:{" "}
             </span>
-            <ul className="flex flex-col gap-4">
-              <li>Implementación de búsqueda en tiempo real por ciudad</li>
+            <ul className="flex flex-col gap-2">
               <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Implementación de búsqueda en tiempo real por ciudad
+                </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
                 Visualización clara y estilizada de los datos meteorológicos
               </li>
               <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
                 Manejo de errores al ingresar ciudades inexistentes o mal
                 escritas
               </li>
               <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
                 Interfaz responsiva y amigable para distintos dispositivos
               </li>
               <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
                 Estructura preparada para futuras mejoras como pronósticos
                 extendidos o integración de mapas
               </li>
-              <li>Guardar ciudades con localStorage favoritas</li>
-              <li>geolocalización automática para mostrar el clima local</li>
-              <li>Historial de busqueda</li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Guardar ciudades con localStorage favoritas
+                </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                geolocalización automática para mostrar el clima local
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Historial de busqueda
+              </li>
             </ul>
-
           </p>
         </div>
       ),
-    },
-    {
-      title: "Aqui Restaurante",
-      github: "https://github.com/AdrianAlexisRD/Proyecto-aqui-restaurante",
-      images: [
-      'https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran1.png?alt=media&token=ae55477b-ba7b-4509-9713-be80c1203f0a',
-       'https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran2.png?alt=media&token=0427ca1e-0427-4978-9cae-777a850e83fc',
-        'https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran3.png?alt=media&token=05734b46-38e2-4652-897a-a67a79d1a063',
-        'https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran4.png?alt=media&token=6850e8b0-ce8d-4952-92fc-b8fe130f2ac1',
-        'https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran5.png?alt=media&token=dc5e1c93-7cd4-4cba-a1da-5889432b5f2b',
-      ],
-      url: "",
-      descripcion: (
-        <div className="bg-[#121212]/60 rounded p-3 text-[14px] animate-[aparecer_1s_ease-in-out]">
-          <p>
-            <span className="font-extrabold text-[18px] text-blue-300">
-              Aquí Restaurante
-            </span>{" "}
-            es una aplicación web diseñada para facilitar la interacción entre
-            clientes y restaurantes, permitiendo a los usuarios consultar menús,
-            realizar pedidos en línea y contactar directamente al negocio a través de
-            WhatsApp.
-            <br />
-            <br />
-            <span className="text-[16px] font-bold text-blue-300">
-              Tecnologías utilizadas:
-            </span>
-            <br />
-            <span className="text-[#f7e025] font-bold">JavaScript</span>{" "}
-            + <span className="text-[#b14dfe] font-bold">React</span> y{" "}
-            <span className="text-[#ef6b33] font-bold">Tailwind CSS</span>{" "}
-            para el diseño y la interactividad.{" "}
-            <span className="text-green-400 font-bold">Firebase</span> para el manejo
-            de datos e imágenes, y{" "}
-            <span className="text-[#25D366] font-bold">WhatsApp API</span> para la
-            integración de pedidos.
-            <br />
-            <br />
-            <span className="text-[16px] font-bold text-blue-300">
-              Logros del proyecto:{" "}
-            </span>
-            <ul className="flex flex-col gap-4">
-              <li>Formulario de pedidos conectado directamente con WhatsApp</li>
-              <li>Generación automática de fecha y hora de entrega</li>
-              <li>Menú interactivo con imágenes y descripciones de los productos</li>
-              <li>Mapa integrado para mostrar la ubicación del restaurante</li>
-              <li>
-                Sistema adaptable a cualquier tipo de negocio gastronómico con mínimos
-                cambios
-              </li>
-              <li>
-                Interfaz moderna, responsiva y optimizada para móviles y escritorio
-              </li>
-              <li>
-                Posibilidad de expansión hacia un sistema completo de inventario y
-                gestión de pedidos
-              </li>
-            </ul>
-          </p>
-      </div>
-)
     },
     {
       title: "Animemania",
@@ -283,7 +336,66 @@ export const Proyects = ({ scroll }) => {
         AN5,
       ],
       url: "",
-
+      descripcion: (
+        <div className="bg-[#121212]/60 rounded p-3 text-[14px] animate-[aparecer_1s_ease-in-out]">
+          <p>
+            <span className="font-extrabold text-[18px] text-blue-300">
+              Animemania
+            </span>{" "}
+            es una plataforma web dedicada a reseñar animes, donde los usuarios
+            pueden buscar su anime preferido, conocer en qué top se encuentra,
+            su puntuación, reseñas y más. Todo esto gracias a la integración con
+            una API de RapidAPI.
+            <br />
+            <br />
+            <span className="text-[16px] font-bold text-blue-300">
+              Tecnologías utilizadas:
+            </span>
+            <br />
+            <span className="text-[#ef6b33] font-bold">HTML</span>,{" "}
+            <span className="text-[#b14dfe] font-bold">CSS</span> y{" "}
+            <span className="text-[#f7e025] font-bold">JavaScript</span> junto
+            con <span className="text-green-400 font-bold">Axios</span> para
+            realizar las peticiones al endpoint de la API.
+            <br />
+            <br />
+            <span className="text-[16px] font-bold text-blue-300">
+              Logros del proyecto:{" "}
+            </span>
+            <ul className="flex flex-col gap-2 mt-3">
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Implementación de buscador de animes por nombre
+                </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Visualización de puntuaciones y rankings de cada anime
+                </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Sección de reseñas y detalles de cada título
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Interfaz intuitiva y amigable para fans del anime
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Consumo de API externa de manera eficiente con Axios
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Diseño responsivo que se adapta a distintos dispositivos
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Preparado para futuras mejoras como favoritos, historial de
+                búsqueda o recomendaciones personalizadas
+              </li>
+            </ul>
+          </p>
+        </div>
+      ),
     },
     {
       title: "To do list",
@@ -291,9 +403,64 @@ export const Proyects = ({ scroll }) => {
         "https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/To-do-app",
       images: [TD1, TD2, TD3, TD4, TD5],
       url: "https://golden-bubblegum-db0a73.netlify.app/",
+      descripcion: (
+        <div className="bg-[#121212]/60 rounded p-3 text-[14px] animate-[aparecer_1s_ease-in-out]">
+          <p>
+            <span className="font-extrabold text-[18px] text-blue-300">
+              To Do List
+            </span>{" "}
+            es una aplicación web diseñada para gestionar tus tareas diarias,
+            permitiendo guardarlas, marcarlas como realizadas o pendientes,
+            borrarlas y actualizarlas en cualquier momento. Funciona como un
+            CRUD completo, asegurando control total sobre tus actividades.
+            <br />
+            <br />
+            <span className="text-[16px] font-bold text-blue-300">
+              Tecnologías utilizadas:
+            </span>
+            <br />
+            <span className="text-[#ef6b33] font-bold">HTML</span>,{" "}
+            <span className="text-[#b14dfe] font-bold">CSS</span> y{" "}
+            <span className="text-[#f7e025] font-bold">JavaScript</span>, con{" "}
+            <span className="text-green-400 font-bold">localStorage</span> para
+            almacenar los datos de manera persistente en el navegador.
+            <br />
+            <br />
+            <span className="text-[16px] font-bold text-blue-300">
+              Logros del proyecto:{" "}
+            </span>
+            <ul className="flex flex-col gap-2 mt-3">
+              <li>
+                Creación, edición y eliminación de tareas
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Marcado de tareas como realizadas o pendientes
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Persistencia de los datos gracias al uso de localStorage
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Interfaz sencilla y práctica para el usuario
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Diseño responsivo adaptable a distintos dispositivos
+              </li>
+              <li>
+               <span className="text-black font-extrabold text-2xl">- </span> 
+                Base sólida para agregar futuras funciones como categorías o
+                filtros
+              </li>
+            </ul>
+          </p>
+        </div>
+      ),
     },
   ];
-  // h-320 md:h-300 sm:h-350 xl:h-300
+
   return (
     <section
       className={` 

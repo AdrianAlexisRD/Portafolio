@@ -1,7 +1,4 @@
-import Aprende from "../assets/Aprende.png";
-import Itla from "../assets/ITLA.png";
-import Infotep from "../assets/logo.infotep.webp";
-import Talendig from "../assets/Talendig.png";
+
 import Mescyt from "../assets/mescyt.jpeg";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -14,7 +11,7 @@ export const Studies = ({ scroll }) => {
     if (esPantallaGrande) {
       scroll >= 4600 ? setDesplegar(true) : setDesplegar(false);
     } else {
-      scroll >= 2900 ? setDesplegar(true) : setDesplegar(false);
+      scroll >= 3400 ? setDesplegar(true) : setDesplegar(false);
     }
   }, [esPantallaGrande, scroll]);
 
@@ -39,7 +36,7 @@ export const Studies = ({ scroll }) => {
       className={` 
         flex-col flex md:grid md:grid-cols-2 
         gap-7 md:p-10  justify-start md:items-center
-         2xl:w-[80%] 2xl:max-w-380
+        2xl:w-[80%] 2xl:max-w-380
         w-[99%] md:w-[90%]  md:gap-10
         h-fit p-5 rounded-2xl border-orange-300 border-4
          bg-[#121212]/50 opacity-0

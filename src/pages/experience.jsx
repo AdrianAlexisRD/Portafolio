@@ -10,9 +10,9 @@ export const Experience = ({ scroll }) => {
 
   useEffect(() => {
     if (esPantallaGrande) {
-      scroll >= 5800 ? setDesplegar(true) : setDesplegar(false);
+      scroll >= 5810 ? setDesplegar(true) : setDesplegar(false);
     } else {
-      scroll >= 4300 ? setDesplegar(true) : setDesplegar(false);
+      scroll >= 5050 ? setDesplegar(true) : setDesplegar(false);
     }
   }, [esPantallaGrande, scroll]);
 
