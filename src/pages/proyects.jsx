@@ -8,6 +8,7 @@ import {
   IconBrandGithub,
   IconBrandReact,
   IconBrandVite,
+  IconStar
 } from "@tabler/icons-react";
 import { useState, useEffect } from "react";
 import SM1 from "../assets/StockMaster1.png";
@@ -112,7 +113,7 @@ export const Proyects = ({ scroll }) => {
       images: [SM1, SM2, SM3, SM4, SM5],
       url: "",
       descripcion: (
-        <div className="bg-[#121212]/60 rounded p-3 text-[14px] animate-[aparecer_1s_ease-in-out]">
+        <div className="bg-[#121212]/60 rounded p-3 xl:p-5 text-[14px] xl:text-[18px] animate-[aparecer_1s_ease-in-out]">
           <p>
             <span className="text-blue-500 font-bold">Stock Master </span> es aplicación 
             fullstack para la gestión de inventario que permite
@@ -120,7 +121,7 @@ export const Proyects = ({ scroll }) => {
             sencilla y eficiente.
             <br />
             <br />
-            <span className="text-[16px] font-bold text-orange-300">
+            <span className="text-[16px] xl:text-[18px] font-bold text-orange-300">
               Tecnologías utilizadas:{" "}
             </span>{" "}
             <br />
@@ -138,32 +139,32 @@ export const Proyects = ({ scroll }) => {
             para los estilo, librerias como axios para realizar
             peticiones y React dom para para tener una pagina estruturada en
             rutas <br /> <br />
-            <span className="text-[16px] font-bold text-orange-300">
+            <span className="text-[16px] xl:text-[18px] font-bold text-orange-300">
               Logros del proyecto:{" "}
             </span>
-            <ul className="flex flex-col gap-2 mt-2">
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+            <ul className="flex flex-col gap-2 mt-2 pl-3">
+              <li className="flex gap-2">
+                <IconStar className="text-amber-300" stroke={4} size={25}/>
                Implementación de una API escalable para manejar productos
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 base de datos inicial con más de 50 productos registrados</li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 estructura clara para expandir funciones como búsqueda, filtros
                 o reportes
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                  Dashboard en React con autenticación de usuarios
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 control de entradas y salidas de productos con historial
                 </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 exportación de inventario en Excel/PDF
               </li>
             </ul>
@@ -183,7 +184,7 @@ export const Proyects = ({ scroll }) => {
       ],
       url: "",
       descripcion: (
-        <div className="bg-[#121212]/60 rounded p-3 text-[14px] animate-[aparecer_1s_ease-in-out]">
+        <div className="bg-[#121212]/60 rounded p-3 text-[14px] xl:text-[18px] xl:p-5 animate-[aparecer_1s_ease-in-out]">
           <p>
             <span className="font-extrabold text-[18px] text-blue-300">
               Aquí Restaurante
@@ -197,7 +198,7 @@ export const Proyects = ({ scroll }) => {
             preferencia.
             <br />
             <br />
-            <span className="text-[16px] font-bold text-blue-300">
+            <span className="text-[16px] xl:text-[18px] font-bold text-blue-300">
               Tecnologías utilizadas:
             </span>
             <br />
@@ -213,38 +214,38 @@ export const Proyects = ({ scroll }) => {
             para almacenamiento de datos, authetificacion .
             <br />
             <br />
-            <span className="text-[16px] font-bold text-blue-300">
+            <span className="text-[16px] xl:text-[18px] font-bold text-blue-300">
               Logros del proyecto:{" "}
             </span>
-            <ul className="flex flex-col gap-1 mt-3">
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+            <ul className="flex flex-col gap-1 mt-3 pl-3">
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/>
                 Formulario para que los propietarios puedan publicar
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Una presentacion estetica de cada restaurante
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Menú interactivo con imágenes y descripciones de los productos
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Mapa integrado para mostrar la ubicación del restaurante
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Sistema adaptable a cualquier tipo de negocio gastronómico con
                 mínimos cambios
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Interfaz moderna, responsiva y optimizada para móviles y
                 escritorio
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Posibilidad de expansión hacia un sistema completo de inventario
                 y gestión de pedidos
               </li>
@@ -260,7 +261,7 @@ export const Proyects = ({ scroll }) => {
       images: [WT1, WT2, WT3, WT4, WT5],
       url: "https://jolly-peony-a4c08a.netlify.app/",
       descripcion: (
-        <div className="bg-[#121212]/60 rounded p-3 text-[14px] animate-[aparecer_1s_ease-in-out]">
+        <div className="bg-[#121212]/60 rounded p-3 text-[14px] xl:text-[18px] xl:p-5 animate-[aparecer_1s_ease-in-out]">
           <p>
             <span className="font-extrabold text-[18px] text-blue-300">
               App weather
@@ -270,7 +271,7 @@ export const Proyects = ({ scroll }) => {
             predicciones diarias.
             <br />
             <br />
-            <span className="text-[16px] font-bold text-blue-300">
+            <span className="text-[16px] xl:text-[18px] font-bold text-blue-300">
               Tecnologías utilizadas:
             </span>
             <br />
@@ -282,42 +283,42 @@ export const Proyects = ({ scroll }) => {
             para los estilos, se realizo Fetch para consumir la API de clima .
             <br />
             <br />
-            <span className="text-[16px] font-bold text-blue-300">
+            <span className="text-[16px] xl:text-[18px]  font-bold text-blue-300">
               Logros del proyecto:{" "}
             </span>
-            <ul className="flex flex-col gap-2">
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+            <ul className="flex flex-col gap-2 mt-3 pl-3">
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Implementación de búsqueda en tiempo real por ciudad
                 </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Visualización clara y estilizada de los datos meteorológicos
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Manejo de errores al ingresar ciudades inexistentes o mal
                 escritas
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Interfaz responsiva y amigable para distintos dispositivos
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Estructura preparada para futuras mejoras como pronósticos
                 extendidos o integración de mapas
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Guardar ciudades con localStorage favoritas
                 </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 geolocalización automática para mostrar el clima local
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/>
                 Historial de busqueda
               </li>
             </ul>
@@ -337,7 +338,7 @@ export const Proyects = ({ scroll }) => {
       ],
       url: "",
       descripcion: (
-        <div className="bg-[#121212]/60 rounded p-3 text-[14px] animate-[aparecer_1s_ease-in-out]">
+        <div className="bg-[#121212]/60 rounded p-3 text-[14px] xl:text-[18px] xl:p-5 animate-[aparecer_1s_ease-in-out]">
           <p>
             <span className="font-extrabold text-[18px] text-blue-300">
               Animemania
@@ -348,7 +349,7 @@ export const Proyects = ({ scroll }) => {
             una API de RapidAPI.
             <br />
             <br />
-            <span className="text-[16px] font-bold text-blue-300">
+            <span className="text-[16px] xl:text-[18px] font-bold text-blue-300">
               Tecnologías utilizadas:
             </span>
             <br />
@@ -359,39 +360,35 @@ export const Proyects = ({ scroll }) => {
             realizar las peticiones al endpoint de la API.
             <br />
             <br />
-            <span className="text-[16px] font-bold text-blue-300">
+            <span className="text-[16px] xl:text-[18px]  font-bold text-blue-300">
               Logros del proyecto:{" "}
             </span>
-            <ul className="flex flex-col gap-2 mt-3">
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+            <ul className="flex flex-col gap-2 mt-3 pl-3">
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Implementación de buscador de animes por nombre
                 </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Visualización de puntuaciones y rankings de cada anime
                 </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Sección de reseñas y detalles de cada título
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Interfaz intuitiva y amigable para fans del anime
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/>
                 Consumo de API externa de manera eficiente con Axios
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Diseño responsivo que se adapta a distintos dispositivos
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
-                Preparado para futuras mejoras como favoritos, historial de
-                búsqueda o recomendaciones personalizadas
-              </li>
+
             </ul>
           </p>
         </div>
@@ -404,9 +401,9 @@ export const Proyects = ({ scroll }) => {
       images: [TD1, TD2, TD3, TD4, TD5],
       url: "https://golden-bubblegum-db0a73.netlify.app/",
       descripcion: (
-        <div className="bg-[#121212]/60 rounded p-3 text-[14px] animate-[aparecer_1s_ease-in-out]">
+        <div className="bg-[#121212]/60 rounded p-3 text-[14px] xl:text-[18px] xl:p-5 animate-[aparecer_1s_ease-in-out]">
           <p>
-            <span className="font-extrabold text-[18px] text-blue-300">
+            <span className="font-extrabold text-[18px] xl:text-[18px]  text-blue-300">
               To Do List
             </span>{" "}
             es una aplicación web diseñada para gestionar tus tareas diarias,
@@ -415,7 +412,7 @@ export const Proyects = ({ scroll }) => {
             CRUD completo, asegurando control total sobre tus actividades.
             <br />
             <br />
-            <span className="text-[16px] font-bold text-blue-300">
+            <span className="text-[16px] xl:text-[18px]  font-bold text-blue-300">
               Tecnologías utilizadas:
             </span>
             <br />
@@ -426,31 +423,32 @@ export const Proyects = ({ scroll }) => {
             almacenar los datos de manera persistente en el navegador.
             <br />
             <br />
-            <span className="text-[16px] font-bold text-blue-300">
+            <span className="text-[16px] xl:text-[18px]  font-bold text-blue-300">
               Logros del proyecto:{" "}
             </span>
-            <ul className="flex flex-col gap-2 mt-3">
-              <li>
+            <ul className="flex flex-col gap-2 mt-3 pl-3">
+              <li className="flex gap-2">
+                <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Creación, edición y eliminación de tareas
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Marcado de tareas como realizadas o pendientes
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Persistencia de los datos gracias al uso de localStorage
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Interfaz sencilla y práctica para el usuario
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Diseño responsivo adaptable a distintos dispositivos
               </li>
-              <li>
-               <span className="text-black font-extrabold text-2xl">- </span> 
+              <li className="flex gap-2">
+               <IconStar className="text-amber-300" stroke={4} size={25}/> 
                 Base sólida para agregar futuras funciones como categorías o
                 filtros
               </li>
@@ -477,10 +475,10 @@ export const Proyects = ({ scroll }) => {
                 }
                 `}
     >
-      <h2 className=" text-orange-300 text-3xl md:text-4xl titl font-extrabold text-center">
+      <h2 className=" text-orange-300 text-3xl md:text-5xl titl font-extrabold text-center">
         Tecnologias utilizadas
       </h2>
-      <div className="grid grid-cols-3 gap-10 text-white lg:flex md:justify-around w-[100%] xl:w-300 border-blue-300 border-4 rounded-2xl bg-black/40 p-6 col-span-2">
+      <div className="grid grid-cols-3 gap-10  text-white lg:flex md:justify-around w-[100%] 2xl:w-300  border-blue-300 border-4 rounded-2xl bg-black/40 p-6 col-span-2">
         {logos.icons.map((logo, i) => (
           <div className="relative group flex justify-center">
             <div className="absolute top-[-60px]  z-20 hidden group-hover:flex  ">
@@ -494,7 +492,7 @@ export const Proyects = ({ scroll }) => {
           </div>
         ))}
       </div>
-      <h2 className="text-blue-300 text-3xl md:text-4xl title-color font-extrabold text-center">
+      <h2 className="text-blue-300 text-3xl md:text-5xl title-color font-extrabold text-center">
         Proyectos
       </h2>
       {/* <Slider data={data}/> */}
