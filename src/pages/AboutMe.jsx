@@ -7,7 +7,7 @@ export default function Home() {
       className={`
         flex-col  xl:flex-row
         gap-7 md:p-10 p-4 lg:mt-20 
-        w-[99%] md:w-[90%] xl:w-[80%] 2xl:w-[80%] 2xl:max-w-380
+        w-[99%] md:w-[90%] xl:w-[80%] 2xl:w-[80%] 2xl:max-w-[1200px]
         md:h-fit  border-orange-300 border-4
         rounded-2xl mt-7 
          bg-[#121212]/50 flex 

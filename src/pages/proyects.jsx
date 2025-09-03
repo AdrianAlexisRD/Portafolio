@@ -84,7 +84,7 @@ export const Proyects = ({ scroll }) => {
       <IconBrandGithub
         stroke={2}
         size={50}
-        className="col-span-2 text-black md:animate-none hover:scale-140 hover:drop-shadow-2xl hover:drop-shadow-black transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_7s_infinite] cursor-pointer"
+        className="col-span-2 text-white md:animate-none hover:scale-140 hover:drop-shadow-2xl hover:drop-shadow-black transition-all duration-300 ease animate-[aumentar_2s_ease-in-out_7s_infinite] cursor-pointer"
       />,
       <IconBrandVite
         stroke={2}
