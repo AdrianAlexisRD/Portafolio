@@ -106,85 +106,62 @@ export const Proyects = ({ scroll }) => {
     ],
   };
 
-  const data = [
-    {
-      title: "Inventario",
-      github: "https://github.com/AdrianAlexisRD/Inventario-MERN",
-      images: [SM1, SM2, SM3, SM4, SM5],
-      url: "",
-      descripcion: (
-        <div className="bg-[#121212]/60 rounded p-3 xl:p-5 text-[14px] xl:text-[18px] animate-[aparecer_1s_ease-in-out]">
-          <p>
-            <span className="text-blue-500 font-bold">Stock Master </span> es aplicación 
-            fullstack para la gestión de inventario que permite
-            registrar, consultar, actualizar y eliminar productos de manera
-            sencilla y eficiente.
-            <br />
-            <br />
-            <span className="text-[16px] xl:text-[18px] font-bold text-orange-300">
-              Tecnologías utilizadas:{" "}
-            </span>{" "}
-            <br />
-            <span className="font-bold text-blue-300 font">Backend</span> conocer
-            <span className="text-green-400 font-bold"> Node.js </span> +
-            <span className="text-red-300 font-bold"> Express</span>
-             , base de datos MongoDB, API REST con CRUD completo{" "}
-            <span className="font-extrabold text-red-400 font">(</span>GET, POST,
-            PUT, DELETE <span className="font-extrabold text-red-400">)</span> y
-            lenguaje JavaScript . <br /> <br />
-            <span className="font-bold text-blue-300">Frontend</span> con 
-            <span className="text-blue-400 font-bold"> React</span> +
-            <span className="text-purple-500 font-bold"> Vite </span> y
-            <span className="text-blue-400 font-bold"> Tailwind </span> 
-            para los estilo, librerias como axios para realizar
-            peticiones y React dom para para tener una pagina estruturada en
-            rutas <br /> <br />
-            <span className="text-[16px] xl:text-[18px] font-bold text-orange-300">
-              Logros del proyecto:{" "}
-            </span>
-            <ul className="flex flex-col gap-2 mt-2 pl-3">
-              <li className="flex gap-2">
-                <IconStar className="text-amber-300" stroke={4} size={25}/>
-               Implementación de una API escalable para manejar productos
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                base de datos inicial con más de 50 productos registrados</li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                estructura clara para expandir funciones como búsqueda, filtros
-                o reportes
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                 Dashboard en React con autenticación de usuarios
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                control de entradas y salidas de productos con historial
-                </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                exportación de inventario en Excel/PDF
-              </li>
-            </ul>
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: "Aqui Restaurante",
-      github: "https://github.com/AdrianAlexisRD/Proyecto-aqui-restaurante",
-      images: [
-        "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran1.png?alt=media&token=ae55477b-ba7b-4509-9713-be80c1203f0a",
-        "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran2.png?alt=media&token=0427ca1e-0427-4978-9cae-777a850e83fc",
-        "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran3.png?alt=media&token=05734b46-38e2-4652-897a-a67a79d1a063",
-        "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran4.png?alt=media&token=6850e8b0-ce8d-4952-92fc-b8fe130f2ac1",
-        "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran5.png?alt=media&token=dc5e1c93-7cd4-4cba-a1da-5889432b5f2b",
-      ],
-      url: "",
-      descripcion: (
-        <div className="bg-[#121212]/60 rounded p-3 text-[14px] xl:text-[18px] xl:p-5 animate-[aparecer_1s_ease-in-out]">
+const data = [
+  {
+    title: "Inventario",
+    github: "https://github.com/AdrianAlexisRD/Inventario-MERN",
+    images: [SM1, SM2, SM3, SM4, SM5],
+    url: "",
+    descripcion: (
+      <div className="bg-[#121212]/60 rounded-2xl p-3 xl:p-5 text-[14px] xl:text-[18px] animate-[aparecer_1s_ease-in-out]">
+        <p>
+          <span className="text-blue-500 text-[18px] font-bold">Stock Master </span> es aplicación
+          fullstack para la gestión de inventario que permite
+          registrar, consultar, actualizar y eliminar productos de manera
+          sencilla y eficiente.
+          <br /><br />
+          <span className="text-[16px] xl:text-[18px] font-bold text-orange-300 ">Tecnologías utilizadas: </span>
+          <br /><br />
+          <span className="font-bold text-blue-300 font">Backend</span> conocer
+          <span className="text-green-400 font-bold"> Node.js </span> +
+          <span className="text-red-300 font-bold"> Express</span>
+          , base de datos MongoDB, API REST con CRUD completo (GET, POST,
+          PUT, DELETE) y lenguaje JavaScript .
+          <br /><br />
+          <span className="font-bold text-blue-300">Frontend</span> con
+          <span className="text-blue-400 font-bold"> React</span> +
+          <span className="text-purple-500 font-bold"> Vite </span> y
+          <span className="text-blue-400 font-bold"> Tailwind </span> 
+          para los estilo, librerias como axios para realizar
+          peticiones y React dom para para tener una pagina estruturada en
+          rutas
+          <br /><br />
+          <span className="text-[16px] xl:text-[18px] font-bold text-orange-300">Logros del proyecto: </span>
+          <ul className="flex flex-col gap-2 mt-2">
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-blue-400"></div>Implementación de una API escalable para manejar productos</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-green-400"></div>Base de datos inicial con más de 50 productos registrados</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-red-400"></div>Estructura clara para expandir funciones como búsqueda, filtros o reportes</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-yellow-400"></div>Dashboard en React con autenticación de usuarios</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-purple-400"></div>Control de entradas y salidas de productos con historial</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-pink-400"></div>Exportación de inventario en Excel/PDF</li>
+          </ul>
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "Aqui Restaurante",
+    github: "https://github.com/AdrianAlexisRD/Proyecto-aqui-restaurante",
+    images: [
+      "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran1.png?alt=media&token=ae55477b-ba7b-4509-9713-be80c1203f0a",
+      "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran2.png?alt=media&token=0427ca1e-0427-4978-9cae-777a850e83fc",
+      "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran3.png?alt=media&token=05734b46-38e2-4652-897a-a67a79d1a063",
+      "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran4.png?alt=media&token=6850e8b0-ce8d-4952-92fc-b8fe130f2ac1",
+      "https://firebasestorage.googleapis.com/v0/b/data-6d9cf.firebasestorage.app/o/imagenes%2FaquiRestauran5.png?alt=media&token=dc5e1c93-7cd4-4cba-a1da-5889432b5f2b",
+    ],
+    url: "",
+    descripcion: (
+         <div className="bg-[#121212]/60 rounded-2xl p-3 text-[14px] xl:text-[18px] xl:p-5 animate-[aparecer_1s_ease-in-out]">
           <p>
             <span className="font-extrabold text-[18px] text-blue-300">
               Aquí Restaurante
@@ -217,51 +194,26 @@ export const Proyects = ({ scroll }) => {
             <span className="text-[16px] xl:text-[18px] font-bold text-blue-300">
               Logros del proyecto:{" "}
             </span>
-            <ul className="flex flex-col gap-1 mt-3 pl-3">
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/>
-                Formulario para que los propietarios puedan publicar
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Una presentacion estetica de cada restaurante
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Menú interactivo con imágenes y descripciones de los productos
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Mapa integrado para mostrar la ubicación del restaurante
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Sistema adaptable a cualquier tipo de negocio gastronómico con
-                mínimos cambios
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Interfaz moderna, responsiva y optimizada para móviles y
-                escritorio
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Posibilidad de expansión hacia un sistema completo de inventario
-                y gestión de pedidos
-              </li>
-            </ul>
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: "App Weather",
-      github:
-        "https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/App-clima",
-      images: [WT1, WT2, WT3, WT4, WT5],
-      url: "https://jolly-peony-a4c08a.netlify.app/",
-      descripcion: (
-        <div className="bg-[#121212]/60 rounded p-3 text-[14px] xl:text-[18px] xl:p-5 animate-[aparecer_1s_ease-in-out]">
+          <ul className="flex flex-col gap-1 mt-3">
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-pink-400"></div>Formulario para que los propietarios puedan publicar</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-yellow-400"></div>Una presentacion estetica de cada restaurante</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-green-400"></div>Menú interactivo con imágenes y descripciones de los productos</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-red-400"></div>Mapa integrado para mostrar la ubicación del restaurante</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-blue-400"></div>Sistema adaptable a cualquier tipo de negocio gastronómico con mínimos cambios</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-purple-400"></div>Interfaz moderna, responsiva y optimizada para móviles y escritorio</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-orange-400"></div>Posibilidad de expansión hacia un sistema completo de inventario y gestión de pedidos</li>
+          </ul>
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "App Weather",
+    github: "https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/App-clima",
+    images: [WT1, WT2, WT3, WT4, WT5],
+    url: "https://jolly-peony-a4c08a.netlify.app/",
+    descripcion: (
+        <div className="bg-[#121212]/60 rounded-2xl p-3 text-[14px] xl:text-[18px] xl:p-5 animate-[aparecer_1s_ease-in-out]">
           <p>
             <span className="font-extrabold text-[18px] text-blue-300">
               App weather
@@ -283,62 +235,34 @@ export const Proyects = ({ scroll }) => {
             para los estilos, se realizo Fetch para consumir la API de clima .
             <br />
             <br />
-            <span className="text-[16px] xl:text-[18px]  font-bold text-blue-300">
+            <span className="text-[16px] xl:text-[18px] font-bold text-blue-300">
               Logros del proyecto:{" "}
             </span>
-            <ul className="flex flex-col gap-2 mt-3 pl-3">
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Implementación de búsqueda en tiempo real por ciudad
-                </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Visualización clara y estilizada de los datos meteorológicos
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Manejo de errores al ingresar ciudades inexistentes o mal
-                escritas
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Interfaz responsiva y amigable para distintos dispositivos
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Estructura preparada para futuras mejoras como pronósticos
-                extendidos o integración de mapas
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Guardar ciudades con localStorage favoritas
-                </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                geolocalización automática para mostrar el clima local
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/>
-                Historial de busqueda
-              </li>
-            </ul>
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: "Animemania",
-      github: "https://github.com/AdrianAlexisRD/Inventario-MERN",
-      images: [
-        "https://firebasestorage.googleapis.com/v0/b/fotos-portafolio-41731.firebasestorage.app/o/Animemania1.png?alt=media&token=04587b31-6230-4de2-90e0-19fcfed76f6c",
-        AN2,
-        AN3,
-        AN4,
-        AN5,
-      ],
-      url: "",
-      descripcion: (
-        <div className="bg-[#121212]/60 rounded p-3 text-[14px] xl:text-[18px] xl:p-5 animate-[aparecer_1s_ease-in-out]">
+          <span className="text-[16px] xl:text-[18px]  font-bold text-blue-300">Logros del proyecto: </span>
+          <ul className="flex flex-col gap-2 mt-3">
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-blue-400"></div>Implementación de búsqueda en tiempo real por ciudad</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-green-400"></div>Visualización clara y estilizada de los datos meteorológicos</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-yellow-400"></div>Manejo de errores al ingresar ciudades inexistentes</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-red-400"></div>Interfaz responsiva y amigable</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-pink-400"></div>Estructura preparada para futuras mejoras</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-orange-400"></div>Guardar ciudades favoritas con localStorage</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-purple-400"></div>Geolocalización automática</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-teal-400"></div>Historial de búsqueda</li>
+          </ul>
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "Animemania",
+    github: "https://github.com/AdrianAlexisRD/Inventario-MERN",
+    images: [
+      "https://firebasestorage.googleapis.com/v0/b/fotos-portafolio-41731.firebasestorage.app/o/Animemania1.png?alt=media&token=04587b31-6230-4de2-90e0-19fcfed76f6c",
+      AN2, AN3, AN4, AN5,
+    ],
+    url: "",
+    descripcion: (
+        <div className="bg-[#121212]/60 rounded-2xl p-3 text-[14px] xl:text-[18px] xl:p-5 animate-[aparecer_1s_ease-in-out]">
           <p>
             <span className="font-extrabold text-[18px] text-blue-300">
               Animemania
@@ -363,45 +287,25 @@ export const Proyects = ({ scroll }) => {
             <span className="text-[16px] xl:text-[18px]  font-bold text-blue-300">
               Logros del proyecto:{" "}
             </span>
-            <ul className="flex flex-col gap-2 mt-3 pl-3">
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Implementación de buscador de animes por nombre
-                </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Visualización de puntuaciones y rankings de cada anime
-                </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Sección de reseñas y detalles de cada título
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Interfaz intuitiva y amigable para fans del anime
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/>
-                Consumo de API externa de manera eficiente con Axios
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Diseño responsivo que se adapta a distintos dispositivos
-              </li>
-
-            </ul>
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: "To do list",
-      github:
-        "https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/To-do-app",
-      images: [TD1, TD2, TD3, TD4, TD5],
-      url: "https://golden-bubblegum-db0a73.netlify.app/",
-      descripcion: (
-        <div className="bg-[#121212]/60 rounded p-3 text-[14px] xl:text-[18px] xl:p-5 animate-[aparecer_1s_ease-in-out]">
+          <ul className="flex flex-col gap-2 mt-3">
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-green-400"></div>Implementación de buscador de animes por nombre</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-pink-400"></div>Visualización de puntuaciones y rankings</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-yellow-400"></div>Sección de reseñas y detalles</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-blue-400"></div>Interfaz intuitiva y amigable</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-red-400"></div>Consumo de API externa con Axios</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-purple-400"></div>Diseño responsivo que se adapta a distintos dispositivos</li>
+          </ul>
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "To do list",
+    github: "https://github.com/AdrianAlexisRD/Curso-fullstack-talenting/tree/main/To-do-app",
+    images: [TD1, TD2, TD3, TD4, TD5],
+    url: "https://golden-bubblegum-db0a73.netlify.app/",
+    descripcion: (
+        <div className="bg-[#121212]/60 rounded-2xl p-4 text-[14px] xl:text-[18px] xl:p-5 animate-[aparecer_1s_ease-in-out]">
           <p>
             <span className="font-extrabold text-[18px] xl:text-[18px]  text-blue-300">
               To Do List
@@ -426,38 +330,21 @@ export const Proyects = ({ scroll }) => {
             <span className="text-[16px] xl:text-[18px]  font-bold text-blue-300">
               Logros del proyecto:{" "}
             </span>
-            <ul className="flex flex-col gap-2 mt-3 pl-3">
-              <li className="flex gap-2">
-                <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Creación, edición y eliminación de tareas
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Marcado de tareas como realizadas o pendientes
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Persistencia de los datos gracias al uso de localStorage
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Interfaz sencilla y práctica para el usuario
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Diseño responsivo adaptable a distintos dispositivos
-              </li>
-              <li className="flex gap-2">
-               <IconStar className="text-amber-300" stroke={4} size={25}/> 
-                Base sólida para agregar futuras funciones como categorías o
-                filtros
-              </li>
-            </ul>
-          </p>
-        </div>
-      ),
-    },
-  ];
+          <ul className="flex flex-col gap-2 mt-3">
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-blue-400"></div>Creación, edición y eliminación de tareas</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-green-400"></div>Marcado de tareas como realizadas o pendientes</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-yellow-400"></div>Persistencia de los datos con localStorage</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-pink-400"></div>Interfaz sencilla y práctica</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-red-400"></div>Diseño responsivo adaptable</li>
+            <li className="flex gap-2 items-center"><div className="w-5 h-5 rounded-full border-4 border-purple-400"></div>Base sólida para agregar futuras funciones</li>
+          </ul>
+        </p>
+      </div>
+    ),
+  },
+];
+
+
 
   return (
     <section
@@ -495,7 +382,6 @@ export const Proyects = ({ scroll }) => {
       <h2 className="text-blue-300 text-3xl md:text-5xl title-color font-extrabold text-center">
         Proyectos
       </h2>
-      {/* <Slider data={data}/> */}
       <ImageSlider data={data} />
     </section>
   );
