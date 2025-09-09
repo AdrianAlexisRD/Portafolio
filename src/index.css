@@ -53,7 +53,7 @@ h1 , h2 {
 @keyframes rotacion {
   0%{transform: rotatez(0deg); }
   30%{transform: rotatez(-80deg);}
-  100%{transform: rotatez(720deg);}
+  100%{transform: rotatez(360deg);}
 }
 
 @keyframes espejo {

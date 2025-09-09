@@ -11,7 +11,7 @@ export const Studies = ({ scroll }) => {
     if (esPantallaGrande) {
       scroll >= 4600 ? setDesplegar(true) : setDesplegar(false);
     } else {
-      scroll >= 3400 ? setDesplegar(true) : setDesplegar(false);
+      scroll >= 3200 ? setDesplegar(true) : setDesplegar(false);
     }
   }, [esPantallaGrande, scroll]);
 

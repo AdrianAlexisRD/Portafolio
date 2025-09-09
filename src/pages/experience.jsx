@@ -12,7 +12,7 @@ export const Experience = ({ scroll }) => {
     if (esPantallaGrande) {
       scroll >= 5810 ? setDesplegar(true) : setDesplegar(false);
     } else {
-      scroll >= 5000 ? setDesplegar(true) : setDesplegar(false);
+      scroll >= 4700 ? setDesplegar(true) : setDesplegar(false);
     }
   }, [esPantallaGrande, scroll]);
 
