@@ -1,63 +1,68 @@
-import { IconBrandLinkedin, IconBrandGithub ,IconBrandWhatsapp, IconMail } from '@tabler/icons-react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { IconBrandLinkedin, IconBrandGithub, IconBrandWhatsapp, IconMail } from '@tabler/icons-react';
+import { useInView } from '../hooks/useInView';
 
-export const Contact = ({scroll}) =>{
+export const Contact = () => {
+    const { ref, inView: desplegar } = useInView();
 
-    const [desplegar , setDesplegar] = useState(false)
-    
-    const esPantallaGrande = window.innerWidth >= 768;
-    
-      useEffect(()=>{
+    const links = [
+        {
+            href: 'https://www.linkedin.com/in/adri%C3%A1n-a-lopez-santos-669ba4333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+            icon: <IconBrandLinkedin stroke={2} size={50} />,
+            label: 'LinkedIn',
+            color: 'hover:border-[#0077b5]/60 hover:bg-[#0077b5]/10 hover:text-[#0077b5]',
+        },
+        {
+            href: 'https://github.com/AdrianAlexisRD',
+            icon: <IconBrandGithub stroke={2} size={50} />,
+            label: 'GitHub',
+            color: 'hover:border-white/40 hover:bg-white/10 hover:text-white',
+        },
+        {
+            href: 'https://wa.me/18092322812',
+            icon: <IconBrandWhatsapp stroke={2} size={50} />,
+            label: 'WhatsApp',
+            color: 'hover:border-[#25d366]/60 hover:bg-[#25d366]/10 hover:text-[#25d366]',
+        },
+        {
+            href: 'mailto:Alexaghm411@gmail.com?subject=Hola&body=Quiero contactarte',
+            icon: <IconMail stroke={2} size={50} />,
+            label: 'Gmail',
+            color: 'hover:border-red-500/60 hover:bg-red-500/10 hover:text-red-400',
+        },
+    ];
 
-        if (esPantallaGrande){
-                scroll>= 6600 ? setDesplegar(true): setDesplegar(false)
-            
-        }else{
-                scroll>= 5700 ? setDesplegar(true): setDesplegar(false)   
-        }
-
-      }, [esPantallaGrande, scroll])
-    return(
-        <section className={` flex-col  
-        gap-7 p-10 items-center
-        w-[99%] md:w-[50%] max-w-200
-        h-fit border-orange-300 border-4 absolute bottom-0
-        rounded-2xl text-center 
-         bg-[#121212]/50 opacity-0
-        ${desplegar ? ' animate-[move-right_0.7s_ease-in-out_forwards]' : 'animate-[retroceso-Left_0.7s_ease-in-out_forwards]'}
-        `}>
-            <h2 className='text-3xl md:text-4xl text-blue-300 font-extrabold mb-15'>Contacta me</h2>
-            <ul className='text-color flex flex-col items-center gap-5 md:gap-10 '>
-                <div className='flex gap-8'>
-                    <li className='group '>
-                        <a className={desplegar && `flex items-center  ease-in-out active:scale-90 drop-shadow-2xl group-hover:drop-shadow-[#162556] text-[#162556] sm:text-white efecto1`} href='https://www.linkedin.com/in/adri%C3%A1n-a-lopez-santos-669ba4333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank">
-                            <IconBrandLinkedin stroke={2} size={60} className='group-hover:text-[#162556] transition-all duration-300 ease-in-out' />
-                            <h2 className=' group-hover:text-[#162556] font-extrabold text-2xl transition-all duration-300 ease-in-out'>Linkedin</h2>
+    return (
+        <section
+            ref={ref}
+            id="contact"
+            className={`flex flex-col
+            gap-7 p-8 items-center
+            w-[99%] md:w-[60%] max-w-xl
+            h-fit border border-orange-400/30
+            rounded-2xl text-center
+            bg-slate-950/60 backdrop-blur-md shadow-xl shadow-black/40
+            transition-all duration-700 ease-out
+            ${desplegar ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
+            `}
+        >
+            <h2 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-transparent">
+                Contáctame
+            </h2>
+            <ul className="grid grid-cols-2 gap-4 w-full mt-2">
+                {links.map(({ href, icon, label, color }) => (
+                    <li key={label}>
+                        <a
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`flex flex-col items-center gap-2 p-4 rounded-xl border border-white/10 bg-slate-900/50 text-white/70 transition-all duration-300 ${color}`}
+                        >
+                            {icon}
+                            <span className="font-bold text-sm">{label}</span>
                         </a>
                     </li>
-                    <li className='group'>
-                    <a className={ desplegar && `flex items-center  active:scale-90 drop-shadow-2xl group-hover:drop-shadow-[#000000] text-[#000000] sm:text-white efecto2`}  href="https://github.com/AdrianAlexisRD" target="_blank">
-                            <IconBrandGithub stroke={2} size={60} className='group-hover:text-[#000000] transition-all duration-300 ease-in-out'  /> 
-                            <h2 className=' group-hover:text-[#000000] font-extrabold text-2xl transition-all duration-300 ease-in-out'>Github</h2>
-                        </a>
-                    </li>
-                </div>
-                <div className='flex gap-5'>
-                    <li className='group'>
-                        <a className={desplegar&&`flex items-center text-[#08aa5e] drop-shadow-2xl group-hover:drop-shadow-[#08aa5e] sm:text-white efecto4`} href='https://wa.me/18092322812' target="_blank">
-                            <IconBrandWhatsapp stroke={2} size={60} className='group-hover:text-[#08aa5e] transition-all duration-300 ease-in-out'  />
-                            <h2 className='text-2xl group-hover:text-[#08aa5e] font-extrabold transition-all duration-300 ease-in-out'> Whatsapp</h2>
-                        </a>
-                    </li>
-                    <li className='group transition-all duration-500 ease-in-out'> 
-                        <a className={`flex items-center active:scale-90 text-[#f5493b] drop-shadow-2xl group-hover:drop-shadow-[#f5493b] sm:text-white efecto3 `} href="mailto:Alexaghm411@gmail.com?subject=Hola&body=Quiero contactarte" target="_blank">
-                            <IconMail stroke={2} size={60} className='group-hover:text-[#f5493b] transition-all duration-300 ease-in-out' />
-                            <h2 className='text-2xl group-hover:text-[#f5493b] font-extrabold transition-all duration-300 ease-in-out'>Gmail</h2>
-                        </a>
-                    </li>
-                </div>
+                ))}
             </ul>
         </section>
-    )
+    );
 }

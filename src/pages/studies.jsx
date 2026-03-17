@@ -1,19 +1,10 @@
 
 import Mescyt from "../assets/mescyt.jpeg";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useInView } from "../hooks/useInView";
 
-export const Studies = ({ scroll }) => {
-  const [desplegar, setDesplegar] = useState(false);
+export const Studies = () => {
+  const { ref, inView: desplegar } = useInView();
   const esPantallaGrande = window.innerWidth >= 768;
-
-  useEffect(() => {
-    if (esPantallaGrande) {
-      scroll >= 4600 ? setDesplegar(true) : setDesplegar(false);
-    } else {
-      scroll >= 3200 ? setDesplegar(true) : setDesplegar(false);
-    }
-  }, [esPantallaGrande, scroll]);
 
   const itla = [
     "Diseño de páginas web.",
@@ -33,22 +24,20 @@ export const Studies = ({ scroll }) => {
 
   return (
     <section
-      className={` 
-        flex-col flex md:grid md:grid-cols-2 
-        gap-7 md:p-10  justify-start md:items-center
+      ref={ref}
+      id="studies"
+      className={`
+        flex-col flex md:grid md:grid-cols-2
+        gap-7 md:p-10 justify-start md:items-center
         2xl:w-[80%] 2xl:max-w-380
-        w-[99%] md:w-[90%]  md:gap-10
-        h-fit p-5 rounded-2xl border-orange-300 border-4
-         bg-[#121212]/50 opacity-0
-                ${
-                  desplegar
-                    ? " animate-[move-Left_0.7s_ease-in-out_forwards]"
-                    : "animate-[retroceso-Left_0.7s_ease-in-out_forwards]"
-                }
-    
+        w-[99%] md:w-[90%] md:gap-10
+        h-fit p-5 rounded-2xl border border-orange-400/30
+        bg-slate-950/60 backdrop-blur-md shadow-xl shadow-black/40
+        transition-all duration-700 ease-out
+        ${desplegar ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
         `}
     >
-      <h2 className="text-4xl text-blue-300 font-extrabold title-color col-span-2 md:justify-start text-center  ">
+      <h2 className="text-4xl font-extrabold col-span-2 md:justify-start text-center bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-transparent">
         Estudios
       </h2>
       <div
