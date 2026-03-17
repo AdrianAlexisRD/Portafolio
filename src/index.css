@@ -3,10 +3,12 @@
 @import "tailwindcss";
 
 
-.text-color{ @apply text-[#F2F2F2] }
-.border-color {@apply border-[#1b3351] border-4}
+.text-color{ @apply text-[#e2e8f0] }
+.border-color {@apply border-sky-900/50 border}
 .img-style{@apply rounded hover:scale-110 transition-all duration-500 ease-in-out }
-.logo-skill{@apply  hover:scale-140 transition-all duration-500 ease-in } 
+.logo-skill{@apply  hover:scale-140 transition-all duration-500 ease-in }
+.glass-card { @apply bg-slate-950/60 backdrop-blur-md border border-white/10; }
+.section-card { @apply bg-slate-950/60 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl shadow-black/40; }
 
 p , h3{
   font-family: "Roboto Mono", monospace;
@@ -57,9 +59,9 @@ h1 , h2 {
 }
 
 @keyframes espejo {
-  0%{color: #121212 ; }
-  50%{color:  #C0C0C0;}
-  100%{color: #121212 ;}
+  0%{color: #1e3a5f ; }
+  50%{color: #e2e8f0;}
+  100%{color: #1e3a5f ;}
 }
 
 @keyframes Efecto-abajo {
@@ -151,14 +153,22 @@ h1 , h2 {
 }
 
 body {
-    background-size: contain;
-    background: linear-gradient(180deg, #1b3351, #000000, #1b3351);
+    background: linear-gradient(160deg, #030712 0%, #0c1a2e 35%, #050d1a 65%, #030712 100%);
+    min-height: 100vh;
     margin: 0;
-    padding: 0; 
-  }
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #030712; }
+::-webkit-scrollbar-thumb { background: #1e3a5f; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+
 @media (max-width: 768px) {
   body {
-    background: linear-gradient(180deg, #6991c2, #000000, #6991c2);
+    background: linear-gradient(160deg, #030712 0%, #0c1a2e 50%, #030712 100%);
   }
 }
 

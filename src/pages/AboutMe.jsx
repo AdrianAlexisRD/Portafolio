@@ -1,60 +1,80 @@
 import FotoAnimada from "../assets/Foto-animada.jpg";
 
 export default function Home() {
- 
   return (
     <article
+      id="about"
       className={`
-        flex-col  xl:flex-row
-        gap-7 md:p-10 p-4 lg:mt-20 
-        w-[99%] md:w-[90%] xl:w-[80%] 2xl:w-[80%] 2xl:max-w-[1200px]
-        md:h-fit  border-orange-300 border-4
-        rounded-2xl mt-7 
-         bg-[#121212]/50 flex 
-         opacity-0 items-center
-          animate-[move-Left_0.7s_ease-in-out_forwards]
-         `}>
-      <div className=" animate-[rotacion_3s_ease-in-out_forwards]  h-fit md:mb-0  md:h-fit md:w-fit w-fit flex justify-center md:items-center  rounded-full border-blue-300 border-4">
-        <img
-          src={FotoAnimada}
-          alt=""
-          className="filter grayscale-25 contrast-120 drop-shadow-2xl/50 2xl:w-300 w-50 xl:w-400 2xl:h-60 xl:h-60 lg:h-60  h-50  shadow-[#EAE4D5] rounded-full  "
-        />
+        flex flex-col xl:flex-row
+        gap-10 md:p-12 p-8 lg:mt-24
+        w-[95%] md:w-[90%] xl:w-[85%] 2xl:max-w-[1250px]
+        mx-auto rounded-[2.5rem] mt-10
+        bg-slate-950/40 backdrop-blur-xl border border-white/10
+        relative overflow-hidden
+        animate-in fade-in slide-in-from-left-10 duration-1000
+        shadow-[0_20px_50px_rgba(0,0,0,0.5)]
+        `}>
+      
+      {/* Decoración de fondo */}
+      <div className="absolute -top-24 -left-24 w-48 h-48 bg-sky-500/10 blur-[100px] rounded-full" />
+      <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-orange-500/10 blur-[100px] rounded-full" />
+
+      {/* Contenedor de Imagen con Efecto Glow */}
+      <div className="relative group self-center xl:self-start">
+        <div className="absolute -inset-1 bg-gradient-to-tr from-sky-400 to-orange-400 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+        <div className="relative h-48 w-48 md:h-64 md:w-64 xl:h-72 xl:w-72 rounded-full border border-white/20 overflow-hidden shadow-2xl">
+          <img
+            src={FotoAnimada}
+            alt="Adrian Lopez"
+            className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[20%] hover:grayscale-0"
+          />
+        </div>
       </div>
-      <div className="flex md:self-start  md:mb-4  relative ">
-        <h1 className="text-orange-300 md:text-5xl text-[45px]">
-          <span className=" efecto1 md:left-[43px] right-0  font-extrabold absolute  ">
-            Adrian
-          </span>
-          <span className=" efecto2 md:left-[210px] hidden md:flex  font-extrabold text-blue-300 absolute">
-            Alexis
-          </span>
-          <span className=" efecto3  md:left-[360px] left-5  font-extrabold  absolute">
-            Lopez
-          </span>
-          <span className=" efecto4 md:left-[510px] hidden md:flex  font-extrabold text-blue-300 absolute">
-            Santos
-          </span>
-        </h1>
 
-      </div>
-      <div className="self-center p-4 pt-10 lg:mt-10">
-        <h2 className=""></h2>
-        <h2 className="self-center md:text-3xl text-2xl font-black text-center md:text-start text-[#121212] mb-10">
-          <span className="animate-[espejo_5s_ease-in_0s_infinite]">Desarrollador </span>
-          <span className="animate-[espejo_5s_ease-in_0.3s_infinite]">web </span>
-          <span className="animate-[espejo_5s_ease-in_0.6s_infinite]">fullstack</span>
-        </h2>
-        <p className=" md:text-2xl text-white  animate-[aparecer_2s_ease-in_forwards] ">
+      {/* Contenido de Texto */}
+      <div className="flex-1 flex flex-col">
+        {/* Nombre con Layout Limpio */}
+        <div className="mb-6">
+          <h1 className="text-4xl md:text-6xl font-black flex flex-wrap gap-x-3 leading-none">
+            <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-orange-400 bg-[length:200%_auto] animate-[gradient_4s_linear_infinite] bg-clip-text text-transparent">
+              Adrian
+            </span>
+            <span className="text-white/10">/</span>
+            <span className="bg-gradient-to-r from-sky-400 via-violet-400 to-sky-400 bg-[length:200%_auto] animate-[gradient_4s_linear_infinite] bg-clip-text text-transparent">
+              Alexis
+            </span>
+            <span className="w-full h-1" /> {/* Salto de línea visual en pantallas pequeñas */}
+            <span className="bg-gradient-to-r from-orange-400 via-amber-300 to-orange-400 bg-[length:200%_auto] animate-[gradient_4s_linear_infinite] bg-clip-text text-transparent">
+              Lopez
+            </span>
+            <span className="text-white/10 hidden md:inline">/</span>
+            <span className="bg-gradient-to-r from-sky-400 via-violet-400 to-sky-400 bg-[length:200%_auto] animate-[gradient_4s_linear_infinite] bg-clip-text text-transparent">
+              Santos
+            </span>
+          </h1>
+        </div>
 
+        {/* Badge de Rol */}
+        <div className="flex items-center gap-3 mb-6">
+            <div className="h-[2px] w-8 bg-sky-500/50" />
+            <h2 className="text-xl md:text-2xl font-bold tracking-[0.2em] uppercase text-sky-400/90 italic">
+                Fullstack Developer
+            </h2>
+        </div>
 
-          Hola, soy un desarrollador junior fullstack, autodidacta, con muchas
-          ganas de demostrar mi talento y superarme cada día. Me apasiona
-          aprender, resolver problemas y siempre me enfoco en alcanzar metas,
-          entregando lo mejor de mí en cada proyecto o tarea que realizo. <br/> <br/> Estoy
-          motivado para trabajar en equipo, compartir conocimientos y aprender
-          de diferentes formas de trabajar y pensar.
+        {/* Descripción */}
+        <p className="text-lg md:text-xl text-slate-300/90 leading-relaxed font-light">
+          Hola, soy un desarrollador <span className="text-white font-medium">junior fullstack autodidacta</span>. 
+          Me apasiona resolver problemas complejos y transformar ideas en experiencias digitales fluidas. 
+          Mi enfoque principal es la superación diaria y la entrega de código de <span className="text-orange-300/90">alta calidad</span>.
+          <br /><br />
+          Estoy listo para colaborar en equipos dinámicos donde pueda aportar mi energía, aprender nuevas metodologías y crecer junto a proyectos innovadores.
         </p>
+
+        {/* Botones de acción rápida (Opcional) */}
+        <div className="mt-8 flex gap-4">
+            <div className="h-1 w-20 bg-gradient-to-r from-orange-400 to-transparent rounded-full" />
+        </div>
       </div>
     </article>
   );

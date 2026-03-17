@@ -49,7 +49,7 @@ export const Slider = ({ data }) => {
         >
           <article
             key={index}
-            className="flex flex-col items-center gap-4 2xl:w-300 xl:w-250 lg:w-200 w-[95%] p-5 bg-[#121212]/50 rounded-2xl border-color xl:h-110 h-150"
+            className="flex flex-col items-center gap-4 2xl:w-300 xl:w-250 lg:w-200 w-[95%] p-5 bg-slate-950/60 backdrop-blur-md rounded-2xl border border-white/10 xl:h-110 h-150"
           >
             <a href={data[index].url} target="_blank">
               <div
@@ -81,8 +81,7 @@ export const Slider = ({ data }) => {
 
             <a
               href={data[index].github}
-              className="flex justify-center items-center hover:text-[#1b3351] border-4 bg-[#1b3351] xl:w-150 
-              w-[80%] rounded hover:bg-white hover:border-[#1b3351] border-white text-white"
+              className="flex justify-center items-center gap-2 border border-white/10 bg-slate-800 xl:w-150 w-[80%] rounded-xl hover:bg-slate-700 hover:border-sky-400/40 text-white transition-all duration-200"
               target="_blank"
             >
               <IconBrandGithub stroke={2} size={50} className="p-2" />
@@ -94,7 +93,7 @@ export const Slider = ({ data }) => {
 
       <div className="flex justify-between w-[100%]">
         <IconChevronCompactLeft
-          className="left-[0px] lg:top-40 bottom-[0px] lg:left-[-40px] z-50 text-[#1b3351]/90 active:scale-90"
+          className="left-[0px] lg:top-40 bottom-[0px] lg:left-[-40px] z-50 text-sky-500/60 hover:text-sky-400 active:scale-90 transition-colors duration-200 cursor-pointer"
           stroke={5}
           size={esPantallaGrande ? 150 : 100}
           onClick={() =>
@@ -103,7 +102,7 @@ export const Slider = ({ data }) => {
         />
 
         <IconChevronCompactRight
-          className="right-[0px] lg:right-[-40px] lg:top-40 bottom-[0px] active:scale-90 text-[#1b3351]/90"
+          className="right-[0px] lg:right-[-40px] lg:top-40 bottom-[0px] active:scale-90 text-sky-500/60 hover:text-sky-400 transition-colors duration-200 cursor-pointer"
           stroke={5}
           size={esPantallaGrande ? 150 : 100}
           onClick={() =>
