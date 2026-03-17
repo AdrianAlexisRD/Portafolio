@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import { 
-  IconBrandMongodb, IconBrandNodejs, IconBrandTailwind, 
-  IconBrandCss3, IconBrandHtml5, IconBrandJavascript, 
-  IconBrandGithub, IconBrandReact, IconBrandVite 
+import {
+  IconBrandMongodb, IconBrandNodejs, IconBrandTailwind,
+  IconBrandCss3, IconBrandHtml5, IconBrandJavascript,
+  IconBrandGithub, IconBrandReact, IconBrandVite,
+  IconBrandTypescript, IconBrandDocker, IconBrandReactNative
 } from "@tabler/icons-react";
 import { useInView } from "../hooks/useInView";
 import ImageSlider from "../Componentes/cardsProyect";
@@ -21,6 +22,9 @@ const TECH_STACK = [
   { icon: IconBrandJavascript, name: "JavaScript", color: "text-[#f7e025]", bg: "bg-[#f7e025]" },
   { icon: IconBrandGithub, name: "Github", color: "text-white", bg: "bg-black" },
   { icon: IconBrandVite, name: "Vite", color: "text-[#b14dfe]", bg: "bg-[#b14dfe]" },
+  { icon: IconBrandTypescript, name: "TypeScript", color: "text-[#3178c6]", bg: "bg-[#3178c6]" },
+  { icon: IconBrandDocker, name: "Docker", color: "text-[#2496ed]", bg: "bg-[#2496ed]" },
+  { icon: IconBrandReactNative, name: "React Native", color: "text-[#61dafb]", bg: "bg-[#61dafb]" },
 ];
 
 export const Proyects = () => {
@@ -52,7 +56,7 @@ export const Proyects = () => {
             >
               {/* Tooltip */}
               <div className="absolute -top-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30">
-                <span className={`${tech.bg} text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg`}>
+                <span className={`${tech.bg} flex flex-nowrap text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg`}>
                   {tech.name}
                 </span>
               </div>

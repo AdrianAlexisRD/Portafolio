@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
+import { IconChevronLeft, IconChevronRight, IconBrandGithub, IconExternalLink, IconLayoutList, IconPhoto } from "@tabler/icons-react";
 
 function ImageSlider({ images }) {
   const [current, setCurrent] = useState(0);
@@ -16,145 +15,246 @@ function ImageSlider({ images }) {
           key={current}
           src={images[current]}
           alt={`slide-${current}`}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
+          initial={{ opacity: 0, scale: 1.03 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.97 }}
+          transition={{ duration: 0.35 }}
           className="h-full w-full object-cover"
         />
       </AnimatePresence>
 
+      {/* Controles - siempre visibles en mobile, hover en desktop */}
       <button
         onClick={prev}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"
+        className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/90 backdrop-blur-sm text-white rounded-full p-2 md:opacity-0 md:group-hover:opacity-100 transition-all duration-200 shadow-lg"
       >
-        <IconChevronLeft size={20} />
+        <IconChevronLeft size={18} />
       </button>
       <button
         onClick={next}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"
+        className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/90 backdrop-blur-sm text-white rounded-full p-2 md:opacity-0 md:group-hover:opacity-100 transition-all duration-200 shadow-lg"
       >
-        <IconChevronRight size={20} />
+        <IconChevronRight size={18} />
       </button>
 
-      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
-        {images.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`w-1.5 h-1.5 rounded-full transition-all ${i === current ? "bg-white w-3" : "bg-white/40"}`}
-          />
-        ))}
+      {/* Dots + counter */}
+      <div className="absolute bottom-3 left-0 right-0 flex items-center justify-center gap-2">
+        <div className="flex items-center gap-1.5 bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`rounded-full transition-all duration-300 ${
+                i === current ? "w-4 h-1.5 bg-white" : "w-1.5 h-1.5 bg-white/40 hover:bg-white/60"
+              }`}
+            />
+          ))}
+          <span className="text-white/60 text-[10px] font-bold ml-1">
+            {current + 1}/{images.length}
+          </span>
+        </div>
       </div>
     </div>
   );
 }
 
-const gradients = [
-  'from-sky-500/10 to-blue-600/5 border-sky-500/20',
-  'from-orange-500/10 to-amber-600/5 border-orange-500/20',
-  'from-violet-500/10 to-purple-600/5 border-violet-500/20',
-  'from-emerald-500/10 to-green-600/5 border-emerald-500/20',
+const ACCENT = [
+  { border: "border-sky-500/25",   glow: "bg-sky-500",    text: "text-sky-400"    },
+  { border: "border-orange-500/25", glow: "bg-orange-500", text: "text-orange-400" },
+  { border: "border-violet-500/25", glow: "bg-violet-500", text: "text-violet-400" },
+  { border: "border-emerald-500/25",glow: "bg-emerald-500",text: "text-emerald-400"},
+  { border: "border-pink-500/25",   glow: "bg-pink-500",   text: "text-pink-400"   },
 ];
+
+function DescripcionPanel({ descripcion }) {
+  return (
+    <div className="h-full w-full p-5 md:p-6 overflow-y-auto bg-slate-950/90 backdrop-blur-sm flex flex-col gap-4">
+      {descripcion?.intro && (
+        <p className="text-slate-300 text-sm md:text-base leading-relaxed">
+          {descripcion.intro}
+        </p>
+      )}
+
+      {(descripcion?.backend || descripcion?.frontend || descripcion?.techStack) && (
+        <div className="flex flex-col gap-2 text-sm">
+          {descripcion?.backend && (
+            <p>
+              <span className="text-sky-400 font-bold">Backend — </span>
+              <span className="text-slate-400">{descripcion.backend}</span>
+            </p>
+          )}
+          {descripcion?.frontend && (
+            <p>
+              <span className="text-violet-400 font-bold">Frontend — </span>
+              <span className="text-slate-400">{descripcion.frontend}</span>
+            </p>
+          )}
+          {descripcion?.techStack && (
+            <p>
+              <span className="text-orange-400 font-bold">Stack — </span>
+              <span className="text-slate-400">{descripcion.techStack}</span>
+            </p>
+          )}
+        </div>
+      )}
+
+      {descripcion?.logros?.length > 0 && (
+        <div>
+          <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">
+            Logros
+          </p>
+          <ul className="flex flex-col gap-2">
+            {descripcion.logros.map((logro, i) => (
+              <li key={i} className="flex gap-2.5 items-start text-sm text-slate-300">
+                <span className="text-orange-400 font-bold mt-0.5 shrink-0">▸</span>
+                {logro}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function CardsProyectos({ data }) {
   const [activeDesc, setActiveDesc] = useState(null);
 
   return (
-    <div className="grid grid-cols-1 gap-12 w-full max-w-6xl mx-auto p-4">
-      {data.map((project, index) => (
-        <motion.div
-          key={project.id || index}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className={`relative overflow-hidden bg-gradient-to-br ${gradients[index % gradients.length]} backdrop-blur-md border rounded-[2rem] p-6 lg:p-8 shadow-2xl flex flex-col lg:flex-row gap-8 items-center`}
-        >
-          {/* Contenedor Izquierdo: Slider o Descripción */}
-          <div className="w-full lg:w-3/5 aspect-video relative rounded-2xl overflow-hidden shadow-inner bg-black/20">
-            <AnimatePresence mode="wait">
-              {activeDesc === index ? (
-                <motion.div
-                  key="desc"
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: 20 }}
-                  className="h-full w-full p-6 overflow-y-auto bg-slate-900/80"
-                >
-                  {/* Renderizado de la descripción */}
-                  <div className="text-slate-200 text-sm leading-relaxed flex flex-col gap-3">
-                    {project.descripcion?.intro && (
-                      <p>{project.descripcion.intro}</p>
-                    )}
-                    {project.descripcion?.backend && (
-                      <p><span className="text-sky-400 font-bold">Backend: </span>{project.descripcion.backend}</p>
-                    )}
-                    {project.descripcion?.frontend && (
-                      <p><span className="text-violet-400 font-bold">Frontend: </span>{project.descripcion.frontend}</p>
-                    )}
-                    {project.descripcion?.techStack && (
-                      <p><span className="text-orange-400 font-bold">Stack: </span>{project.descripcion.techStack}</p>
-                    )}
-                    {project.descripcion?.logros?.length > 0 && (
-                      <ul className="flex flex-col gap-1 mt-1">
-                        {project.descripcion.logros.map((logro, i) => (
-                          <li key={i} className="flex gap-2 items-start">
-                            <span className="text-orange-400 mt-0.5">▸</span>
-                            <span>{logro}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="slider"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  className="h-full w-full"
-                >
-                  <ImageSlider images={project.images} />
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+    <div className="flex flex-col gap-10 w-full max-w-6xl mx-auto px-2 md:px-4 pb-6">
+      {data.map((project, index) => {
+        const accent = ACCENT[index % ACCENT.length];
+        const isFlipped = index % 2 !== 0;
+        const showDesc = activeDesc === index;
 
-          {/* Contenedor Derecho: Info y Botones */}
-          <div className="w-full lg:w-2/5 flex flex-col items-center lg:items-start">
-            <h3 className="text-white text-3xl lg:text-4xl font-black mb-4 italic tracking-tight">
-              {project.title}
-            </h3>
-            
-            <div className="flex flex-wrap gap-2 mb-6 justify-center lg:justify-start">
-              {project.tech?.map(t => (
-                <span key={t} className="text-[10px] uppercase tracking-tighter font-bold px-2 py-1 bg-white/5 border border-white/10 text-slate-400 rounded-md">
-                  {t}
+        return (
+          <motion.div
+            key={project.id || index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className={`
+              relative overflow-hidden
+              bg-slate-900/60 backdrop-blur-md
+              border ${accent.border}
+              rounded-2xl md:rounded-3xl
+              shadow-xl shadow-black/40
+              flex flex-col
+              ${isFlipped ? "lg:flex-row-reverse" : "lg:flex-row"}
+            `}
+          >
+            {/* Glow de acento en la esquina */}
+            <div className={`pointer-events-none absolute ${isFlipped ? "top-0 right-0" : "top-0 left-0"} w-48 h-48 ${accent.glow} opacity-5 blur-[80px] rounded-full`} />
+
+            {/* ── Lado imagen ── */}
+            <div className="w-full lg:w-[55%] h-56 sm:h-72 lg:h-auto lg:min-h-[340px] relative shrink-0">
+              <AnimatePresence mode="wait">
+                {showDesc ? (
+                  <motion.div
+                    key="desc"
+                    initial={{ opacity: 0, x: isFlipped ? 20 : -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: isFlipped ? -20 : 20 }}
+                    transition={{ duration: 0.3 }}
+                    className="absolute inset-0"
+                  >
+                    <DescripcionPanel descripcion={project.descripcion} />
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    key="slider"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="absolute inset-0"
+                  >
+                    <ImageSlider images={project.images} />
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {/* Divisor vertical en desktop */}
+            <div className={`hidden lg:block w-px bg-gradient-to-b from-transparent via-white/10 to-transparent shrink-0`} />
+
+            {/* ── Lado info ── */}
+            <div className="flex-1 flex flex-col justify-between gap-5 p-6 md:p-8">
+
+              {/* Número + título */}
+              <div>
+                <span className={`text-xs font-black tracking-[0.3em] uppercase ${accent.text} opacity-60`}>
+                  {String(index + 1).padStart(2, "0")} — Proyecto
                 </span>
-              ))}
-            </div>
+                <h3 className="text-white text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight mt-1">
+                  {project.title}
+                </h3>
+              </div>
 
-            <div className="flex gap-3 w-full flex-wrap">
-              {project.url && (
-                <a href={project.url} target="_blank" className="flex-1 min-w-[120px] text-center px-5 py-3 rounded-xl bg-sky-500 text-white font-bold hover:bg-sky-400 transition-colors shadow-lg shadow-sky-500/20">
-                  Live Demo
-                </a>
+              {/* Descripción corta visible siempre */}
+              {project.descripcion?.intro && (
+                <p className="text-slate-400 text-sm leading-relaxed line-clamp-3">
+                  {project.descripcion.intro}
+                </p>
               )}
-              <a href={project.github} target="_blank" className="flex-1 min-w-[120px] text-center px-5 py-3 rounded-xl bg-slate-800 text-white font-bold border border-white/10 hover:bg-slate-700 transition-colors">
-                Código
-              </a>
+
+              {/* Tech badges */}
+              <div className="flex flex-wrap gap-2">
+                {project.tech?.map((t) => (
+                  <span
+                    key={t}
+                    className="text-[10px] sm:text-xs uppercase tracking-wider font-bold px-2.5 py-1 bg-white/5 border border-white/10 text-slate-400 rounded-lg"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              {/* Botones */}
+              <div className="flex flex-col sm:flex-row gap-3 mt-auto">
+                <button
+                  onClick={() => setActiveDesc(showDesc ? null : index)}
+                  className={`
+                    flex items-center justify-center gap-2 flex-1
+                    px-4 py-2.5 rounded-xl text-sm font-bold
+                    border transition-all duration-300 active:scale-95
+                    ${showDesc
+                      ? "bg-white/10 border-white/20 text-white"
+                      : `bg-white/5 border-white/10 ${accent.text} hover:bg-white/10`
+                    }
+                  `}
+                >
+                  {showDesc
+                    ? <><IconPhoto size={16} /> Ver Imágenes</>
+                    : <><IconLayoutList size={16} /> Ver Detalles</>
+                  }
+                </button>
+
+                {project.url && (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 flex-1 px-4 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-white text-sm font-bold transition-all duration-300 shadow-lg shadow-sky-500/20 active:scale-95"
+                  >
+                    <IconExternalLink size={16} /> Live Demo
+                  </a>
+                )}
+
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 flex-1 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-sm font-bold border border-white/10 transition-all duration-300 active:scale-95"
+                >
+                  <IconBrandGithub size={16} /> Código
+                </a>
+              </div>
             </div>
-            
-            <button
-              onClick={() => setActiveDesc(activeDesc === index ? null : index)}
-              className="mt-4 w-full py-3 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 text-white font-extrabold hover:brightness-110 transition-all active:scale-95"
-            >
-              {activeDesc === index ? "Ver Imágenes" : "Ver Detalles"}
-            </button>
-          </div>
-        </motion.div>
-      ))}
+          </motion.div>
+        );
+      })}
     </div>
   );
 }
